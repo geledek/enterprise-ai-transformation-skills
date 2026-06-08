@@ -25,4 +25,4 @@ Before any major AI infrastructure investment. When pilots aren't scaling. When 
 - `mit-cisr-4-stages.md` — Stage 3 platform requirements
 - `nist-rmf-functions.md` — MANAGE lifecycle functions
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

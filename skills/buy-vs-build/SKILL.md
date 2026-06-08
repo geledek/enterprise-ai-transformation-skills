@@ -115,4 +115,4 @@ SOURCING STRATEGY | MOAT ASSESSMENT | RISK FLAGS | RECOMMENDED NEXT ACTION
 - `hiten-skill-library.md` — skill library as the BUILD layer that compounds
 - `ai-stack-layers.md` — which stack layers are buy vs. build candidates
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

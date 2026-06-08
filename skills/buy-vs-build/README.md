@@ -24,4 +24,4 @@ Before any significant AI procurement decision. When debating build vs. buy for 
 - `hiten-skill-library.md` — skill library as the BUILD layer
 - `ai-stack-layers.md` — stack-layer sourcing guidance
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

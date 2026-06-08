@@ -142,7 +142,7 @@ REGULATORY CONTEXT:
 - EU AI Act (Art. 4): if deploying in EU context, AI literacy obligation applies to all users
 - EU AI Act (Art. 26): if this is a high-risk system, named human oversight is legally required
 - NIST RMF MANAGE: every AI system needs a documented "off" path (MANAGE 2.4)
-(Consult `eu-ai-act-essentials.md` and `nist-rmf-functions.md` in `references/` for detailed obligations)
+(Consult `eu-ai-act-essentials.md` and `nist-rmf-functions.md` for detailed obligations.)
 
 Output:
 READINESS VERDICT | GAPS LIST | CRITICAL GAPS | REGULATORY OBLIGATIONS TRIGGERED
@@ -156,4 +156,4 @@ READINESS VERDICT | GAPS LIST | CRITICAL GAPS | REGULATORY OBLIGATIONS TRIGGERED
 - `nist-rmf-functions.md` — GOVERN, MANAGE functions; MANAGE 2.4 (off-path requirement)
 - `pwc-roi-2026-governance.md` — 1.7× AI leadership advantage for documented RAI strategy
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

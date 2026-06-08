@@ -63,7 +63,7 @@ Name which dimensions pass and which do not.
 MEASUREMENT CHECK — THE MEASUREMENT GAP.
 Name three metrics that prove this is working. Are these the metrics that would naturally get tracked? Flag any gap between what matters and what is easy to measure.
 
-*Consult `european-fintech-case.md` in the `references/` folder: a leading European fintech replaced 700 agents with one AI system — tracked volume, speed, cost; did NOT track resolution quality, repeat-contact rate, CSAT. CSAT dropped 22%. Hiring resumed within months.*
+*Consult `european-fintech-case.md`: a leading European fintech replaced 700 agents with one AI system — tracked volume, speed, cost; did NOT track resolution quality, repeat-contact rate, CSAT. CSAT dropped 22%. Hiring resumed within months.*
 
 OBJECTIVE-MODE CHECK.
 Map this idea to one of three objectives (consult `mckinsey-3-objective-mix.md`):
@@ -88,11 +88,11 @@ WHAT ACCUMULATES | THREE METRICS | MEASUREMENT GAP | OBJECTIVE MODE | MOAT TYPE 
 
 Your job is to identify the execution gaps that would prevent this idea from working in practice, regardless of how sound the concept is.
 
-DATA. Is the data AI-ready? Does the organisation have confirmed legal rights to use it? Is it in a usable format and accessible via pipeline? (Consult `isg-data-foundation.md` in `references/` — the binding-constraint finding.)
+DATA. Is the data AI-ready? Does the organisation have confirmed legal rights to use it? Is it in a usable format and accessible via pipeline? (Consult `isg-data-foundation.md` — the binding-constraint finding.)
 
 INTEGRATION. Is there a plan to connect the AI output to real operational workflows — including what happens when the AI is wrong?
 
-CHANGE MANAGEMENT. Stanford: 77% of the hardest challenges in enterprise AI are invisible costs — change management, data quality, process redesign. Not tech. Does the org have the muscle to absorb this deployment? (Consult `stanford-51-deployments.md` in `references/`.)
+CHANGE MANAGEMENT. Stanford: 77% of the hardest challenges in enterprise AI are invisible costs — change management, data quality, process redesign. Not tech. Does the org have the muscle to absorb this deployment? (Consult `stanford-51-deployments.md`.)
 
 Output:
 DATA | INTEGRATION | CHANGE MANAGEMENT | Q4 VERDICT (Pass / Gaps / Fail)

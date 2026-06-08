@@ -28,4 +28,4 @@ Quarterly or before setting AI strategy. Before a board AI briefing. When scopin
 - `pwc-roi-2026-governance.md` — performance differentials
 - `bcg-future-built.md` — Future-Built archetype
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

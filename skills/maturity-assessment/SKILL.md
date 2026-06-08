@@ -153,4 +153,4 @@ CURRENT STATE SUMMARY | TARGET STATE | CAPABILITY GAPS (ordered) | BOLD GOAL | R
 - `deloitte-cheerleader-to-champion.md` — 74/21 governance gap; HR five jobs
 - `hiten-skill-library.md` — skill library as the Stage 3–4 knowledge architecture
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

@@ -126,4 +126,4 @@ RECOMMENDATION | CONDITIONS (if any) | RED FLAGS (if any) | VERDICT RATIONALE
 - `stanford-51-deployments.md` — invisible-costs (77%); empirical backing for Don't #2 and #8
 - `european-fintech-case.md` — measurement-gap reference case; backing for Don't #4
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

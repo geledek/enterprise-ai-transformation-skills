@@ -38,4 +38,4 @@ See `cases/` for six diagnosed examples: Air Canada, JPMorgan COIN, Klarna (anon
 - `stanford-51-deployments.md` — invisible-costs reality check
 - `isg-data-foundation.md` — data readiness criteria
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

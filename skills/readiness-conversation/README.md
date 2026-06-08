@@ -31,4 +31,4 @@ Quarterly as a leadership team diagnostic. Before setting AI strategy. When AI i
 - `deloitte-cheerleader-to-champion.md` — HR's five jobs
 - `eu-ai-act-essentials.md` — Art. 4 literacy obligation
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

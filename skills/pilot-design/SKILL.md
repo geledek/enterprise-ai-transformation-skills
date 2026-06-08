@@ -160,4 +160,4 @@ Produce a one-page pilot brief from Roles 1–6. Write for sponsor approval. Be 
 - `pilot-discipline-ng.md` — cross-source pilot discipline synthesis
 - `mckinsey-workflow-redesign.md` — 3× workflow redesign; AI-bolted-onto-legacy failure mode
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

@@ -29,4 +29,4 @@ A structured investment recommendation with:
 - `accenture-redeployment-roi.md` — three-channel ROI model
 - `stanford-51-deployments.md` — invisible-costs empirical backing
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

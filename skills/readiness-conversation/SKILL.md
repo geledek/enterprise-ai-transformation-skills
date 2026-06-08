@@ -142,4 +142,4 @@ Consolidate Roles 1–4. Write for CEO or CHRO audience.
 - `mckinsey-3-objective-mix.md` — objective-mode audit for CEO strategy gap
 - `accenture-maturity-archetypes.md` — Differentation axis includes sponsorship + training; Innovator vs. Builder gap
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

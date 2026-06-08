@@ -28,4 +28,4 @@ A one-page pilot brief: problem statement, scope, redesigned workflow, 3 pre-dep
 - `pilot-discipline-ng.md` — pilot discipline synthesis
 - `mckinsey-workflow-redesign.md` — workflow redesign method
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).

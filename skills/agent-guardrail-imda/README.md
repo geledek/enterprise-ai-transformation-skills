@@ -30,4 +30,4 @@ A structured governance readiness assessment with:
 - `eu-ai-act-essentials.md` — EU AI Act obligations
 - `nist-rmf-functions.md` — NIST RMF GOVERN and MANAGE functions
 
-All reference files are in the `references/` folder at the root of this collection.
+Reference files are bundled with this skill — Claude resolves them by filename regardless of install layout (single-skill or plugin).
