@@ -71,7 +71,7 @@ These skills produce board-ready outputs — not engineering artifacts. No codin
 14. `peer-case-library` — pull closest-match analogs as you make calls
 15. `stack-diagnostic` — run before any major scaling decision
 
-See `docs/coverage-matrix.md` for how each skill maps to specific practitioner challenges from the GSB Singapore alumni cohort.
+See `docs/usage-guide.md` for full-transcript worked examples — four single-skill walkthroughs and five chained-flow operating decisions (greenfield bank initiative, leadership readiness, agent governance under audit pressure, SME build-vs-buy, clinical AI rollout).
 
 ---
 
