@@ -1,6 +1,6 @@
 # Enterprise AI Transformation Skills
 
-Eight installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation — distilled from 21 flagship research sources published 2024–2026.
+Fifteen installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation — distilled from 21 flagship research sources published 2024–2026 and battle-tested against real practitioner challenges from the Stanford GSB Singapore alumni event (June 2026).
 
 ---
 
@@ -32,30 +32,46 @@ These skills produce board-ready outputs — not engineering artifacts. No codin
 
 | Stage | Skills to use |
 |---|---|
+| **Discovery** — "Where do we even start with AI?" | `use-case-discovery` |
 | **Concept** — "Should we pursue this AI idea?" | `ai-idea-diagnostic` |
 | **Pilot design** — "How do we structure the 90-day test?" | `pilot-design` |
 | **Funding gate** — "Should we approve this investment?" | `roi-gate-pwc` |
 | **Build vs. buy** — "Should we build this, buy it, or partner?" | `buy-vs-build` |
-| **Deployment** — "Are our agents governed correctly?" | `agent-guardrail-imda` |
-| **Scaling** — "Is our tech stack ready to scale?" | `stack-diagnostic` |
+| **Data + deployment pattern** — "Where can this data legally run?" | `data-trust-deployment-pattern` |
+| **Productionization** — "Move past the prototype" | `productionization-playbook` |
+| **Deployment governance** — "Are our agents governed correctly?" | `agent-guardrail-imda` |
+| **Scaling tech** — "Is our tech stack ready to scale?" | `stack-diagnostic` |
+| **Scaling people** — "How do we engage skeptical frontline experts?" | `augmentation-frontline-engagement` |
+| **Run / observe** — "What is each agent actually returning?" | `ai-portfolio-observability` |
 
-### Cross-cutting diagnostics
+### Cross-cutting diagnostics & enablers
 
-| Diagnostic | When |
+| Diagnostic / enabler | When |
 |---|---|
 | `readiness-conversation` | Any time you need to surface where leadership gaps will block progress |
 | `maturity-assessment` | Quarterly or before setting AI strategy — where are we on the maturity curve? |
+| `workforce-literacy-curriculum` | Standing up role-based AI literacy + EU AI Act Art. 4 compliance |
+| `peer-case-library` | When the question is "what have others actually done?" |
 
 ### Typical executive flow
 
 1. `maturity-assessment` — baseline where the org sits
-2. `ai-idea-diagnostic` — gate each new AI concept
-3. `pilot-design` — structure the pilot with pre-deployment metrics
-4. `roi-gate-pwc` — approve or kill at the funding gate
-5. `buy-vs-build` — decide the sourcing model
-6. `agent-guardrail-imda` — govern deployed agents
-7. `readiness-conversation` — run quarterly to surface people/leadership gaps
-8. `stack-diagnostic` — run before any major scaling decision
+2. `use-case-discovery` — generate / rank candidate use cases
+3. `ai-idea-diagnostic` — gate each promising concept
+4. `data-trust-deployment-pattern` — match data sensitivity to deployment tier
+5. `pilot-design` — structure the pilot with pre-deployment metrics
+6. `roi-gate-pwc` — approve or kill at the funding gate
+7. `buy-vs-build` — decide the sourcing model
+8. `productionization-playbook` — move from working prototype to SLO-bound prod
+9. `agent-guardrail-imda` — govern deployed agents
+10. `ai-portfolio-observability` — track every initiative net-of-oversight
+11. `readiness-conversation` — run quarterly to surface people/leadership gaps
+12. `workforce-literacy-curriculum` — close the literacy gap and meet Art. 4
+13. `augmentation-frontline-engagement` — engage frontline experts as co-designers
+14. `peer-case-library` — pull closest-match analogs as you make calls
+15. `stack-diagnostic` — run before any major scaling decision
+
+See `docs/coverage-matrix.md` for how each skill maps to specific practitioner challenges from the GSB Singapore alumni cohort.
 
 ---
 
