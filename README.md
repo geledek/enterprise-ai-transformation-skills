@@ -77,19 +77,43 @@ See `docs/usage-guide.md` for full-transcript worked examples — four single-sk
 
 ## How to install
 
-### Claude Code (primary)
+### Claude Desktop (non-technical, recommended for most users)
+
+1. Open Claude Desktop → **Customize** (left sidebar) → **Plugins** tab
+2. Click **Browse plugins** or **Upload custom plugin**
+3. Paste this URL when prompted:
+   `https://github.com/geledek/enterprise-ai-transformation-skills`
+4. Restart Claude Desktop. All 15 skills activate automatically.
+
+Requires a paid plan (Pro, Max, Team, or Enterprise). See [Claude plugin docs](https://support.claude.com/en/articles/13837440-use-plugins-in-claude) for details.
+
+### Claude Code (CLI)
 
 ```bash
-# Via Claude Code plugin manager
 claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills
-
-# Or manual clone
-git clone https://github.com/geledek/enterprise-ai-transformation-skills.git ~/.claude/plugins/enterprise-ai-transformation-skills
 ```
 
-Then restart Claude Code. Skills activate automatically from their trigger descriptions.
+Restart Claude Code. Skills activate automatically from their trigger descriptions.
 
-See `INSTALL.md` for full setup, verification steps, and ChatGPT custom GPT adaptation.
+Or manual clone:
+
+```bash
+git clone https://github.com/geledek/enterprise-ai-transformation-skills.git \
+  ~/.claude/plugins/enterprise-ai-transformation-skills
+```
+
+### Claude.ai Projects (no install required)
+
+For users without a paid Claude Code plan:
+
+1. Create a new **Project** at [claude.ai](https://claude.ai)
+2. Open **Project Instructions**
+3. Paste the contents of any skill's `README.md` from this repo
+4. Upload relevant files from `references/` as Project Knowledge
+
+This loads one skill per Project. Skills activate on their trigger phrases.
+
+See `INSTALL.md` for full setup, verification steps, and ChatGPT Custom GPT adaptation.
 
 ---
 
