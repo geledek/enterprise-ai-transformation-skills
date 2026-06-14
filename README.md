@@ -113,7 +113,15 @@ For users without a paid Claude Code plan:
 
 This loads one skill per Project. Skills activate on their trigger phrases.
 
-See `INSTALL.md` for full setup, verification steps, and ChatGPT Custom GPT adaptation.
+### ChatGPT
+
+Install via native Skills (if available on your plan) or as a Custom GPT — paste any skill's `SKILL.md` into GPT Instructions and upload relevant `references/` files as Knowledge.
+
+### Grok CLI
+
+Clone to `~/.grok/plugins/` or add this repo as a marketplace source in `~/.grok/config.toml`.
+
+See `INSTALL.md` for full setup instructions across all platforms, verification steps, and platform-specific limitations.
 
 ---
 

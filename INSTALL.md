@@ -43,17 +43,80 @@ After restart, test each skill with its trigger phrase:
 
 ---
 
-## ChatGPT Custom GPT Adaptation
+## Claude Desktop
 
-These skills can be adapted as a ChatGPT Custom GPT (no code required).
+1. Open Claude Desktop → **Customize** (left sidebar) → **Plugins** tab
+2. Click **Browse plugins** or **Upload custom plugin**
+3. Paste this URL when prompted:
+   `https://github.com/geledek/enterprise-ai-transformation-skills`
+4. Restart Claude Desktop. All 15 skills activate automatically.
+
+Requires a paid plan (Pro, Max, Team, or Enterprise). See [Claude plugin docs](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
+
+---
+
+## ChatGPT
+
+### Option A — Native Skills (if available on your plan)
+
+1. Go to **chatgpt.com → Explore skills** or open Settings → **Skills**
+2. Click **Add skill from URL** (if shown) and paste:
+   `https://github.com/geledek/enterprise-ai-transformation-skills`
+
+See [OpenAI skills docs](https://help.openai.com/en/articles/20001066-skills-in-chatgpt) for current plan availability.
+
+### Option B — Custom GPT (no code required, always available)
 
 1. Create a new GPT at `chat.openai.com/gpts`
-2. In **Instructions**, paste the full content of the `SKILL.md` you want to adapt
-3. In **Knowledge**, upload the relevant reference files from `references/`
-4. Set the **Conversation Starter** to the skill's primary trigger phrase
-5. Repeat per skill, or combine up to 4 skills into one GPT using role-selection prompt logic
+2. In **Instructions**, paste the full content of any skill's `SKILL.md`
+3. In **Knowledge**, upload the relevant files from `references/`
+4. Set the **Conversation Starter** to the skill's trigger phrase
+5. Repeat per skill, or combine up to 4 skills into one GPT
 
-Limitation: Custom GPTs don't auto-trigger on phrase pattern-matching the way Claude Code plugins do — you'll need to explicitly invoke the skill in conversation.
+Limitation: Custom GPTs don't auto-trigger on phrase matching — you'll need to explicitly invoke the skill in conversation.
+
+---
+
+## Grok CLI
+
+### Option A — Marketplace install
+
+Add this repo as a marketplace source in `~/.grok/config.toml`:
+
+```toml
+[[marketplace.sources]]
+url = "https://github.com/geledek/enterprise-ai-transformation-skills"
+```
+
+Then browse and install from the **Marketplace** tab in the Grok TUI, or run:
+
+```bash
+grok plugin install enterprise-ai-transformation-skills
+```
+
+### Option B — Manual clone
+
+```bash
+git clone https://github.com/geledek/enterprise-ai-transformation-skills.git \
+  ~/.grok/plugins/enterprise-ai-transformation-skills
+```
+
+Grok auto-discovers plugins in `~/.grok/plugins/`. Skills appear as `/skill-name` slash commands.
+
+See [Grok skills & plugins docs](https://docs.x.ai/build/features/skills-plugins-marketplaces).
+
+---
+
+## Claude.ai Projects (no install required)
+
+For users without a paid Claude Code or Desktop plan:
+
+1. Create a new **Project** at [claude.ai](https://claude.ai)
+2. Open **Project Instructions**
+3. Paste the contents of any skill's `README.md` from this repo
+4. Upload relevant files from `references/` as Project Knowledge
+
+This loads one skill per Project. Skills activate on their trigger phrases.
 
 ---
 
