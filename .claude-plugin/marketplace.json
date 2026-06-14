@@ -1,0 +1,36 @@
+{
+  "name": "enterprise-ai-transformation-skills",
+  "owner": {
+    "name": "Ray Han",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Fifteen installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation — distilled from 21 flagship research sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF).",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "enterprise-ai-transformation-skills",
+      "description": "Decision frameworks, diagnostic tools, and gate criteria for enterprise AI transformation — covering discovery, concept gating, pilot design, ROI, build-vs-buy, data governance, productionization, agent guardrails, stack diagnostics, frontline engagement, portfolio observability, readiness, maturity, workforce literacy, and peer case library.",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/ai-idea-diagnostic",
+        "./skills/pilot-design",
+        "./skills/roi-gate-pwc",
+        "./skills/agent-guardrail-imda",
+        "./skills/stack-diagnostic",
+        "./skills/buy-vs-build",
+        "./skills/readiness-conversation",
+        "./skills/maturity-assessment",
+        "./skills/use-case-discovery",
+        "./skills/data-trust-deployment-pattern",
+        "./skills/productionization-playbook",
+        "./skills/ai-portfolio-observability",
+        "./skills/augmentation-frontline-engagement",
+        "./skills/peer-case-library",
+        "./skills/workforce-literacy-curriculum"
+      ]
+    }
+  ]
+}

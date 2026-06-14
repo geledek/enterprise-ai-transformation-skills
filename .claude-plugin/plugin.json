@@ -1,8 +1,8 @@
 {
   "name": "enterprise-ai-transformation-skills",
   "displayName": "Enterprise AI Transformation Skills",
-  "version": "0.1.0",
-  "description": "Eight installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation. Distilled from 21 flagship sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF).",
+  "version": "0.2.0",
+  "description": "Fifteen installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation. Distilled from 21 flagship sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF).",
   "author": "Ray Han",
   "license": "MIT",
   "homepage": "https://github.com/geledek/enterprise-ai-transformation-skills",
@@ -14,6 +14,13 @@
     "skills/stack-diagnostic",
     "skills/buy-vs-build",
     "skills/readiness-conversation",
-    "skills/maturity-assessment"
+    "skills/maturity-assessment",
+    "skills/use-case-discovery",
+    "skills/data-trust-deployment-pattern",
+    "skills/productionization-playbook",
+    "skills/ai-portfolio-observability",
+    "skills/augmentation-frontline-engagement",
+    "skills/peer-case-library",
+    "skills/workforce-literacy-curriculum"
   ]
 }

@@ -2,13 +2,13 @@
 
 ## Claude Code (Primary)
 
-### Option A — Plugin Manager
+### Option A — Plugin Manager (recommended)
 
 ```bash
 claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills
 ```
 
-Restart Claude Code. All 8 skills activate automatically.
+Restart Claude Code. All 15 skills activate automatically.
 
 ### Option B — Manual Clone
 
@@ -17,7 +17,7 @@ git clone https://github.com/geledek/enterprise-ai-transformation-skills.git \
   ~/.claude/plugins/enterprise-ai-transformation-skills
 ```
 
-Then in Claude Code settings, add the plugin path, or restart — Claude Code auto-discovers plugins in `~/.claude/plugins/`.
+Restart Claude Code — it auto-discovers plugins in `~/.claude/plugins/`.
 
 ### Verify Installation
 
@@ -33,6 +33,13 @@ After restart, test each skill with its trigger phrase:
 | `buy-vs-build` | "Should we build or buy this AI capability?" |
 | `readiness-conversation` | "Surface AI readiness gaps in our leadership team" |
 | `maturity-assessment` | "Where are we on the AI maturity curve?" |
+| `use-case-discovery` | "Where do we start with AI?" |
+| `data-trust-deployment-pattern` | "Where can this data legally run?" |
+| `productionization-playbook` | "How do we move this prototype to production?" |
+| `ai-portfolio-observability` | "What is each AI initiative actually returning?" |
+| `augmentation-frontline-engagement` | "How do we engage skeptical frontline experts?" |
+| `peer-case-library` | "Has anyone else done this before?" |
+| `workforce-literacy-curriculum` | "Build a role-based AI literacy curriculum" |
 
 ---
 
