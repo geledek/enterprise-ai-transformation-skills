@@ -143,21 +143,21 @@ Three forks:
 
 | ID | Source |
 |---|---|
-| `stanford-ai-index-2026` | Stanford AI Index 2026 |
+| `stanford-ai-index-2026` | [Stanford AI Index 2026](https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf) |
 | `mit-nanda-2025` | MIT NANDA GenAI Deployment Study 2025 |
-| `mckinsey-state-ai-2025` | McKinsey State of AI 2025 |
+| `mckinsey-state-ai-2025` | [McKinsey State of AI 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) |
 | `bcg-bffxai-2026` | BCG Build for the Future x AI 2026 |
-| `deloitte-ai-leaders-2026` | Deloitte AI Leaders Survey 2026 |
-| `pwc-roi-2026` | PwC ROI Report 2026 |
+| `deloitte-ai-leaders-2026` | [Deloitte AI Leaders Survey 2026](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) |
+| `pwc-roi-2026` | [PwC ROI Report 2026](https://www.pwc.com/gx/en/issues/technology/ai-performance.html) |
 | `pwc-agentic-playbook-2026` | PwC Agentic AI Playbook 2026 |
 | `accenture-co-intelligence-2026` | Accenture Co-Intelligence 2026 |
 | `accenture-maturity-global` | Accenture AI Maturity Global 2024 |
 | `mit-cisr-2024` | MIT CISR AI Maturity Stages 2024 |
-| `nist-ai-rmf` | NIST AI Risk Management Framework 1.0 |
-| `eu-ai-act-2024` | EU AI Act 2024 |
+| `nist-ai-rmf` | [NIST AI Risk Management Framework 1.0](https://doi.org/10.6028/NIST.AI.100-1) |
+| `eu-ai-act-2024` | [EU AI Act 2024](https://artificialintelligenceact.eu/the-act/) |
 | `imda-agentic-2026` | IMDA Agentic AI Framework 2026 |
 | `wef-rai-2024` | WEF Responsible AI Playbook 2024 |
-| `landing-ai-playbook` | Landing AI Enterprise Transformation Playbook |
+| `landing-ai-playbook` | [Landing AI Enterprise Transformation Playbook](https://landing.ai/resources/ai-transformation-playbook/) |
 | `andrew-ng-moats` | Andrew Ng — Three AI Moats |
 | `isg-genai-2025` | ISG GenAI Enterprise Research 2025 |
 | `bcg-manager-modeling` | BCG Role-Modeling Research 2026 |
