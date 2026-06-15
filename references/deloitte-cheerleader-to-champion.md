@@ -28,8 +28,8 @@ Deloitte 2026 findings on CEO and executive ownership of AI: the difference betw
 
 ## When to consult
 
-- For skill `readiness-conversation`: HR's 5 jobs define the HR row of the 4-role gap report — ask which of the 5 HR is actively executing vs. deferring.
-- For skill `maturity-assessment`: the 74/21 governance gap is a direct indicator of governance maturity — firms that haven't addressed agentic governance are at Stage 2 regardless of pilot count.
+- For skill `people-readiness-conversation`: HR's 5 jobs define the HR row of the 4-role gap report — ask which of the 5 HR is actively executing vs. deferring.
+- For skill `general-maturity-assessment`: the 74/21 governance gap is a direct indicator of governance maturity — firms that haven't addressed agentic governance are at Stage 2 regardless of pilot count.
 
 ## Source
 

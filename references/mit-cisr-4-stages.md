@@ -42,8 +42,8 @@ Stage 2 → Stage 3 requires a platform investment that ROI-driven Stage 2 cultu
 
 ## When to consult
 
-- For skill `maturity-assessment`: MIT CISR's four stages are the primary sequential axis of the assessment. Plot the org on this axis first, then use Accenture's 2×2 to identify the binding constraint.
-- For skill `stack-diagnostic`: Stage 3 platform requirements (shared AI platform, architectural reuse) are what the stack diagnostic should be building toward.
+- For skill `general-maturity-assessment`: MIT CISR's four stages are the primary sequential axis of the assessment. Plot the org on this axis first, then use Accenture's 2×2 to identify the binding constraint.
+- For skill `tech-stack-diagnostic`: Stage 3 platform requirements (shared AI platform, architectural reuse) are what the stack diagnostic should be building toward.
 
 ## Source
 

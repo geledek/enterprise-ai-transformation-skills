@@ -32,9 +32,9 @@ Ask: What percentage of this firm's AI portfolio is efficiency vs. growth vs. in
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: Q3 (value accumulates?) should ask which objective mode the initiative targets — an efficiency-only initiative with no moat potential is lower conviction.
-- For skill `maturity-assessment`: a mature firm's portfolio should have explicit growth/innovation objectives alongside efficiency; pure efficiency portfolio signals Stage 2 plateau.
-- For skill `readiness-conversation`: the CEO role card includes a 3× ownership differential — make this concrete.
+- For skill `general-idea-diagnostic`: Q3 (value accumulates?) should ask which objective mode the initiative targets — an efficiency-only initiative with no moat potential is lower conviction.
+- For skill `general-maturity-assessment`: a mature firm's portfolio should have explicit growth/innovation objectives alongside efficiency; pure efficiency portfolio signals Stage 2 plateau.
+- For skill `people-readiness-conversation`: the CEO role card includes a 3× ownership differential — make this concrete.
 
 ## Source
 

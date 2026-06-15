@@ -29,8 +29,8 @@ Specific behaviors that qualify as visible role-modeling:
 
 ## When to consult
 
-- For skill `readiness-conversation`: the 88/25 gap is the opening diagnostic for manager readiness — ask "what percentage of your managers are visibly using AI in team settings?" A gap below 25% is a named risk.
-- For skill `maturity-assessment`: Accenture Achievers have 83% CEO + senior sponsorship; the BCG manager finding extends this down the org — role-modeling cascades from C-suite to managers to employees.
+- For skill `people-readiness-conversation`: the 88/25 gap is the opening diagnostic for manager readiness — ask "what percentage of your managers are visibly using AI in team settings?" A gap below 25% is a named risk.
+- For skill `general-maturity-assessment`: Accenture Achievers have 83% CEO + senior sponsorship; the BCG manager finding extends this down the org — role-modeling cascades from C-suite to managers to employees.
 
 ## Source
 

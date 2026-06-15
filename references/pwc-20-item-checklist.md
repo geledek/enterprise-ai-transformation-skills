@@ -51,8 +51,8 @@ Source: PwC Agentic AI Playbook 2026, pp.16–17.
 
 ## When to consult
 
-- For skill `roi-gate-pwc`: this IS the core content of the ROI gate — load all 20 items, run each as a written Q&A before greenlighting any AI investment.
-- For skill `pilot-design`: Do #3 and Do #4 define the pilot philosophy.
+- For skill `general-roi-gate`: this IS the core content of the ROI gate — load all 20 items, run each as a written Q&A before greenlighting any AI investment.
+- For skill `process-pilot-design`: Do #3 and Do #4 define the pilot philosophy.
 
 ## Source
 

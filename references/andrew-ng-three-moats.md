@@ -29,9 +29,9 @@ Andrew Ng's foundational framework (Landing AI Playbook, Step 4): AI strategy sh
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: Q3 (value accumulates?) maps directly to moat analysis — does this initiative build toward any of the three moat types?
-- For skill `buy-vs-build`: the "buy the model, build the orchestration" principle follows from the Ng/Stanford synthesis — the orchestration layer is the moat, not the model.
-- For skill `maturity-assessment`: a firm at Stage 3/4 (MIT CISR) should be able to name its moat type; if it can't, it's still in productivity-tool territory.
+- For skill `general-idea-diagnostic`: Q3 (value accumulates?) maps directly to moat analysis — does this initiative build toward any of the three moat types?
+- For skill `tech-buy-vs-build`: the "buy the model, build the orchestration" principle follows from the Ng/Stanford synthesis — the orchestration layer is the moat, not the model.
+- For skill `general-maturity-assessment`: a firm at Stage 3/4 (MIT CISR) should be able to name its moat type; if it can't, it's still in productivity-tool territory.
 
 ## Source
 

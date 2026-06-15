@@ -29,9 +29,9 @@ Stanford AI Index 2026 analysis of 51 enterprise AI deployments across industrie
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: invisible-costs framing is the Q4 (capability) reality check — does the organization have the change management muscle, data quality, and process discipline to absorb the deployment?
-- For skill `pilot-design`: the 51-deployment pattern database is the source for pilot archetypes and failure mode avoidance.
-- For skill `roi-gate-pwc`: the invisible-costs finding is the empirical backing for Don't #2 (Underestimate complexity) and Don't #8 (Underestimate costs).
+- For skill `general-idea-diagnostic`: invisible-costs framing is the Q4 (capability) reality check — does the organization have the change management muscle, data quality, and process discipline to absorb the deployment?
+- For skill `process-pilot-design`: the 51-deployment pattern database is the source for pilot archetypes and failure mode avoidance.
+- For skill `general-roi-gate`: the invisible-costs finding is the empirical backing for Don't #2 (Underestimate complexity) and Don't #8 (Underestimate costs).
 
 ## Source
 

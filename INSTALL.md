@@ -21,25 +21,38 @@ Restart Claude Code — it auto-discovers plugins in `~/.claude/plugins/`.
 
 ### Verify Installation
 
-After restart, test each skill with its trigger phrase:
+After restart, test each skill with its trigger phrase. Skills are grouped by bucket:
 
+**General — diagnostics & strategy**
 | Skill | Trigger phrase |
 |---|---|
-| `ai-idea-diagnostic` | "Should we pursue this AI idea?" |
-| `pilot-design` | "Design a 90-day AI pilot for [X]" |
-| `roi-gate-pwc` | "Run the ROI gate on this AI investment" |
-| `agent-guardrail-imda` | "Check governance on this AI agent deployment" |
-| `stack-diagnostic` | "Diagnose our AI tech stack" |
-| `buy-vs-build` | "Should we build or buy this AI capability?" |
-| `readiness-conversation` | "Surface AI readiness gaps in our leadership team" |
-| `maturity-assessment` | "Where are we on the AI maturity curve?" |
-| `use-case-discovery` | "Where do we start with AI?" |
-| `data-trust-deployment-pattern` | "Where can this data legally run?" |
-| `productionization-playbook` | "How do we move this prototype to production?" |
-| `ai-portfolio-observability` | "What is each AI initiative actually returning?" |
-| `augmentation-frontline-engagement` | "How do we engage skeptical frontline experts?" |
-| `peer-case-library` | "Has anyone else done this before?" |
-| `workforce-literacy-curriculum` | "Build a role-based AI literacy curriculum" |
+| `general-use-case-discovery` | "Where should we point AI first across our function?" |
+| `general-idea-diagnostic` | "Should we pursue this AI idea?" |
+| `general-maturity-assessment` | "Where are we on the AI maturity curve?" |
+| `general-peer-cases` | "Has anyone else done this before?" |
+| `general-roi-gate` | "Run the ROI gate on this AI investment" |
+
+**Process — pilot, ship, observe**
+| Skill | Trigger phrase |
+|---|---|
+| `process-pilot-design` | "Design a 90-day AI pilot for [X]" |
+| `process-productionization` | "How do we move this prototype to production?" |
+| `process-portfolio-observability` | "What is each AI initiative actually returning?" |
+
+**Tech — stack, sourcing, deployment, agents**
+| Skill | Trigger phrase |
+|---|---|
+| `tech-stack-diagnostic` | "Diagnose our AI tech stack" |
+| `tech-buy-vs-build` | "Should we build or buy this AI capability?" |
+| `tech-data-deployment` | "Where can this data legally run?" |
+| `tech-agent-guardrail` | "Check governance on this AI agent deployment" |
+
+**People — leadership, workforce, frontline**
+| Skill | Trigger phrase |
+|---|---|
+| `people-readiness-conversation` | "Surface AI readiness gaps in our leadership team" |
+| `people-literacy-curriculum` | "Build a role-based AI literacy curriculum" |
+| `people-frontline-engagement` | "How do we engage skeptical frontline experts?" |
 
 ---
 

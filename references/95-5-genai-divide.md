@@ -30,10 +30,10 @@ Start upper-left. Expand outward — either broader scope or more complex execut
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: the 95/5 divide is the framing for why rigorous Q1–Q4 gating matters before committing.
-- For skill `roi-gate-pwc`: cite the 95/5 divide as the empirical basis for why formal gating is necessary, not bureaucratic.
-- For skill `pilot-design`: the Scope × Execution Grid is the primary design tool for sizing the pilot correctly.
-- For skill `buy-vs-build`: the 2:1 advantage is the empirical anchor for the BUY recommendation.
+- For skill `general-idea-diagnostic`: the 95/5 divide is the framing for why rigorous Q1–Q4 gating matters before committing.
+- For skill `general-roi-gate`: cite the 95/5 divide as the empirical basis for why formal gating is necessary, not bureaucratic.
+- For skill `process-pilot-design`: the Scope × Execution Grid is the primary design tool for sizing the pilot correctly.
+- For skill `tech-buy-vs-build`: the 2:1 advantage is the empirical anchor for the BUY recommendation.
 
 ## Source
 

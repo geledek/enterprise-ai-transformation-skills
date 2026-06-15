@@ -33,8 +33,8 @@ The Act is designed to be integrated into project design, not applied at a final
 
 ## When to consult
 
-- For skill `agent-guardrail-imda`: EU AI Act obligations run alongside IMDA's four dimensions — particularly Art. 4 (literacy) and Art. 26 (deployer oversight).
-- For skill `readiness-conversation`: the AI literacy obligation (Art. 4) is a named governance requirement; ask whether the organization has addressed it.
+- For skill `tech-agent-guardrail`: EU AI Act obligations run alongside IMDA's four dimensions — particularly Art. 4 (literacy) and Art. 26 (deployer oversight).
+- For skill `people-readiness-conversation`: the AI literacy obligation (Art. 4) is a named governance requirement; ask whether the organization has addressed it.
 
 ## Source
 

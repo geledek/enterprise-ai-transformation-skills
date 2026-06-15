@@ -32,8 +32,8 @@ A six-layer framework for diagnosing an enterprise AI technology stack. Each lay
 
 ## When to consult
 
-- For skill `stack-diagnostic`: this is the primary assessment framework — walk each layer, score against the signal indicators, identify the weakest link.
-- For skill `buy-vs-build`: the orchestration layer is where BUILD investment is justified; models and tools are where BUY almost always wins.
+- For skill `tech-stack-diagnostic`: this is the primary assessment framework — walk each layer, score against the signal indicators, identify the weakest link.
+- For skill `tech-buy-vs-build`: the orchestration layer is where BUILD investment is justified; models and tools are where BUY almost always wins.
 
 ## Source
 

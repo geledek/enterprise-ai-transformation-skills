@@ -1,20 +1,135 @@
 # Enterprise AI Transformation Skills
 
-Fifteen installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation — distilled from 21 flagship research sources published 2024–2026 and battle-tested against real practitioner challenges from the Stanford GSB Singapore alumni event (June 2026).
+Fifteen installable skills that help executives, operators, and consultants run enterprise AI transformation — from "where do we start?" to "is our agent governed correctly?" — distilled from 21 flagship research sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF) published 2024–2026.
+
+> **TL;DR.** 95% of enterprise GenAI pilots return zero P&L impact. The 5% that win don't have better models — they operate differently across **people, process, technology**, and a layer of **general** strategy/diagnostics. This skill library encodes those operating patterns. Each skill is a structured prompt the AI runs for you; you ask the question, the skill produces a board-ready output.
 
 ---
 
-## Why these skills exist
+## The four buckets (30 seconds)
 
-95% of enterprise GenAI pilots return zero measurable P&L impact. The 5% that capture nearly all the value don't have better models — they operate differently across five layers: Governance, Technology, Process, People, and Strategy.
+Skills are grouped by what they fix. Pick the bucket that matches your problem; pick the skill inside it that matches the question.
 
-These skills encode the structural patterns that separate that 5%: decision frameworks, diagnostic tools, and gate criteria drawn from Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, and WEF — compressed into formats an AI agent can load and execute.
+| Prefix | What it covers | Use when… |
+|---|---|---|
+| `general-` | Cross-cutting strategy, selection, diagnosis | You don't yet know *which* layer is broken |
+| `people-` | Leadership, workforce, frontline change | Tech works, value isn't landing |
+| `process-` | Pilot design, productionization, observability | You have a candidate / a prototype / a portfolio |
+| `tech-` | Stack, sourcing, data deployment, agent guardrails | You're choosing a vendor, a tier, a model, or governing an agent |
 
-A skill is a documented, versioned, forkable unit of how the work gets done. The model commoditizes. The skill library compounds.
+**The default order is general → process → tech → people**, but most real engagements jump around. The "Which skill when?" decision tree below does the picking for you.
 
 ---
 
-## Who should use these skills
+## Which skill when? — Decision tree
+
+**Start here.** Read top to bottom; stop at the first row that matches.
+
+| Your situation | Skill to invoke | Bucket |
+|---|---|---|
+| "We don't know where to point AI first." | `general-use-case-discovery` | general |
+| "We have an idea — should we pursue it?" | `general-idea-diagnostic` | general |
+| "Where are we on the AI maturity curve, and what's next?" | `general-maturity-assessment` | general |
+| "Has anyone else done this before?" | `general-peer-cases` | general |
+| "Should we approve this AI investment / fund this program?" | `general-roi-gate` | general |
+| "How should we structure the 90-day pilot?" | `process-pilot-design` | process |
+| "Demo works — how do we move it to production?" | `process-productionization` | process |
+| "We've shipped 10 agents — what's the net ROI?" | `process-portfolio-observability` | process |
+| "Diagnose our AI tech stack — where's the weakest link?" | `tech-stack-diagnostic` | tech |
+| "Should we build, buy, or partner for this AI capability?" | `tech-buy-vs-build` | tech |
+| "Where can this data legally run? ChatGPT? Enterprise SaaS? VPC?" | `tech-data-deployment` | tech |
+| "We're about to launch an AI agent — is it safely governed?" | `tech-agent-guardrail` | tech |
+| "Why isn't our AI investment moving the needle? (people gaps)" | `people-readiness-conversation` | people |
+| "We need an AI literacy / EU AI Act Art. 4 training program." | `people-literacy-curriculum` | people |
+| "Frontline experts (clinicians, lawyers, agents) are blocking the pilot." | `people-frontline-engagement` | people |
+
+If your question hits multiple rows, run the **higher one first** — it sets context for the rest.
+
+---
+
+## Get started in 5 minutes
+
+### Install once
+
+**Claude Desktop (easiest)** — Customize → Plugins → Upload custom plugin → paste:
+```
+https://github.com/geledek/enterprise-ai-transformation-skills
+```
+Restart. All 15 skills activate from their trigger phrases.
+
+**Claude Code** — `claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills`
+
+**No paid plan?** — Open a Project at [claude.ai](https://claude.ai), paste any single skill's `SKILL.md` into Project Instructions, upload relevant `references/` files as Project Knowledge. One skill per Project.
+
+Full instructions for ChatGPT / Grok / others: see [`INSTALL.md`](INSTALL.md).
+
+### Try your first skill (2 minutes)
+
+Pick the question from the decision tree closest to your real situation, then ask the AI in plain English. Examples:
+
+- *"Should we pursue an AI agent that auto-approves expense reports under S$200?"* → triggers `general-idea-diagnostic`
+- *"Where should we point AI first across our claims operation?"* → triggers `general-use-case-discovery`
+- *"Design a 90-day pilot for an RM call-prep summarizer at our private bank."* → triggers `process-pilot-design`
+- *"We deployed 11 agents but can't see what they're earning. Help."* → triggers `process-portfolio-observability`
+- *"Our senior lawyers are openly hostile to the contract-review AI. What now?"* → triggers `people-frontline-engagement`
+
+Each skill walks the AI through 4–7 structured roles and produces a verdict (Fund / Reframe / Kill, Greenlight / Stage / Park, Approved / Conditional / Blocked, etc.). The output is meant to be sponsor-ready.
+
+---
+
+## A typical executive flow
+
+For a leader running an end-to-end AI transformation, this is the canonical sequence. You can branch off at any point — the buckets are designed to be invoked individually too.
+
+```
+┌─ general-maturity-assessment ─── where are we today?
+│
+├─ general-use-case-discovery ──── what should we pilot first?
+│      │
+│      └─ general-idea-diagnostic ─ is THIS specific idea worth doing?
+│             │
+│             └─ tech-data-deployment ─ where can the data legally run?
+│                    │
+│                    └─ process-pilot-design ─ design the 90-day pilot
+│                           │
+│                           └─ general-roi-gate ─ approve / fund / reject
+│                                  │
+│                                  └─ tech-buy-vs-build ─ buy or build?
+│                                         │
+│                                         └─ process-productionization ─ ship to prod
+│                                                │
+│                                                └─ tech-agent-guardrail ─ govern at runtime
+│                                                       │
+│                                                       └─ process-portfolio-observability ─ track net ROI
+│
+├─ people-readiness-conversation ── (run quarterly — surfaces gaps the tech can't fix)
+├─ people-literacy-curriculum ───── (close the literacy gap, satisfy EU AI Act Art. 4)
+├─ people-frontline-engagement ──── (when fearful experts are blocking rollout)
+│
+├─ general-peer-cases ──────────── (pull at any decision point: "what have others done?")
+└─ tech-stack-diagnostic ───────── (run before any major scaling decision)
+```
+
+For full-transcript worked examples — four single-skill walkthroughs and five chained-flow operating decisions — see [`docs/usage-guide.md`](docs/usage-guide.md).
+
+---
+
+## Cross-skill cautions
+
+These skills were tested together. A few real interactions worth knowing about:
+
+- **Customer-facing pilots.** `general-use-case-discovery` will surface customer-pain pools (NPS, conversion drop). `process-pilot-design` will downrate any first pilot with customer-facing blast radius. The discovery skill now defaults customer-facing candidates to **Stage-and-watch** unless the sponsor explicitly accepts the risk in the brief. Trust the pilot-design skill on first-pilot scope.
+- **Three different "70/20/10"s.** Different sources use the same digits for different things. Each skill is now explicit about which one applies:
+  - `general-use-case-discovery` / `general-peer-cases` → **BCG 10/20/70 effort split** (10% algorithm / 20% tech / 70% people-process)
+  - `process-portfolio-observability` → **70/20/10 portfolio mix** (70% core / 20% adjacent / 10% transformational)
+  - `people-literacy-curriculum` → **70-20-10 training-budget split** (70% sandbox / 20% delivery / 10% content)
+- **"BCG 88/25" can mean two things.** `people-readiness-conversation` and `people-literacy-curriculum` use it for *manager role-modeling*. `tech-data-deployment` uses the same digits for *broad-use-vs-value gap*. Both anchors are real; the skills now flag which one they mean.
+- **Verdict vocabularies differ across gating skills** by design — concept-stage (`general-idea-diagnostic` → Fund / Reframe / Kill), portfolio-selection (`general-use-case-discovery` → Greenlight / Stage / Park / Reject), funding-approval (`general-roi-gate` → Approve / Conditional / Return / Reject). They sit at different points in the lifecycle. Don't run all three on the same question.
+- **CEO public commitment vs. no-headcount-cut clause.** `people-readiness-conversation` recommends a CEO-owned measurable productivity number. `people-frontline-engagement` requires a no-headcount-cut clause for pilot duration. These reconcile — public commitment is on outcome, the clause is on pilot-window — but the CEO must say so explicitly to the frontline.
+
+---
+
+## Who is this for
 
 - **Investors** evaluating AI-first companies and AI initiative funding proposals
 - **Operators** running AI transformation programs, CoEs, or portfolio pilots
@@ -22,118 +137,19 @@ A skill is a documented, versioned, forkable unit of how the work gets done. The
 - **Boards and executives** needing structured frameworks for AI governance and investment decisions
 - **Consultants and advisors** delivering enterprise AI strategy engagements
 
-These skills produce board-ready outputs — not engineering artifacts. No coding background required to use them.
+Skills produce board-ready outputs. No coding required to use them.
 
 ---
 
-## When to use which skill
-
-### By lifecycle stage
-
-| Stage | Skills to use |
-|---|---|
-| **Discovery** — "Where do we even start with AI?" | `use-case-discovery` |
-| **Concept** — "Should we pursue this AI idea?" | `ai-idea-diagnostic` |
-| **Pilot design** — "How do we structure the 90-day test?" | `pilot-design` |
-| **Funding gate** — "Should we approve this investment?" | `roi-gate-pwc` |
-| **Build vs. buy** — "Should we build this, buy it, or partner?" | `buy-vs-build` |
-| **Data + deployment pattern** — "Where can this data legally run?" | `data-trust-deployment-pattern` |
-| **Productionization** — "Move past the prototype" | `productionization-playbook` |
-| **Deployment governance** — "Are our agents governed correctly?" | `agent-guardrail-imda` |
-| **Scaling tech** — "Is our tech stack ready to scale?" | `stack-diagnostic` |
-| **Scaling people** — "How do we engage skeptical frontline experts?" | `augmentation-frontline-engagement` |
-| **Run / observe** — "What is each agent actually returning?" | `ai-portfolio-observability` |
-
-### Cross-cutting diagnostics & enablers
-
-| Diagnostic / enabler | When |
-|---|---|
-| `readiness-conversation` | Any time you need to surface where leadership gaps will block progress |
-| `maturity-assessment` | Quarterly or before setting AI strategy — where are we on the maturity curve? |
-| `workforce-literacy-curriculum` | Standing up role-based AI literacy + EU AI Act Art. 4 compliance |
-| `peer-case-library` | When the question is "what have others actually done?" |
-
-### Typical executive flow
-
-1. `maturity-assessment` — baseline where the org sits
-2. `use-case-discovery` — generate / rank candidate use cases
-3. `ai-idea-diagnostic` — gate each promising concept
-4. `data-trust-deployment-pattern` — match data sensitivity to deployment tier
-5. `pilot-design` — structure the pilot with pre-deployment metrics
-6. `roi-gate-pwc` — approve or kill at the funding gate
-7. `buy-vs-build` — decide the sourcing model
-8. `productionization-playbook` — move from working prototype to SLO-bound prod
-9. `agent-guardrail-imda` — govern deployed agents
-10. `ai-portfolio-observability` — track every initiative net-of-oversight
-11. `readiness-conversation` — run quarterly to surface people/leadership gaps
-12. `workforce-literacy-curriculum` — close the literacy gap and meet Art. 4
-13. `augmentation-frontline-engagement` — engage frontline experts as co-designers
-14. `peer-case-library` — pull closest-match analogs as you make calls
-15. `stack-diagnostic` — run before any major scaling decision
-
-See `docs/usage-guide.md` for full-transcript worked examples — four single-skill walkthroughs and five chained-flow operating decisions (greenfield bank initiative, leadership readiness, agent governance under audit pressure, SME build-vs-buy, clinical AI rollout).
-
----
-
-## How to install
-
-### Claude Desktop (non-technical, recommended for most users)
-
-1. Open Claude Desktop → **Customize** (left sidebar) → **Plugins** tab
-2. Click **Browse plugins** or **Upload custom plugin**
-3. Paste this URL when prompted:
-   `https://github.com/geledek/enterprise-ai-transformation-skills`
-4. Restart Claude Desktop. All 15 skills activate automatically.
-
-Requires a paid plan (Pro, Max, Team, or Enterprise). See [Claude plugin docs](https://support.claude.com/en/articles/13837440-use-plugins-in-claude) for details.
-
-### Claude Code (CLI)
-
-```bash
-claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills
-```
-
-Restart Claude Code. Skills activate automatically from their trigger descriptions.
-
-Or manual clone:
-
-```bash
-git clone https://github.com/geledek/enterprise-ai-transformation-skills.git \
-  ~/.claude/plugins/enterprise-ai-transformation-skills
-```
-
-### Claude.ai Projects (no install required)
-
-For users without a paid Claude Code plan:
-
-1. Create a new **Project** at [claude.ai](https://claude.ai)
-2. Open **Project Instructions**
-3. Paste the contents of any skill's `README.md` from this repo
-4. Upload relevant files from `references/` as Project Knowledge
-
-This loads one skill per Project. Skills activate on their trigger phrases.
-
-### ChatGPT
-
-Install via native Skills (if available on your plan) or as a Custom GPT — paste any skill's `SKILL.md` into GPT Instructions and upload relevant `references/` files as Knowledge.
-
-### Grok CLI
-
-Clone to `~/.grok/plugins/` or add this repo as a marketplace source in `~/.grok/config.toml`.
-
-See `INSTALL.md` for full setup instructions across all platforms, verification steps, and platform-specific limitations.
-
----
-
-## How to add your own knowledge
+## How to extend
 
 Three forks:
 
-1. **Add references** — copy a wiki extract into `references/`, follow the file shape in `references/_index.md`, update `_index.md`. Skill descriptions reference files by name, not path.
-
-2. **Add cases** — drop a diagnosed case into `skills/ai-idea-diagnostic/cases/` (Markdown, following the existing case format). The diagnostic skill will reference the closest case automatically.
-
+1. **Add references** — drop an extract into `references/`, follow the file shape in `references/_index.md`, update `_index.md`. Skill descriptions reference files by filename, not path.
+2. **Add cases** — drop a diagnosed case into the relevant `skills/<bucket>-<skill>/cases/`. The skill will pull the closest analog automatically.
 3. **Fork a skill** — copy any `SKILL.md`, rename it, adjust the role instructions and reference pointers for your sector, internal processes, or role-specific context.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full contribution shape.
 
 ---
 
@@ -165,13 +181,13 @@ Three forks:
 | `accenture-five-success` | Accenture Five Success Factors 2025 |
 | `wharton-skills-index` | Wharton-Accenture Skills Index 2025 |
 
-See `references/` for curated extracts from each source.
+See [`references/`](references/) for curated extracts from each source.
 
 ---
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see [`LICENSE`](LICENSE).
 
 ## Author
 

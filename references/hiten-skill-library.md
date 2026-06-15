@@ -47,7 +47,7 @@ All five layers of the keynote point here:
 
 ## When to consult
 
-- For skill `maturity-assessment`: a firm with a skill library is operating at Stage 3+ — it has architected for reuse, documented its processes, and is treating AI as infrastructure.
+- For skill `general-maturity-assessment`: a firm with a skill library is operating at Stage 3+ — it has architected for reuse, documented its processes, and is treating AI as infrastructure.
 - As the synthesis reference for all 8 skills: each skill in this collection is an instance of Hiten Shah's thesis.
 
 ## Source

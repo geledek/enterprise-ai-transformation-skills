@@ -30,9 +30,9 @@ If a portfolio is 90% labor savings and 10% revenue uplift, it is in efficiency-
 
 ## When to consult
 
-- For skill `roi-gate-pwc`: the three-channel model is the upgraded ROI framework — apply it alongside the PwC 20-item checklist.
-- For skill `maturity-assessment`: a mature organization's AI business cases use the three-channel model; single-line cost-takeout cases signal Stage 2 maturity.
-- For skill `readiness-conversation`: the redeployment question surfaces ownership gaps — ask "who owns the redeployment plan?"
+- For skill `general-roi-gate`: the three-channel model is the upgraded ROI framework — apply it alongside the PwC 20-item checklist.
+- For skill `general-maturity-assessment`: a mature organization's AI business cases use the three-channel model; single-line cost-takeout cases signal Stage 2 maturity.
+- For skill `people-readiness-conversation`: the redeployment question surfaces ownership gaps — ask "who owns the redeployment plan?"
 
 ## Source
 

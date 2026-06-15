@@ -30,8 +30,8 @@ Before AI deployment, answer:
 
 ## When to consult
 
-- For skill `pilot-design`: workflow redesign is step 0 of pilot design — before any technology decisions.
-- For skill `stack-diagnostic`: if a stack diagnostic finds AI is deployed without workflow redesign, this is a process-layer gap, not a technology gap.
+- For skill `process-pilot-design`: workflow redesign is step 0 of pilot design — before any technology decisions.
+- For skill `tech-stack-diagnostic`: if a stack diagnostic finds AI is deployed without workflow redesign, this is a process-layer gap, not a technology gap.
 
 ## Source
 

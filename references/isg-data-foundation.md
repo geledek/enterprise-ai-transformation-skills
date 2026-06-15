@@ -34,9 +34,9 @@ For any AI initiative, assess:
 
 ## When to consult
 
-- For skill `stack-diagnostic`: Layer 1 (Data) assessment — the checklist above is the starting point for the data layer.
-- For skill `ai-idea-diagnostic`: Q4 (Right Capability?) includes data readiness as a first-class capability question.
-- For skill `pilot-design`: data readiness must be confirmed before pilot design — a pilot on unpipeline-ready data is not a pilot, it's a data engineering project.
+- For skill `tech-stack-diagnostic`: Layer 1 (Data) assessment — the checklist above is the starting point for the data layer.
+- For skill `general-idea-diagnostic`: Q4 (Right Capability?) includes data readiness as a first-class capability question.
+- For skill `process-pilot-design`: data readiness must be confirmed before pilot design — a pilot on unpipeline-ready data is not a pilot, it's a data engineering project.
 
 ## Source
 

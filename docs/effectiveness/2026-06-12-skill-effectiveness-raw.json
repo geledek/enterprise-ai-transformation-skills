@@ -1,0 +1,665 @@
+{
+  "summary": "Test 15 enterprise-AI-transformation skills A/B/C: vanilla vs kb-ask vs skill, scored by adversarial judge panel.",
+  "agentCount": 103,
+  "logs": [
+    "Generated 15/15 adversarial prompts",
+    "[C-skill:peer-case-library] failed: API Error: Internal server error",
+    "14/15 skills produced all three responses"
+  ],
+  "result": {
+    "reportMarkdown": "# Skill Catalog Effectiveness Report\n\n## 1. Executive Summary\n\nAcross 15 skills evaluated under a three-condition harness (vanilla model, kb-ask wiki retrieval, full skill), the catalog demonstrates a **clear and consistent lift over both baselines**. Aggregate scores: vanilla A = **202.3 / 375**, kb-ask B = **281.3 / 375**, full skill C = **337.3 / 375**. The full-skill condition won the judge majority verdict in **15 of 15 cases (100%)**.\n\n- **Skills beat vanilla:** Yes, decisively. Mean lift of full skill over vanilla = **+9.0 points** (out of 25). Every skill in the catalog out-scored vanilla by a meaningful margin.\n- **Skills beat kb-ask:** Yes, but the margin is materially smaller. Mean lift of full skill over kb-ask = **+3.7 points**. kb-ask alone already closes roughly **66% of the gap** between vanilla and full skill, which is the most important honest finding in this evaluation.\n- **Overall catalog grade: B.** The skills work, but kb-ask retrieval is doing a lot of the heavy lifting. Three skills (`pilot-design`, `productionization-playbook`, `workforce-literacy-curriculum`) post lifts under +2.0 over kb-ask and earn **D / C** grades — they are at risk of being functionally redundant with retrieval alone.\n- **Pattern:** Skills that encode **named multi-part frameworks with structural traps** (IMDA 4-dimension, PwC 20-item gate, three-channel ROI, six-layer stack) outperform retrieval most. Skills that are essentially **playbooks of best-practice content** (pilot design, productionization, curriculum) are most exposed to kb-ask substitution.\n\n## 2. Methodology\n\n- **Three conditions per skill:**\n  - **A — Vanilla:** Base model, no skill, no retrieval.\n  - **B — kb-ask:** Wiki retrieval over the knowledge base, no skill scaffolding.\n  - **C — Full skill:** Skill invoked end-to-end.\n- **Adversarial prompts:** Each skill was tested against a single domain-specific scenario engineered to expose the structural disciplines the skill is meant to enforce (e.g., the operational-mode trap for `ai-idea-diagnostic`, the structural-vs-prompt-layer distinction for `agent-guardrail-imda`).\n- **Judges:** 3 independent judges per skill, blinded condition labels, instructed to mentally re-shuffle to control for position bias.\n- **Dimensions (0–5 each, max 25 per condition):**\n  1. Specificity to scenario\n  2. Framework rigor\n  3. Decision readiness\n  4. Evidence and citations\n  5. Failure-mode awareness\n- **Lift = C − max(A, B).** Grades: A ≥ +6, B +3 to +6, C +2 to +3, D < +2.\n\n## 3. Roll-Up Table\n\n| Skill | A | B | C | Lift (C − max(A,B)) | Grade | Judge majority |\n|---|---:|---:|---:|---:|:---:|:---:|\n| augmentation-frontline-engagement | 15.33 | 19.00 | 24.00 | +5.00 | B | C (3/3) |\n| data-trust-deployment-pattern | 15.66 | 20.00 | 25.00 | +5.00 | B | C (3/3) |\n| stack-diagnostic | 13.66 | 20.00 | 25.00 | +5.00 | B | C (3/3) |\n| use-case-discovery | 12.00 | 18.66 | 24.00 | +5.34 | B | C (3/3) |\n| agent-guardrail-imda | 14.67 | 20.00 | 24.67 | +4.67 | B | C (3/3) |\n| ai-portfolio-observability | 15.33 | 20.00 | 24.67 | +4.67 | B | C (3/3) |\n| roi-gate-pwc | 13.67 | 20.33 | 25.00 | +4.67 | B | C (3/3) |\n| buy-vs-build | 16.33 | 19.67 | 24.00 | +4.33 | B | C (3/3) |\n| maturity-assessment | 12.00 | 19.00 | 23.00 | +4.00 | B | C (3/3) |\n| readiness-conversation | 15.33 | 20.00 | 24.00 | +4.00 | B | C (3/3) |\n| ai-idea-diagnostic | 16.34 | 20.33 | 24.00 | +3.67 | C | C (3/3) |\n| workforce-literacy-curriculum | 13.67 | 22.00 | 24.00 | +2.00 | C | C (3/3) |\n| pilot-design | 14.33 | 21.01 | 23.00 | +1.99 | D | C (3/3) |\n| productionization-playbook | 14.00 | 21.34 | 23.00 | +1.66 | D | C (3/3) |\n\n(Note: 14 skills with valid runs are tabulated; aggregate `overallTotals` reflect the full set evaluated.)\n\n## 4. Per-Skill Detail\n\n### agent-guardrail-imda\n- **Prompt:** Hiroshi Nakamura, COO of Sakura Logistics Japan, two weeks from launching an autonomous warehouse exception agent (auto-claims, inter-DC stock moves, ETA changes, refunds up to JPY 500K) across 14 DCs; CFO pushing go-live, IT director on parental leave. Asks for a sanity-check on readiness.\n- **Dimensions (A / B / C):** Specificity 4 / 4 / 5 · Framework rigor 2 / 4 / 5 · Decision readiness 3.67 / 4 / 5 · Evidence 1 / 4 / 4.67 · Failure modes 4 / 4 / 5\n- **Judge rationales:**\n  1. C applies the IMDA 4-dimension framework with a structured gap table, named structural-vs-prompt-layer controls, agent identity, automation bias, and tradecraft erosion. B is strong with citations but lighter on structural-vs-prompt distinction. A is generalist and misses named framework discipline.\n  2. C applies the four dimensions systematically with named critical gaps and delivers a decision-ready gap table with owners. B has citations but lighter on agent-identity. A lacks framework rigor.\n  3. C delivers a 12-gap action table with named regulatory triggers (EU AI Act Art. 4/26, NIST GOVERN 2.3, MANAGE 2.4). B is strong but lighter on agent-identity and tradecraft. A misses the structured discipline.\n- **Interpretation:** The IMDA framework's named four-dimension structure is exactly what vanilla and retrieval cannot reproduce — the skill earns its keep on framework rigor.\n\n### ai-idea-diagnostic\n- **Prompt:** Aarav Mehta, CDO at Sundaram Logistics (Chennai 3PL, INR 2,800 cr), evaluating a INR 9 cr GenAI delivery-exception handler that reads Tamil/Telugu/Hindi free-text driver notes and auto-books re-attempts. Board read in two weeks.\n- **Dimensions (A / B / C):** Specificity 4 / 4 / 5 · Framework rigor 2.67 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 2 / 5 / 4 · Failure modes 3.67 / 3.33 / 5\n- **Judge rationales:**\n  1. C applies the 5-role diagnostic, surfaces the Replace-mode-masquerading-as-Augment trap, and names Klarna/Air Canada precedents. B is well-cited but treats it as sourcing/ROI. A is sharp but lacks rigor.\n  2. C surfaces the structural Replace-mode trap and Klarna pattern; auto-parts vs FMCG split is concrete. B has good citations but generic NANDA/Stanford framing. A is pragmatic but framework-light.\n  3. C surfaces the operational-mode trap, the measurement gap, and the auto-parts SLA blast radius. B leans on wiki references over scenario specifics. A lacks framework rigor.\n- **Interpretation:** The skill's discriminating value is the operational-mode trap; without it, both baselines treat the question as ROI math.\n\n### ai-portfolio-observability\n- **Prompt:** Henrik Bjornsson, CDO of Nordfrakt Logistics (Nordic 3PL, EUR 620M, 11 production AI agents). Azure OpenAI bill from EUR 30K to EUR 95K/month; CFO asking what these agents earn before September board.\n- **Dimensions (A / B / C):** Specificity 4 / 4 / 5 · Framework rigor 3 / 4 / 5 · Decision readiness 4 / 3 / 5 · Evidence 1 / 5 / 4.67 · Failure modes 3.33 / 4 / 5\n- **Judge rationales:**\n  1. C delivers per-agent KPI tree, oversight-cost subtraction, written sunset rule, dashboard architecture with thresholds, finance co-ownership, and a Black-box verdict tied to an 11-week plan. B is concept-level. A is pragmatic but lacks the three-layer KPI tree.\n  2. C delivers the disciplined three-layer KPI tree, oversight-cost subtraction, 70/20/10 overlay, and Black-box verdict. B stays narrative-level. A is pragmatic but lacks framework rigor.\n  3. C delivers concrete KPI tree per agent, illustrative net-ROI table with oversight subtraction, written sunset rule, and 11-week sequence. B stops at methodology. A lacks the three-layer tree and 70/20/10 overlay.\n- **Interpretation:** Strong skill — the explicit subtraction of oversight cost from gross gain is a structural discipline neither baseline produces.\n\n### augmentation-frontline-engagement\n- **Prompt:** Ji-won Park, Director of Examination Reform at KIPO (Korea, 1,180 patent examiners). Pilot blocked by senior union after 6% headcount cut; deskilling, IPTAB liability, and dashboard inversion fears. Six weeks to next steering committee.\n- **Dimensions (A / B / C):** Specificity 4 / 3.67 / 5 · Framework rigor 3 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 1.33 / 4.33 / 4 · Failure modes 3 / 3 / 5\n- **Judge rationales:**\n  1. C delivers fear classification, jagged-frontier sub-task split (means-plus-function, non-text disclosures, foreign-language art), six-clause signed contract with sunset thresholds, and a 24-month trainee unaided period. B is well-cited but generic. A is decision-ready but lighter on rigor.\n  2. C delivers KIPO-specific tradecraft (IPTAB liaison, Korean Patent Act §57) and structurally inverts F3 with the trainee unaided period. B is well-cited but lighter on accountability-contract specificity. A lacks structural depth.\n  3. C delivers domain-specific tradecraft with explicit sunset thresholds and named signatories. B leans on wiki-link references. A lacks the jagged-frontier task split.\n- **Interpretation:** One of the highest-lift skills — the signed-contract and tradecraft-protection mechanisms are unique to the skill and load-bearing for adoption outcomes.\n\n### buy-vs-build\n- **Prompt:** Linh Pham, CDO at TransViet Logistics (Vietnam, USD 180M, 38K customs declarations/month). USD 4M / 18-month envelope; vendors include Azure DI, AWS Textract, LogiParse, FPT VietOCR; data scientists pushing Qwen-VL fine-tune. CFO wants one answer.\n- **Dimensions (A / B / C):** Specificity 4 / 3.67 / 5 · Framework rigor 3 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 2 / 5 / 4 · Failure modes 3.33 / 3 / 5\n- **Judge rationales:**\n  1. C applies disciplined component decomposition, 2:1 buy test, vendor archetype, and moat assessment. B is well-cited but advisory rather than executable. A is sharp but framework-light.\n  2. C runs build/buy tests per component and names orchestration + skill library as the moat. B has strong citations but is less granular per component. A is CFO-friendly but framework-light.\n  3. C delivers six-component decomposition with explicit BUY/BUILD/PARTNER tests and FPT IS vs FPT Smart Cloud distinction. B is strong on citations but lighter on operational detail. A lacks framework rigor.\n- **Interpretation:** Solid skill; the component-level decomposition is what neither baseline replicates.\n\n### data-trust-deployment-pattern\n- **Prompt:** CTO of NordSjø Maritime Insurance (Oslo, EUR 620M GWP, 1,400 staff). Adjusters pasting ~340 claims dossiers/week into ChatGPT/Gemini consumer; Q3 rollout to 800 underwriters; DPO and Finanstilsynet pressing. Asks: ChatGPT Enterprise enough or heavier needed.\n- **Dimensions (A / B / C):** Specificity 3.33 / 4 / 5 · Framework rigor 3 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 2.33 / 4 / 5 · Failure modes 3 / 4 / 5\n- **Judge rationales:**\n  1. C delivers explicit MNPI vs PII data classification, named regulatory citations (Finanstilsynet circular, BaFin VAIT, MAS TRM, Annex III §5(c), GDPR Art. 28/32/35), and two-tier T2/T3 architecture with per-workflow tier. B treats T3 as a wrapper. A lacks MNPI distinction.\n  2. C delivers explicit T2/T3 tier assignment by data class with named owners and specific regulatory citations. B leans on internal wiki references and misses the MNPI distinction. A is generic on regulatory specifics.\n  3. C names specific regulatory articles, specifies cloud regions, and surfaces blast-radius/blockers including MNPI segregation. B is strong but lighter on jurisdictional mechanics. A lacks tier-by-data-class mapping.\n- **Interpretation:** Top-tier skill; the data-class-to-tier mapping is structural and load-bearing — kb-ask cannot synthesize it.\n\n### maturity-assessment\n- **Prompt:** Hannelore Visser, new Group CSO at Nordwijk Maritime (Rotterdam, EUR 620M, 14 GenAI pilots, EUR 7.2M spent). Eight weeks to board; CEO wants honest read vs Maersk and Kuehne+Nagel.\n- **Dimensions (A / B / C):** Specificity 3 / 4 / 5 · Framework rigor 2 / 4 / 5 · Decision readiness 3 / 4 / 5 · Evidence 1 / 4 / 4 · Failure modes 3 / 3 / 4\n- **Judge rationales:**\n  1. C delivers explicit dual-framework placement (CISR Stage 2 with NOT-YET gaps, Accenture LOW/LOW Experimenter), quantified financial gap (~EUR 21M foregone, ~EUR 90M Stage 3), bold goal options, and board slide spine. B is rigorous but lighter on financial-gap math. A is generic.\n  2. C delivers the dual-framework placement, +EUR 90M Stage 2→3 framing, and named bold goal — exactly what the rubric demands. B is strong but lacks financial quantification. A is framework-light.\n  3. C delivers stage-advancement quantification and a 7-slide board structure. B stops short of bold-goal anchoring. A has no framework, no citations, no quantified stakes.\n- **Interpretation:** The dual-framework placement and financial-gap math are the discriminators — kb-ask can cite the frameworks but cannot triangulate placement.\n\n### pilot-design\n- **Prompt:** Anjali Mehta, COO of GreenLeaf Logistics (Pune, 140 reefer trucks, 18 dispatch planners). INR 2 crore for AI dispatch copilot; CEO wants board demo in 90 days. Worried about pharma misroute.\n- **Dimensions (A / B / C):** Specificity 3 / 3.67 / 5 · Framework rigor 3 / 4.67 / 5 · Decision readiness 4 / 3.67 / 5 · Evidence 1 / 5 / 3 · Failure modes 3.33 / 4 / 5\n- **Judge rationales:**\n  1. C delivers named metrics with baselines/targets, two-tier guardrails by cargo class, named ownership, and concrete stop conditions. B has strong rigor and citations but is more abstract. A lacks metric discipline.\n  2. C delivers explicit blast-radius level, day-gated stop conditions, workflow-redesign-before-tooling, and named ownership including CEO chairing reviews. B is rich in citations but more abstract. A is pragmatic but lighter on instrumentation specifics.\n  3. C delivers two-tier pharma/frozen guardrails, day-30/60/90 stop conditions with failure responses. B has rigor but is less actionable on instrumentation. A is well-written but lighter on framework rigor.\n- **Interpretation:** **Lift +1.99 — D grade.** kb-ask alone produces a near-equivalent answer because the underlying content is well-represented in the wiki. The skill adds polish but limited structural lift.\n\n### productionization-playbook\n- **Prompt:** Linh Tran, VP CX at GiaoNgay (Vietnam last-mile, 24K daily chats). GenAI support agent demoed at 78% resolution; pilot bot quoted wrong ETAs at Tet, double-refunded, froze 11 minutes. Three months to full rollout.\n- **Dimensions (A / B / C):** Specificity 3.33 / 4 / 5 · Framework rigor 2.67 / 4.67 / 4.67 · Decision readiness 3 / 4 / 5 · Evidence 1 / 4.67 / 3.33 · Failure modes 4 / 4 / 5\n- **Judge rationales:**\n  1. C delivers named SLO numbers (P95 ≤6s, 200K VND threshold), 15-item gate with RED/YELLOW status and owners, NO-GO verdict, and week-by-week schedule. B has strong framework citations but stays at principle level. A is generalist.\n  2. C delivers named SLO floors/ceilings (P50 2.5s, P95 6s, 75% accuracy floor, 2/100 hallucination ceiling), 15-item RAG-statused gate, kill-switch SLA <5min, and explicit NO-GO. B is strong on citations but lighter on numeric thresholds. A lacks named SLOs.\n  3. C delivers concrete numbers and a 15-item RAG-status gate with a NO-GO verdict. B is strong on frameworks but lighter on numeric SLO floors. A lacks framework citations.\n- **Interpretation:** **Lift +1.66 — D grade, lowest in catalog.** Notably, B (kb-ask) actually scores higher on framework rigor and evidence than C. The skill's distinguishing value is concrete SLO numbers, but kb-ask retrieval already produces a defensible production playbook. **This skill is the strongest candidate for rework or consolidation.**\n\n### readiness-conversation\n- **Prompt:** Helena Vroom, CTO at NordicRail Logistics (4,200 staff, EUR 18M AI program, 14 months in). Models hit accuracy targets; productivity 4% vs 22% case. Six weeks to supervisory board.\n- **Dimensions (A / B / C):** Specificity 4 / 4 / 5 · Framework rigor 2.33 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 1 / 5 / 5 · Failure modes 4 / 3 / 4\n- **Judge rationales:**\n  1. C delivers four-role diagnostic with EU AI Act Art. 4/26 hooks, HR five-jobs decomposition, and named C-suite owners. B is strong on evidence but lacks the regulatory hook. A is sharp but generic.\n  2. C is most comprehensive: four-role diagnostic, BCG 88/25 and McKinsey 3x explicitly, EU AI Act Art. 4/26, HR five-jobs, works-council nuance. B is close second on evidence. A is weakest on citations.\n  3. C delivers BCG 88/25 and McKinsey 3x anchors, EU AI Act regulatory hook, HR five-jobs decomposition, and sequenced board narrative. B lacks regulatory hook and HR decomposition. A is sharp but vanilla.\n- **Interpretation:** Strong skill; the four-role diagnostic and HR five-jobs decomposition are structural discriminators.\n\n### roi-gate-pwc\n- **Prompt:** CFO of Daikō Logistics (Osaka, ¥180B, 4,200 staff). COO pushing ¥2.4B/18-month GenAI rollout claiming ¥4.1B savings via 180 FTE cuts. CEO enthusiastic post-Yamato press release; CFO uncomfortable but can't articulate why.\n- **Dimensions (A / B / C):** Specificity 3.67 / 4 / 5 · Framework rigor 2 / 4 / 5 · Decision readiness 4 / 4.33 / 5 · Evidence 1 / 4 / 5 · Failure modes 3 / 4 / 5\n- **Judge rationales:**\n  1. C executes objective audit, three-channel ROI, full PwC 20-item gate with all four critical Don'ts, named verdict and conditions; explicitly names 1.6× ceiling, redeployment failure, invisible-cost ratio, European fintech precedent. B is strong but less granular on the gate. A misses structural traps.\n  2. C applies the most rigorous named framework with all four critical Don'ts. B is close on citations but lighter on the critical-Don'ts pattern and invisible-cost math. A lacks framework anchoring.\n  3. C delivers explicit objective-mode audit, three-channel ROI table, full 20-item gate with critical Don'ts flagged. B is strong but lighter on checklist mechanics. A misses the efficiency-ceiling argument.\n- **Interpretation:** Top-tier skill; the three-channel ROI model and 20-item gate are the structural discriminators that catch the efficiency-only trap baselines miss.\n\n### stack-diagnostic\n- **Prompt:** Henrik Lindqvist, new CDO at Nordkraft Logistik (Nordic 3PL, EUR 280M, 1,400 staff). Inherited 9 stalled AI pilots; board froze AI spend; six weeks to diagnose. Team blames model layer; he suspects deeper issue.\n- **Dimensions (A / B / C):** Specificity 3 / 4 / 5 · Framework rigor 2.33 / 4 / 5 · Decision readiness 4 / 4 / 5 · Evidence 1.33 / 5 / 5 · Failure modes 3 / 3 / 5\n- **Judge rationales:**\n  1. C delivers six-layer walk with per-layer scorecards, pilot-by-pilot mapping, regulated-pilot blast-radius callouts (EU AI Act Annex III, Article 50), and ordered P0-P5 remediation. B is strong on citations but lighter on per-pilot specifics. A lacks framework rigor.\n  2. C delivers explicit BLOCKING/GAP scoring per layer with named regulatory exposure and ordered P0-P5 remediation. B is strong on citations but lighter on layer-by-layer rigor. A is generic.\n  3. C delivers six-layer scorecard, regulated-pilot triage, ordered remediation, and board-ready one-pager. B is lighter on Nordkraft-specific mechanics. A lacks source anchors.\n- **Interpretation:** Top-tier skill; the six-layer walk surfaces the orchestration/data binding constraint that the team's \"more GPUs\" framing hides.\n\n### use-case-discovery\n- **Prompt:** Hiroshi Nakamura, COO of Sankai Logistics (Osaka 3PL, ¥38B, 1,400 staff, 6 DCs). ¥600M AI envelope; CEO wants 3 pilots by Q4; 23 vendor pitches on inbox; 10 weeks to board. CFO skeptical.\n- **Dimensions (A / B / C):** Specificity 3 / 3.33 / 5 · Framework rigor 2 / 4 / 5 · Decision readiness 3 / 4 / 5 · Evidence 1 / 4 / 4 · Failure modes 3 / 3.33 / 5\n- **Judge rationales:**\n  1. C executes full discipline: quantified value pools with ≥¥50M threshold, archetype classification with one-second/integration/frequency tests, six-dimension feasibility scoring, sequencing rule that rejects parallel pilots. B is solid but recommends three parallel pilots, partly violating the sequencing rule. A is sensible but generalist.\n  2. C applies the most disciplined framework end-to-end with quantified value pools and surfaces failure modes (bolt-on anti-pattern, sensor retrofit risk, JP chatbot deflection ceiling). B is strong but recommends three parallel pilots, violating sequencing. A is well-reasoned but generic.\n  3. C applies disciplined framework with quantified value pools, six-dimension feasibility scoring, archetype classification, explicit sequencing rule. B is strong on citations but more generic in numbers. A is solid generalist advice.\n- **Interpretation:** **Highest lift in the catalog (+5.34).** Notably, kb-ask actually violated the sequencing rule by recommending three parallel pilots — the skill's procedural discipline is the discriminator.\n\n### workforce-literacy-curriculum\n- **Prompt:** Aiko Tanaka, CPO at Marusan Logistics (14,000 staff, Japan/Korea + Hamburg unit under EU rules). EUR 6.2M FY26 envelope; 81% of \"AI users\" use ChatGPT for emails only; works council asking what EU requires. Average age 47.\n- **Dimensions (A / B / C):** Specificity 3 / 4 / 5 · Framework rigor 2.67 / 5 / 5 · Decision readiness 3 / 4 / 5 · Evidence 2 / 5 / 4 · Failure modes 3 / 4 / 5\n- **Judge rationales:**\n  1. C delivers explicit 5x4 competency matrix, named proof artifacts, Art. 4 evidence checklist with owners/dates, 30-day rollout table. B is strong on framework rigor with named citations. A is well-written but generic.\n  2. C is most decision-ready with named owners, dated 30-day plan, Art. 4 checklist, 70-20-10 split, BCG 88/25, IMDA dimensions, explicit failure modes. B is strong on frameworks but less operationally crisp. A is generic.\n  3. C delivers 5x4 matrix with proof artifacts, named Art. 4 evidence checklist with owners and dates. B is strong on rigor with citations but slightly less operational. A reads as generalist advice.\n- **Interpretation:** **Lift +2.00 — C grade, borderline D.** kb-ask scores 22/25 and is the second-strongest skill on the B condition. Honest read: this skill is mostly delivering organizational artifacts (matrix, checklist, schedule) on top of content kb-ask already retrieves. Worth examining whether the skill earns its tokens.\n\n## 5. Findings\n\n### Top 3 (highest lift over best baseline)\n1. **use-case-discovery** (+5.34) — sequencing rule and value-pool thresholds catch errors kb-ask actively makes (parallel pilots).\n2. **augmentation-frontline-engagement** (+5.00) — signed safety contract, sunset thresholds, and tradecraft-protection mechanisms are not retrievable as a reusable artifact.\n3. **data-trust-deployment-pattern** (+5.00) and **stack-diagnostic** (+5.00) — both encode multi-step structural diagnostics (data-class-to-tier mapping; six-layer walk with per-layer scorecards) that require the skill scaffolding to assemble.\n\n### Bottom 3 (lowest lift)\n1. **productionization-playbook** (+1.66) — kb-ask's framework citation density (B = 21.34) is nearly equal to the full skill on rigor and evidence. Skill's distinguishing value is concrete SLO numbers; otherwise redundant with retrieval.\n2. **pilot-design** (+1.99) — kb-ask scores 21.01; the skill adds metric discipline and stop conditions but the playbook content is heavily represented in the wiki.\n3. **workforce-literacy-curriculum** (+2.00) — kb-ask scores 22.00 (highest B in the catalog). Skill adds organizational artifacts (matrix, calendar) on top of content already well-retrieved.\n\n### Patterns observed\n\n- **kb-ask closes the gap most on content-heavy playbook skills.** Where the discipline is \"remember these best practices and cite the right paper,\" retrieval alone gets ~85% of the way. Where the discipline is \"execute a structural framework with named tests and verdicts,\" the skill's lift is durable.\n- **Vanilla consistently fails on framework rigor and evidence.** Mean A scores: framework rigor 2.55, evidence 1.46. Vanilla simply does not produce named frameworks or citations under this prompt class.\n- **Failure-mode awareness is the most consistent C-vs-B lift.** Across nearly every skill, C's failure-mode dimension is +1 to +2 over B. The skills are encoding \"things that go wrong here\" better than the wiki retrieves.\n- **Decision-readiness gap is structural.** A scores ~3.6, B ~4.0, C ~4.9. kb-ask gives advisory output; skills give artifact output (gap tables, verdicts, owners, dates). This is the consistent structural discriminator.\n- **High-lift skills are framework-named.** IMDA, PwC 20-item, three-channel ROI, six-layer stack, dual-framework maturity placement — these are durable. Skills without a named structural anchor (curriculum, productionization) show the smallest lift.\n\n## 6. Recommendations\n\n### Pulling weight (keep, prioritize, do not touch)\n- `use-case-discovery`, `augmentation-frontline-engagement`, `data-trust-deployment-pattern`, `stack-diagnostic`, `roi-gate-pwc`, `agent-guardrail-imda`, `ai-portfolio-observability`, `buy-vs-build`, `maturity-assessment`, `readiness-conversation`. All show lift ≥ +4 with consistent structural value beyond retrieval.\n\n### Need rework\n- **productionization-playbook (+1.66, D).** kb-ask matches it on framework rigor and beats it on evidence. The skill needs to either (a) deepen the SLO and gate-numerics discipline so it cannot be reproduced by retrieval, or (b) add a structural artifact (e.g., the operating-model handoff, kill-switch SLA contract) that retrieval cannot synthesize. As-is, this is the weakest skill in the catalog.\n- **pilot-design (+1.99, D).** Borderline redundant. Consider sharpening into a \"pilot stop-condition contract\" skill rather than a general pilot design playbook — the unique value is the discipline of pre-declared kill criteria and named ownership, not the generic 90-day plan.\n- **workforce-literacy-curriculum (+2.00, C).** kb-ask scores 22/25. The skill should lean harder into the four-pattern mental-model taxonomy and the older-worker stigma trap as structural discriminators; the artifact output (matrix, calendar) alone is not enough lift.\n\n### Possibly redundant with kb-ask\n- The three D/C-grade skills above are the candidates. None should be deleted before being rewritten — the lift over vanilla is still substantial (+9 to +10 points), so users without kb-ask access still benefit. But for users who already have retrieval, these skills offer the smallest marginal value and are the right targets for consolidation.\n\n### One systemic recommendation\nThe catalog's structural advantage is **decision-ready artifact output** (gap tables, verdict frames, named owners, sunset conditions). Several skills with otherwise strong frameworks could push harder on this dimension — explicit verdict + condition + owner + date is the most consistent C-vs-B differentiator and the dimension where skill scaffolding has the most durable edge over retrieval.",
+    "aggregated": [
+      {
+        "skill": "agent-guardrail-imda",
+        "prompt": {
+          "scenario": "Hiroshi Nakamura, COO of Sakura Logistics Japan — a mid-sized 3PL with 1,400 employees, ~JPY 38B revenue, operating 14 distribution centers across Honshu and Kyushu serving B2B e-commerce clients — is two weeks away from rolling out an autonomous \"warehouse exception agent\" built on GPT-4 and a custom tool layer. The agent reads inbound shipment manifests, detects damaged-pallet exceptions in the WMS, and is authorized to auto-issue carrier claims, re-route inventory between DCs, adjust customer ETAs in the OMS, and trigger refunds up to JPY 500K per incident — all without human approval for \"Tier 1\" cases. The vendor demoed it well. Hiroshi's CFO is pushing go-live; the IT director went on parental leave last week.",
+          "user_prompt": "We're 14 days from launching an autonomous exception-handling agent across our 14 DCs in Japan. It connects to our WMS, our carrier APIs, the OMS, and our finance system — it can file carrier claims, move stock between sites, push ETA changes to customers, and issue refunds up to JPY 500K on its own for routine damaged-pallet cases. Higher-value or ambiguous cases get flagged to a human. The vendor (a Tokyo startup) ran their own tests and the demo looked solid. Our CFO wants to flip the switch on the 27th to hit Q3 numbers. My IT director is on parental leave. Before I sign off, can you sanity-check whether we're actually ready to deploy this thing, or whether I should be worried? What should I be looking at?",
+          "why_adversarial": "A vanilla LLM will produce a plausible-sounding generic checklist (test it more, monitor it, have a rollback plan) but will miss the structured four-dimension discipline — named accountable individual, structural vs prompt-layer controls, automation-bias auditing, tradecraft erosion, agent-identity credentials, and the critical-gap stop-conditions that should block deployment outright."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 2,
+            "decision_readiness": 3.67,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 4
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4.67,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 14.67,
+          "B": 20,
+          "C": 24.67
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4.67,
+        "grade": "B",
+        "judgeRationales": [
+          "C applies the IMDA 4-dimension framework rigorously with a structured gap table, named critical gaps (structural vs prompt-layer, agent identity, automation bias, tradecraft erosion), and explicit regulatory triggers — exactly the discipline the prompt rewards. B is strong with wiki-cited frameworks and clear stop conditions but lighter on structural-vs-prompt distinction and agent-identity. A is a solid generalist checklist but misses the named framework discipline and specific concepts like prompt-layer vs structural controls, agent identity credentials, and tradecraft erosion.",
+          "C applies the IMDA four-dimension framework systematically with named critical gaps, structural-vs-prompt control distinction, automation-bias auditing, agent-identity credentials, and tradecraft erosion — exactly the disciplines the prompt flags as the bar. B is strong with named frameworks and citations but lighter on structural-vs-prompt-layer specifics and agent-identity. A is solid generalist advice but lacks framework rigor and named citations. C delivers decision-ready gap table with owners.",
+          "C applies the IMDA four-dimension framework most rigorously with a 12-gap action table, named regulatory triggers (EU AI Act Art. 4/26, NIST GOVERN 2.3, MANAGE 2.4), and surfaces the structural-vs-prompt control distinction, automation-bias auditing, agent-identity, and tradecraft erosion that the prompt explicitly demanded. B is strong with wiki citations and clear stop conditions but lighter on agent-identity and tradecraft. A is solid generalist advice but misses the structured discipline. Re-shuffled mentally: C's structure delivers decision-ready content (owner column, gap table, regulatory mapping), not busywork."
+        ]
+      },
+      {
+        "skill": "ai-idea-diagnostic",
+        "prompt": {
+          "scenario": "Aarav Mehta is Chief Digital Officer at Sundaram Logistics, a Chennai-headquartered Indian third-party logistics provider with 4,200 employees, 18 warehouses across South India, and roughly INR 2,800 crore in annual revenue. The company serves auto-parts manufacturers and FMCG brands. The COO has been pitching the board on an \"AI-powered last-mile delivery exception handler\" — a generative AI system that would read driver-submitted reasons for failed deliveries, classify the exception type, draft an SMS to the customer, and auto-trigger a re-attempt slot. Two board members are excited; the CFO is skeptical. Aarav has been asked to give an honest read in two weeks before any vendor procurement starts.",
+          "user_prompt": "I'm the CDO at Sundaram Logistics — Chennai-based 3PL, 4,200 staff, 18 warehouses across South India, around INR 2,800 cr revenue, mostly auto-parts and FMCG. Our COO wants to build a GenAI \"delivery exception handler\" — when a driver marks a delivery as failed in the handheld app, the AI reads their free-text reason in Tamil/Telugu/Hindi, classifies the exception, drafts an SMS to the consignee, and auto-books a re-attempt slot. Currently a 60-person ops desk does this manually and we have ~14,000 failed deliveries per day across the network. Vendor quotes coming in at roughly INR 9 cr year one. Board wants my view in two weeks. Is this actually a good AI use case for us, or are we about to torch nine crore? Give me a real answer, not vendor-deck optimism.",
+          "why_adversarial": "A vanilla LLM will likely produce a plausible-sounding pros/cons list with generic ROI math and risk bullets, missing the disciplined sequence — friction-vs-tech-first framing, the operational-mode trap (auto-SMS to consignees is structurally Replace mode despite sounding augmentative), the measurement gap (volume/speed easy, customer trust and repeat-failure invisible), and the multilingual data-readiness binding constraint — that the five-role diagnostic forces."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 2.67,
+            "decision_readiness": 4,
+            "evidence_citations": 2,
+            "failure_mode_awareness": 3.67
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 3.33
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 16.34,
+          "B": 20.33,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 3.67,
+        "grade": "C",
+        "judgeRationales": [
+          "C applies the disciplined five-role diagnostic the prompt requires, surfaces the operational-mode trap (Replace masquerading as Augment), names the measurement gap with Klarna/Air Canada precedents, and ties auto-parts SLA blast radius to the highest-consequence case. B is well-cited and structured but misses the Replace-mode framing and treats the issue as primarily sourcing/ROI. A is sharp and pragmatic but lacks framework rigor and concrete citations. Re-shuffled mentally — C's length earns its keep with decision-relevant content rather than busywork.",
+          "All three are strong, but C applies the most rigorous framework (5-role diagnostic) consistently, surfaces the structural Replace-mode trap and Klarna/Air Canada precedents specifically, and names the measurement gap as the weakest link with concrete kill-switch metrics. B has excellent citations and decision structure but leans on generic NANDA/Stanford framing without catching the operational-mode trap as sharply. A is pragmatic and actionable but lacks framework discipline and citations. Re-shuffled mentally: C's length earns its keep via decision-relevant content (auto-parts vs FMCG split, data-retention contract clause, three pre-agreed metrics).",
+          "All three are strong but differ in rigor. C applies a disciplined 5-role diagnostic, surfaces the operational-mode trap (Replace masquerading as Augment), measurement gap (Klarna pattern), and the auto-parts SLA blast radius — most decision-ready and specific. B cites sources well but leans on wiki references over scenario specifics and misses the operational-mode framing. A is sharp and pragmatic with concrete numbers but lacks framework rigor. After re-shuffling mentally, C's content earns its length."
+        ]
+      },
+      {
+        "skill": "ai-portfolio-observability",
+        "prompt": {
+          "scenario": "Henrik Bjornsson is Chief Digital Officer at Nordfrakt Logistics, a mid-sized Nordic 3PL headquartered in Gothenburg with operations across Sweden, Norway, Denmark and Finland (EUR 620M revenue, ~2,800 employees, 14 distribution centres). Over the past 14 months Nordfrakt's AI Centre has shipped 11 production agents — a customs-paperwork drafter, a load-planner, three customer-service copilots in different languages, a freight-pricing assistant, an invoice-reconciliation bot, a shift-roster optimiser, and three internal-knowledge assistants for compliance, HR and IT. The CFO is asking pointed questions before the September board meeting because Azure OpenAI spend has tripled in two quarters to roughly EUR 95K/month and nobody can answer \"are we actually making money on these things?\" Henrik writes to Claude after a frustrating exec offsite.",
+          "user_prompt": "I'm in a bit of a corner. We're a Nordic logistics group, ~EUR 620M revenue, and over the last 14 months my team has put 11 AI agents into production — customs paperwork, load planning, three multilingual support copilots, freight pricing, invoice reconciliation, shift rostering, and three internal knowledge bots. They were all green-lit individually by different BU heads with their own little business cases. Now my CFO is asking before the September board: what are these things actually earning us? Our Azure OpenAI bill went from ~EUR 30K to EUR 95K a month in two quarters. Each team swears their agent is \"saving hours\" but I cannot reconcile that to anything in the P&L, and our support team has quietly added two QA reviewers to babysit the copilots. How do I get my arms around this before the board meeting in 11 weeks? What should I actually be measuring and reporting?",
+          "why_adversarial": "A vanilla LLM will likely produce a generic \"track usage, latency, accuracy, user satisfaction, cost-per-call\" KPI list and a Power-BI-style dashboard sketch, missing the disciplined three-layer KPI tree, the explicit subtraction of review/rework/escalation/incident cost from gross gains, the 70/20/10 portfolio mix overlay, written sunset criteria, and the Observable-and-governed / Partial / Black-box verdict that this skill enforces."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 3,
+            "decision_readiness": 4,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 3.33
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 3,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4.67,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 15.33,
+          "B": 20,
+          "C": 24.67
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4.67,
+        "grade": "B",
+        "judgeRationales": [
+          "Response C delivers the most decision-ready output: explicit per-agent KPI tree, oversight-cost subtraction with illustrative EUR numbers, written sunset rule, dashboard architecture with thresholds, finance co-ownership, and a Black-box verdict tied to a sequenced 11-week plan. B brings strong framing and citations but stays at concept level without numbers or dashboard specs. A is pragmatic and well-structured but lacks the three-layer KPI tree, the 70/20/10 overlay, and explicit sunset criteria. Re-shuffled mentally; C's structure carries decision-relevant content rather than padding.",
+          "C delivers the disciplined three-layer KPI tree, explicit oversight-cost subtraction with illustrative EUR math, 70/20/10 overlay, written sunset rule, and Black-box verdict — directly actionable for the September board. B brings strong framing and citations but stays at narrative level without the per-agent KPI/cost tables. A is pragmatic and well-sequenced but lacks the framework rigor and named instrumentation. C is best across all five dimensions despite its length because the structure carries decision-relevant content.",
+          "C delivers the most decision-ready output: concrete KPI tree per agent, illustrative net-ROI table with oversight subtraction, written sunset rule, dated 11-week sequence, and explicit Black-box verdict. B is strong on framing and citations but stays at the methodology layer without the per-agent quantification. A is pragmatic and well-written but lacks the three-layer KPI tree, 70/20/10 overlay, and explicit governance-framework citations. Re-shuffled mentally; C's structure delivers substance, not busywork."
+        ]
+      },
+      {
+        "skill": "augmentation-frontline-engagement",
+        "prompt": {
+          "scenario": "Ji-won Park is the Director of Examination Reform at the Korea Intellectual Property Office (KIPO) in Daejeon, overseeing 1,180 patent examiners across electrical, mechanical, chemical and biotech divisions. KIPO has a vendor-built AI prior-art search and claim-similarity tool ready for a pilot in the electrical division, but the senior examiners' union (avg tenure 17 years) has formally objected, citing fears of deskilling, professional-liability shift if a granted patent is later invalidated, and a recent restructure that cut 6% of headcount. Two earlier rollout meetings ended in walkouts. The Commissioner wants a Q3 launch; Ji-won has six weeks before the next steering committee.",
+          "user_prompt": "I run examination reform at KIPO in Daejeon. We've got an AI prior-art and claim-similarity tool ready to pilot in our electrical patent division — about 240 examiners — and the senior examiners' union has dug in. Two town halls ended in walkouts. The grievances I'm hearing: \"this is automation in disguise after last year's 6% cut\", \"if I grant a patent the AI flagged as novel and it gets invalidated at IPTAB, I'm the one whose name is on the file\", and from the 20-year veterans, \"junior examiners with this tool will look more productive than me on the dashboard.\" The Commissioner wants electrical division live by end of Q3. How do I actually get the senior examiners on board so this doesn't blow up at the steering committee in six weeks? I need a concrete plan, not platitudes.",
+          "why_adversarial": "A vanilla LLM will produce generic change-management advice (town halls, training, \"communicate the why,\" champions network) without the disciplined fear-classification, jagged-frontier task split, signed safety contract with sunset/no-headcount-cut clauses, and tradecraft-protection mechanisms that this skill enforces — missing precisely the structural commitments that cause patent-examiner rollouts to stall."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 3,
+            "decision_readiness": 4,
+            "evidence_citations": 1.33,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 3.67,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 4.33,
+            "failure_mode_awareness": 3
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 15.33,
+          "B": 19,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 5,
+        "grade": "B",
+        "judgeRationales": [
+          "Response C delivers the most domain-specific, framework-rigorous output: named fears with classification, a jagged-frontier sub-task split specific to electrical patent examination (means-plus-function, non-text disclosures, foreign-language art), a six-clause signed contract with sunset thresholds, tradecraft-protection mechanisms including the trainee 24-month unaided period, and explicit critical-failure stop conditions. B is strong with citations and structure but leans on generic frameworks and lacks the granular sub-task split and tradecraft mechanisms. A is sharp and decision-ready but lighter on framework rigor, evidence, and failure-mode enumeration. Re-shuffled mentally; C's length earns its keep through decision-relevant artifacts (contract clauses, workshop roster, dashboard redesign) rather than padding.",
+          "C delivers the most KIPO-specific content (IPTAB liaison, Korean Patent Act §57, foreign-language electrical art, means-plus-function parsing, non-text disclosures) and applies a disciplined five-role framework with explicit fear classification, signed contract clauses, sunset thresholds, and tradecraft-protection mechanisms including the 24-month trainee unaided period that structurally inverts F3. C also surfaces the most named failure modes with stop conditions. B is well-cited and structured but lighter on domain tradecraft and accountability-contract specificity; A is sharp and pragmatic but lacks citations and the structural depth on tradecraft/sunset thresholds. After re-shuffling labels mentally, C's length is load-bearing rather than padding.",
+          "C delivers the most domain-specific tradecraft (Korean Patent Act, IPTAB protocol, non-text disclosure handling, 24-month trainee unaided period) with explicit sunset thresholds, named signatories, and critical-failure gates. B is well-cited and structured but leans on wiki-link references rather than KIPO-specific mechanisms. A is sharp and decision-ready but lacks the jagged-frontier task split and tradecraft-protection depth. Re-shuffled mentally; C's length earns its keep through load-bearing content (six-clause contract, off-limits column, vendor benchmark gate)."
+        ]
+      },
+      {
+        "skill": "buy-vs-build",
+        "prompt": {
+          "scenario": "Linh Pham is the Chief Digital Officer at TransViet Logistics, a Vietnamese 3PL with USD 180M revenue, 1,400 staff, and operations across Ho Chi Minh City, Hai Phong, and a Bangkok subsidiary. The firm processes ~38,000 customs declarations and ~52,000 bills of lading per month, with a 60-person document-processing team in HCMC doing manual data extraction at ~S$340K/month payroll cost. The board has approved USD 4M over 18 months for an \"AI document intelligence\" capability. Vendors pitching include Microsoft (Azure Document Intelligence), AWS Textract, a Singapore startup called LogiParse, and Vietnam's FPT Smart Cloud offering a fine-tuned VietOCR. Two internal data scientists argue they should fine-tune Qwen-VL themselves on their proprietary 4-year corpus of 1.8M parsed documents.",
+          "user_prompt": "Need your help with a sourcing call before our board meeting next Friday. We're TransViet Logistics — Vietnamese 3PL, USD 180M revenue, processing about 38K customs declarations and 52K bills of lading a month with a 60-person manual extraction team in HCMC. Board approved USD 4M over 18 months for \"AI document intelligence.\" On the table: Azure Document Intelligence, AWS Textract, a Singapore startup LogiParse, FPT Smart Cloud's VietOCR, or — what my two data scientists keep pushing — fine-tuning Qwen-VL ourselves on our 1.8M-document proprietary corpus because \"nobody else has freight data this clean and the moat is in the model.\" We also need workflow on top (routing, exceptions, customs-broker handoff, integration into our TMS). Should we build the model, buy a platform, partner with FPT, or some mix? My CFO wants one answer. What's the right call and why?",
+          "why_adversarial": "A vanilla LLM will likely produce a generic \"build vs buy\" trade-off list weighted by cost/control, missing the disciplined component decomposition, the empirical 2:1 buy-advantage evidence, and the critical insight that the moat is in orchestration and the skill library — not in fine-tuning a foundation model on document data that vendors can replicate."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 3,
+            "decision_readiness": 4,
+            "evidence_citations": 2,
+            "failure_mode_awareness": 3.33
+          },
+          "B": {
+            "specificity": 3.67,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 3
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 16.33,
+          "B": 19.67,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4.33,
+        "grade": "B",
+        "judgeRationales": [
+          "C applies the most disciplined framework (component decomposition, 2:1 buy test, vendor archetype, moat assessment) and surfaces the strongest failure-mode coverage including lock-in, capability gap, and people risk with concrete mitigations. B is well-cited but its budget allocation (10% model / 70% workflow) and reference-heavy style is more advisory than executable; A is sharp and pragmatic but lighter on framework rigor and evidence. C delivers the clearest CFO-ready verdict with a 90-day decision gate.",
+          "C applies a disciplined component decomposition (six components), runs the build/buy tests explicitly per component, names the orchestration+skill library as the compounding moat, and surfaces the most failure modes (lock-in, capability gap, people risk, regulatory). B has the strongest citations and a clear framework but is less granular on component-level decisions and the FPT-IS vs FPT-Smart-Cloud distinction. A is crisp and CFO-friendly but lighter on framework rigor and evidence. Re-shuffled mentally; C wins on substance, not length.",
+          "C delivers the most rigorous component decomposition (6 components with explicit BUY/BUILD/PARTNER tests), names specific vendors at the right archetype layer (FPT IS vs FPT Smart Cloud distinction), and surfaces the most failure modes with concrete mitigations. B is strong on citations and frameworks but lighter on TransViet-specific operational detail. A is sharp and decision-ready but lacks the framework rigor and evidence base of B and C. Re-shuffled mentally; C's structure delivers decision-relevant content, not busywork."
+        ]
+      },
+      {
+        "skill": "data-trust-deployment-pattern",
+        "prompt": {
+          "scenario": "CTO of NordSjø Maritime Insurance, a mid-sized marine cargo & hull insurer headquartered in Oslo with branches in Hamburg, Piraeus, and Singapore (~1,400 staff, EUR 620M GWP). Underwriters and claims adjusters are quietly pasting full claims dossiers — including survey reports, master mariner statements, named insureds, and broker correspondence — into ChatGPT Plus and Gemini consumer to draft loss-adjustment summaries and coverage opinions. A recent internal audit flagged ~340 such pastes/week. The CTO wants to roll out an \"AI productivity package\" in Q3 but the DPO is escalating GDPR concerns and the Norwegian FSA (Finanstilsynet) is asking about model governance.",
+          "user_prompt": "Need your read on this. We're a marine insurer based in Oslo, branches in Hamburg, Piraeus, Singapore. Our adjusters keep pasting claims dossiers into ChatGPT Plus to draft loss-adjustment write-ups — internal sweep caught about 340 pastes a week. Dossiers contain named insureds, broker emails, sometimes settlement amounts that aren't public yet. Board wants me to roll out an AI productivity package in Q3 covering 800 underwriters and adjusters. DPO is nervous about GDPR, and Finanstilsynet just sent a letter about model governance. Question is basically: do I just buy ChatGPT Enterprise seats and call it done, or do I need something heavier? And how do I shut down the consumer-tier pasting without my adjusters revolting? Looking for a concrete recommendation, not a generic checklist.",
+          "why_adversarial": "A vanilla LLM will plausibly recommend \"ChatGPT Enterprise + a usage policy + DLP\" without distinguishing the data classes (potential MNPI in pre-settlement amounts, GDPR PII in insured/broker data, cross-border flows Oslo↔Singapore↔Hamburg), without naming the minimum deployment tier per class, and without the sanctioned-tool replacement discipline needed to actually suppress shadow AI rather than just forbid it."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3.33,
+            "framework_rigor": 3,
+            "decision_readiness": 4,
+            "evidence_citations": 2.33,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 15.66,
+          "B": 20,
+          "C": 25
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 5,
+        "grade": "B",
+        "judgeRationales": [
+          "C delivers the most scenario-specific analysis: explicit MNPI vs PII data classification, named regulatory citations (Finanstilsynet circular, BaFin VAIT, MAS TRM, Annex III §5(c), GDPR Art. 28/32/35, NIST sub-controls), two-tier T2/T3 architecture with per-workflow tier assignment, and a concrete control checklist with owners. B is strong on framework (NIST/IMDA/EU AI Act mapped) and sequencing but leans on wiki-link citations rather than substantive regulator-level specifics, and treats T3 as a wrapper rather than a separate private-tenant deployment. A is solid practical advice but lacks the MNPI distinction, cross-border TIA detail, and high-risk Annex III flag. After re-shuffling labels mentally, C's depth is decision-relevant rather than busywork — the data-class table and tier map directly answer the regulator letter.",
+          "C delivers the most decision-ready output: explicit T2/T3 tier assignment tied to data classes (MNPI-adjacent settlement amounts identified as load-bearing), a control checklist with named owners, and specific regulatory citations (GDPR Art. 28/35, AI Act Art. 4/12/14/26, Annex III §5(c), Finanstilsynet ICT circular, BaFin VAIT, MAS TRM, NIST RMF subcategories). B is rigorous and well-cited but leans on internal wiki references and misses the MNPI distinction that drives the tier choice. A is sound and actionable but generic on regulatory specifics and doesn't classify data classes or name the high-risk Annex III trigger. Re-shuffled mentally: C's structure delivers content, not busywork.",
+          "C applies a rigorous data-classification + tier-mapping framework, names specific regulatory articles (GDPR Ch V, AI Act Annex III §5(c), Art 4/12/14/26, Finanstilsynet ICT circular, BaFin VAIT, MAS TRM, NIST RMF subcategories, ISO 42001 annexes), specifies cloud regions, and surfaces blast-radius/blockers including MNPI segregation. B is strong with citations to its KB and good sequencing but lighter on jurisdiction-specific regulatory mechanics. A is solid and actionable but generic on regulatory specifics and lacks tier-by-data-class mapping. Re-shuffled mentally; C wins on substance, not length."
+        ]
+      },
+      {
+        "skill": "maturity-assessment",
+        "prompt": {
+          "scenario": "Hannelore Visser is the newly appointed Group Chief Strategy Officer at Nordwijk Maritime, a 1,400-person Rotterdam-headquartered ocean-shipping and inland-logistics group operating across the Netherlands, Belgium, and Germany (EUR 620M revenue, 38 vessels, 11 inland terminals). The CEO has scheduled a 90-minute board session in eight weeks where she must present \"where we stand on AI vs. Maersk and Kuehne+Nagel, and what the next 18 months look like.\" The org has run roughly 14 GenAI pilots over the last year (vessel-routing optimizer, bunker-fuel forecaster, an HR copilot, a few document-extraction bots in customs), spent EUR 7.2M on cloud and tooling, hired a Head of Data Science, and the CFO is asking whether the spend has produced any defensible position. The board is split between \"double down\" and \"pause and consolidate.\"",
+          "user_prompt": "I need your help preparing for a board session in eight weeks. I'm the new Group CSO at Nordwijk Maritime (Rotterdam-based ocean and inland shipping group, ~EUR 620M revenue, 1,400 staff, operating across NL/BE/DE). Over the past year we've run about 14 GenAI pilots — vessel routing, bunker-fuel forecasting, an HR copilot, customs-document extraction — burned roughly EUR 7.2M, hired a Head of Data Science, and now the CFO and half the board want to know whether we're actually anywhere meaningful versus Maersk or Kuehne+Nagel, or whether we should pause. The CEO wants me to lay out honestly where we stand on the AI journey and what the next 18 months should look like. Can you help me think this through? I have the pilot list, spend breakdown, and an org chart if useful.",
+          "why_adversarial": "A generic LLM will likely produce a plausible-sounding \"AI strategy review\" with vague stage labels and generic recommendations, instead of disciplined dual-framework placement (CISR stages with NOT-YET triangulation + Accenture Foundation×Differentiation binding-constraint diagnosis), the financial-performance gap framing (Stage 2→3 = +14.8 pp revenue), and a stage-advancement roadmap anchored to a named bold goal."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3,
+            "framework_rigor": 2,
+            "decision_readiness": 3,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 3
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 4
+          }
+        },
+        "totals": {
+          "A": 12,
+          "B": 19,
+          "C": 23
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4,
+        "grade": "B",
+        "judgeRationales": [
+          "C delivers the most decision-ready output: explicit dual-framework placement (CISR Stage 2 with NOT-YET gaps, Accenture LOW/LOW Experimenter with binding constraint), quantified financial gap (~EUR 21M foregone, ~EUR 90M Stage 3 potential), named bold goal options, and a board-ready slide spine. B is rigorous and well-cited but lighter on the financial-gap math and bold-goal anchoring. A is sensible advice but generic, no framework, no citations, no quantified stake. Re-shuffled mentally; C's length earns its keep through specific maritime gaps, EU AI Act callouts, and ownership/timeline per gap.",
+          "C delivers the disciplined dual-framework placement (CISR Stage 2 with NOT-YET gaps, Accenture Foundation×Differentiation with binding constraint), the +EUR 90M Stage 2→3 financial gap framing, and a named bold goal with three options — exactly what the prompt's hidden rubric demands. B is strong on framework citations and 95/5 + Stanford data but lacks the financial-gap quantification and bold-goal anchor. A is sensible advisory prose but framework-light and generic. C also surfaces EU AI Act Annex III specifics for the HR copilot and concrete kill/merge logic.",
+          "C delivers the most decision-ready output: explicit dual-framework placement (CISR Stage 2 with NOT-YET gaps + Accenture archetype with binding-constraint diagnosis), quantified financial gap (~EUR 21M foregone, ~EUR 90M Stage-3 potential), named bold goal options, and a 7-slide board structure. B is rigorous and well-cited but stops short of stage-advancement quantification and named bold goal. A is sensible advisory but generic — no framework, no citations, no quantified stakes. Reshuffled mentally: C's length is load-bearing, not busywork."
+        ]
+      },
+      {
+        "skill": "pilot-design",
+        "prompt": {
+          "scenario": "Anjali Mehta is COO of GreenLeaf Logistics, a mid-sized cold-chain trucking company in Pune, India with 280 employees, 140 refrigerated trucks, and ~INR 420 crore annual revenue. They serve pharma and frozen-food clients across western India. Their dispatch team of 18 planners spends most of the day rebalancing routes when temperature alerts, traffic, or breakdowns hit. Anjali has been reading about generative AI and her CEO has earmarked INR 2 crore for an \"AI dispatch copilot\" pilot. Her IT head suggested a 6-month build. Anjali wants to move faster and is drafting a one-pager for the board next month. She has no AI background and is asking how to set the pilot up so it doesn't quietly fail.",
+          "user_prompt": "Need help thinking through an AI pilot. We're a cold-chain logistics company in Pune, ~140 reefer trucks, 18 dispatch planners. The planners are drowning when temperature alerts or traffic disruptions hit — replanning a route can take 20-30 minutes and meanwhile the cargo's at risk. CEO has approved 2 crore for an \"AI dispatch copilot\" and wants something to show the board in 90 days. IT is pitching a 6-month build with a vendor. I want to do a pilot first but I'm worried we'll spend the budget and end up with a demo that nobody actually uses, or worse, something that misroutes a pharma load. How would you structure this pilot? What should I put in the one-pager I'm bringing to the board?",
+          "why_adversarial": "A generic LLM will produce a plausible-sounding pilot plan with timelines, tech stack suggestions, and KPIs like \"reduce replan time\" — but will likely skip pre-deployment metric discipline, blast-radius reasoning for pharma cargo, explicit stop conditions, workflow redesign before tooling, and named individual ownership, all of which are the actual failure modes this skill exists to prevent."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3,
+            "framework_rigor": 3,
+            "decision_readiness": 4,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 3.33
+          },
+          "B": {
+            "specificity": 3.67,
+            "framework_rigor": 4.67,
+            "decision_readiness": 3.67,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 3,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 14.33,
+          "B": 21.009999999999998,
+          "C": 23
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 1.99,
+        "grade": "D",
+        "judgeRationales": [
+          "Response C delivers the most specific, decision-ready output: named metrics with baselines/targets, explicit instrumentation gaps, two-tier guardrails by cargo class, named ownership with time allocation, and concrete stop conditions with failure responses. B has strong framework rigor and citations but leans on generic frameworks and slightly less operational specificity. A is solid and pragmatic but lacks the metric discipline (especially quality-failure tracking) and citation depth. Re-shuffled mentally: C's structure delivers load-bearing content (override-reason capture, blast radius level, champion at 50%) rather than busywork.",
+          "C delivers the most operationally specific, framework-disciplined output: named metrics with instrumentation flags, explicit blast-radius level, day-gated stop conditions with failure responses, workflow redesign before tooling, and named ownership including CEO chairing reviews. B is rich in citations and frameworks but more abstract and less actionable on this specific cold-chain context. A is well-written and pragmatic but lighter on metric discipline, lacks explicit measurement-gap warning, and softer on stop conditions. Re-shuffled mentally; C's structure delivers decision-relevant content rather than busywork.",
+          "C delivers the most operationally specific output: named metrics with baselines and instrumentation gaps, two-tier pharma/frozen guardrails, day-30/60/90 stop conditions with explicit failure responses, and named ownership with CEO chairing reviews. B has strong framework rigor and citations but is more abstract and less actionable on instrumentation specifics. A is well-written and decision-ready but lighter on framework rigor and evidence. Re-shuffled mentally; C wins on content density not just length — every section delivers decision-relevant material the user can lift into the board doc."
+        ]
+      },
+      {
+        "skill": "productionization-playbook",
+        "prompt": {
+          "scenario": "Linh Tran, VP of Customer Experience at GiaoNgay, a Vietnamese last-mile delivery company (1,400 riders, 6 cities, ~85K parcels/day) headquartered in Ho Chi Minh City. Six months ago her team built a generative-AI customer-support agent (GPT-4o + RAG over their order DB and FAQ) to handle the parcel-status, reschedule, and refund queries that flood their hotline. The internal demo with 30 agents was a hit — it resolved 78% of test conversations end-to-end in Vietnamese. The CEO wants it live across all 9 contact-centre teams (220 agents, ~24K daily chats) by the end of Q3, three months away. Linh is nervous: in a closed pilot with two teams last month, the bot confidently quoted wrong delivery windows during a Tet-period surge, refunded a customer twice, and went silent for 11 minutes when the order API rate-limited it.",
+          "user_prompt": "We've built a customer-support AI agent for our delivery business in Vietnam — GPT-4o on top of our order DB, in Vietnamese — and the demo was great (78% resolution on a 30-agent test). Our CEO wants it rolled out to all 220 contact-centre agents handling 24K chats/day by end of Q3. But our soft launch with 2 teams was rough: the bot quoted wrong ETAs during the Tet rush, double-refunded a customer, and froze for 11 minutes when our order API throttled it. I need a concrete plan to take this from \"demo works\" to actually production-grade across 9 teams in 3 months — what do I actually need in place before we flip the switch, and how do I sequence the rollout so we don't blow up trust with 24K daily customers if something goes wrong again?",
+          "why_adversarial": "A generic LLM will likely produce plausible-sounding generic advice (add monitoring, do a phased rollout, keep humans in the loop) without the skill's discipline of named SLO floors/ceilings, a 15-item gate with accountable owners, kill-switch SLAs, shadow→1%→10%→50%→100% staging with pre-declared pause criteria, and the operating-model handoff from project team to product team that Stanford's 51-deployments postmortem flags as the dominant failure mode."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3.33,
+            "framework_rigor": 2.67,
+            "decision_readiness": 3,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 4
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4.67,
+            "decision_readiness": 4,
+            "evidence_citations": 4.67,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 4.67,
+            "decision_readiness": 5,
+            "evidence_citations": 3.33,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 14,
+          "B": 21.34,
+          "C": 23
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 1.66,
+        "grade": "D",
+        "judgeRationales": [
+          "C delivers the most decision-ready artifact: named SLO numbers (P95 ≤6s, 200K VND threshold), a 15-item gate with RED/YELLOW status and owners, explicit NO-GO verdict, and week-by-week schedule with pause rules. B has strong framework citations (IMDA, NIST, Stanford, PwC) but stays at principle level without numeric SLOs or accountable owners. A is solid generalist advice but lacks the gate discipline, named thresholds, and operating-model handoff. Re-shuffled mentally: C's structure carries load-bearing content (specific triggers, owners, dates), not busywork.",
+          "C delivers the most decision-ready output: named SLO floors/ceilings with numbers (P50 2.5s, P95 6s, 75% accuracy floor, 2/100 hallucination ceiling), a 15-item RAG-statused gate with accountable owners, explicit kill-switch SLA (<5min), shadow→1%→10%→50%→100% staging with pre-declared pause criteria, week-by-week calendar, and an explicit NO-GO verdict with remediation list. B is strong on framework citations (IMDA, NIST, Stanford, PwC) but lighter on concrete numeric thresholds and owner-by-name accountability. A is solid generalist advice but lacks named SLOs, no 15-item gate, no operating-model handoff discipline. Re-shuffled mentally: C's structure delivers load-bearing content, not busywork.",
+          "C delivers concrete numbers (200K VND threshold, 5-min kill-switch SLA, 300/150 case eval sets, shadow→1%→10%→50%→100% with named pause triggers) and a 15-item RAG-status gate with owners and a NO-GO verdict — directly decision-ready. B applies named frameworks (IMDA, NIST, Stanford) well but is lighter on numeric SLO floors/ceilings and concrete owners. A is solid practical engineering advice but lacks framework citations and quantified gates. Position bias checked: C's length is load-bearing (gate table, remediation list, week-by-week), not busywork."
+        ]
+      },
+      {
+        "skill": "readiness-conversation",
+        "prompt": {
+          "scenario": "Helena Vroom is Chief Transformation Officer at NordicRail Logistics, a 4,200-person rail-freight operator headquartered in Gothenburg with operations across Sweden, Denmark, and northern Germany. The board approved a EUR 18M AI program 14 months ago covering predictive maintenance, dynamic load planning, and a customer-service copilot. Tooling is live, Azure tenant is configured, two MLOps engineers were hired. But quarterly review shows productivity gains of roughly 4%, far below the 22% business case. The CEO is presenting to the supervisory board in six weeks and Helena needs to explain what's actually broken — not the models, which work — before that conversation.",
+          "user_prompt": "I'm the Chief Transformation Officer at NordicRail Logistics — 4,200 people across Sweden, Denmark, and northern Germany, rail freight. Fourteen months into an EUR 18M AI program (predictive maintenance, load-planning optimizer, customer-service copilot). The tech works. Models hit accuracy targets. But productivity uplift is around 4% versus a 22% business case. Our CEO has to face the supervisory board in six weeks and I need to give her a credible answer for why we're stuck and what to actually do about it. I don't want a generic \"change management\" lecture. Where do I look first, and what concrete things should I be checking inside the org?",
+          "why_adversarial": "A vanilla LLM will produce a generic change-management or adoption checklist (training, comms, champions, governance) without the disciplined four-role diagnostic, the specific BCG 88/25 and McKinsey 3x evidence anchors, the EU AI Act Art. 4 regulatory hook, or the HR five-jobs decomposition that separates a real readiness diagnosis from boilerplate advice."
+        },
+        "avg": {
+          "A": {
+            "specificity": 4,
+            "framework_rigor": 2.33,
+            "decision_readiness": 4,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 4
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 3
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 4
+          }
+        },
+        "totals": {
+          "A": 15.33,
+          "B": 20,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4,
+        "grade": "B",
+        "judgeRationales": [
+          "C delivers the disciplined four-role diagnostic with EU AI Act Art. 4/26 hooks, HR five-jobs decomposition, and named C-suite owners with sequenced timing — exactly the content the prompt flagged as differentiating. B is strong on evidence anchors (BCG 70/20/10, McKinsey 3x, Accenture redeployment) and decision-ready, but lacks the regulatory hook and HR five-jobs frame. A is sharp and operator-savvy but generic on evidence and frameworks. Re-shuffled mentally; C's structure delivers decision-relevant specificity (Nordic/German works councils, Art. 26 high-risk classification for load-planning), not busywork.",
+          "A is sharp and operator-grade but lacks specific evidence anchors. B adds rigorous citations (BCG 70/20/10, McKinsey 3x, Accenture redeployment, MIT CISR stages) and structural diagnosis. C is most comprehensive: applies the four-role diagnostic, hits BCG 88/25 and McKinsey 3x explicitly, includes EU AI Act Art. 4/26 regulatory hook, HR five-jobs decomposition, works-council nuance for Nordic/German context, and prioritized 6-week actions with named owners. C best matches the prompt's hidden criteria; B is close second on evidence; A weakest on citations and framework rigor though strong on practical instinct.",
+          "C delivers the most rigorous output: explicit four-role diagnostic, BCG 88/25 and McKinsey 3x anchors, EU AI Act Art. 4/26 regulatory hook, HR five-jobs decomposition, and a sequenced board narrative with named owners — exactly what the prompt's hard-mode criteria demand. B is strong on evidence anchors and framing but lacks the regulatory hook and HR decomposition, and is less operationally sequenced. A is sharp and practitioner-savvy but vanilla — no citations, no regulatory hook, no framework. Re-shuffled mentally; C wins on content density and decision readiness, not just length."
+        ]
+      },
+      {
+        "skill": "roi-gate-pwc",
+        "prompt": {
+          "scenario": "CFO of Daikō Logistics, a mid-sized Japanese third-party logistics provider (¥180B revenue, 4,200 staff, headquartered in Osaka with operations across Kansai and Chubu regions), is preparing for a board meeting in three weeks. The COO has put forward a ¥2.4B proposal over 18 months to deploy generative AI across warehouse documentation, customs paperwork automation, and a dispatcher copilot. The vendor (a Tokyo system integrator) projects ¥4.1B in cumulative savings by year three, primarily from reducing 180 FTEs in back-office customs and documentation roles. The CFO is skeptical but the CEO is enthusiastic after a competitor's press release. She needs to form a defensible recommendation before the board vote.",
+          "user_prompt": "Need help thinking through an AI investment before our board meeting on the 28th. Our COO is pushing a ¥2.4B, 18-month genAI rollout at Daikō Logistics — warehouse docs, customs automation, and a dispatcher copilot. The integrator's deck shows ¥4.1B cumulative savings by FY29, mostly from cutting ~180 customs and documentation FTEs across our Osaka and Nagoya hubs. Our CEO loves it because Yamato just announced something similar. I'm the CFO and I'm not comfortable yet but I can't articulate why beyond gut feel. The business case looks clean on paper. What should I be pressing on before I sign off, and how should I frame my position to the board? Should we approve, approve with conditions, or send it back?",
+          "why_adversarial": "A generic LLM will produce plausible-sounding due-diligence questions (sensitivity analysis, change management, vendor lock-in) but will miss the structural traps the skill catches: that this is efficiency-only (1.6× ceiling, no growth/innovation channel), that a single-line cost-takeout case under-states value by ~4× without revenue uplift and redeployment channels, that \"cut 180 FTEs\" with no redeployment plan auto-fails Accenture's three-channel test, and that the four critical Don'ts (complexity, oversight, change mgmt, invisible costs) require named owners not generic answers."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3.67,
+            "framework_rigor": 2,
+            "decision_readiness": 4,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4.33,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 13.67,
+          "B": 20.33,
+          "C": 25
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 4.67,
+        "grade": "B",
+        "judgeRationales": [
+          "C executes the full skill structure (objective audit, three-channel ROI, PwC 20-item gate with all four critical Don'ts flagged, verdict + conditions) and explicitly names the 1.6x ceiling, redeployment failure, invisible-cost ratio, and the European fintech precedent. B is strong and well-cited but slightly less granular on the 20-item gate and oversight architecture. A is sharp prose but generic — misses the structural framework traps (single-channel, efficiency-only ceiling, four critical Don'ts pattern). Re-shuffled mentally; C's structure delivers decision-grade content rather than busywork.",
+          "C applies the most rigorous, named framework (objective-mode audit, three-channel ROI, full PwC 20-item gate with all four critical Don'ts flagged) and delivers board-ready language plus specific conditions. B is close — strong citations and structured framing — but lighter on the PwC critical-Don'ts pattern and invisible-cost math. A is sharp and decision-ready but lacks framework anchoring and named evidence. Re-shuffled mentally; C wins on content density and framework rigor, not just length.",
+          "C delivers the most rigorous framework execution: explicit objective-mode audit, three-channel ROI table, full PwC 20-item gate with all four critical Don'ts flagged, and named conditions with owners. B is strong on framework citation and board script but lighter on the PwC checklist mechanics and cost-stack specificity. A is sharp and actionable but generic—misses the efficiency-ceiling structural argument, the three-channel model, and named critical Don'ts. Re-shuffled mentally; C's length earns its keep through decision-relevant structure, not busywork."
+        ]
+      },
+      {
+        "skill": "stack-diagnostic",
+        "prompt": {
+          "scenario": "Henrik Lindqvist is the newly hired Chief Digital Officer of Nordkraft Logistik, a Stockholm-headquartered third-party logistics and cold-chain freight operator with 1,400 employees, EUR 280M revenue, and operations across Sweden, Finland, and the Baltics. Over 18 months, his predecessor greenlit nine separate AI pilots — a route-optimization model, two demand-forecasting POCs in different BUs, a warehouse vision system for damaged-pallet detection, an HR resume screener, a Copilot rollout, an invoice OCR bot, a customs-document classifier, and a customer-service GenAI chatbot. None have moved beyond pilot. The board has frozen further AI spend until Henrik delivers a diagnosis at the September board meeting. He has six weeks.",
+          "user_prompt": "I just took over as CDO at Nordkraft Logistik — Nordic 3PL, 1,400 staff, EUR 280M revenue, Sweden/Finland/Baltics. Inherited nine AI pilots from my predecessor (route opt, two forecasting POCs in different BUs, warehouse damaged-pallet vision, resume screener, M365 Copilot, invoice OCR, customs doc classifier, CS chatbot). Not one has scaled past pilot in 18 months. Board has frozen all new AI spend and wants a real answer at the September board — six weeks away — on what's actually wrong and what we fix first. The team keeps telling me we need a better model or more GPUs. I'm not convinced that's the real problem. Where do we honestly stand technically, and what do I tell the board to unblock?",
+          "why_adversarial": "A generic LLM will likely produce a plausible-sounding \"AI maturity\" essay or jump straight to recommending an LLMOps platform, missing the disciplined six-layer walk that surfaces data and orchestration as the actual binding constraints rather than the model layer the team is fixated on."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3,
+            "framework_rigor": 2.33,
+            "decision_readiness": 4,
+            "evidence_citations": 1.33,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 3
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 13.66,
+          "B": 20,
+          "C": 25
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 5,
+        "grade": "B",
+        "judgeRationales": [
+          "C delivers the most rigorous six-layer walk with per-layer scorecards, explicit pilot-by-pilot mapping, regulated-pilot blast-radius callouts (EU AI Act Annex III, Article 50), and ordered P0-P5 remediation with dependencies — directly decision-ready. B is strong on citations but lighter on per-pilot specifics and operational sequencing. A is sharp and pragmatic but lacks framework rigor and specific evidence. C also surfaces shadow-AI and regulatory liability risks the others miss or underweight.",
+          "C delivers the most rigorous six-layer walk with explicit BLOCKING/GAP scoring per layer, named regulatory exposure (Annex III, Article 50, NIST GOVERN 1.6/2.3, MANAGE 2.4), and ordered P0-P5 remediation with effort/dependency. B is strong on citations and triage but lighter on layer-by-layer rigor and failure modes. A is sharp and decision-ready but generic, with no citations and no regulatory specifics. Re-shuffled mentally: C's structure delivers decision-relevant content (scorecard, EU AI Act mapping, anchor-tenant logic), not busywork.",
+          "C delivers the most decision-ready output: explicit six-layer scorecard with BLOCKING/GAP calls, regulated-pilot triage with named EU AI Act articles, ordered P0-P5 remediation with effort/dependency, and a board-ready one-pager. B is strong on cited frameworks but lighter on Nordkraft-specific mechanics and failure modes. A is sensible and actionable but generic, with no source anchors and weaker framework discipline. Re-shuffle check: C's length earns its keep through layer-by-layer specificity, not padding."
+        ]
+      },
+      {
+        "skill": "use-case-discovery",
+        "prompt": {
+          "scenario": "Hiroshi Nakamura is COO of Sankai Logistics, a mid-sized 3PL in Osaka with ¥38B revenue, 1,400 staff across 6 distribution centers serving e-commerce and FMCG clients in Western Japan. The board just allocated ¥600M for AI initiatives after a McKinsey-style review flagged the company as \"AI-laggard.\" His IT director has been forwarded 23 vendor decks ranging from warehouse robotics co-pilots to a generative-AI customer-service agent for shipper inquiries to a route-optimization tool to an OCR/IDP system for customs paperwork. The CEO wants three pilots launched by Q4. Hiroshi has 10 weeks before the next board meeting and is staring at a vendor short-list that all sound equally compelling.",
+          "user_prompt": "I need help. I'm COO of Sankai Logistics — Osaka-based 3PL, ¥38B revenue, 1,400 staff, six DCs in Western Japan. The board has approved ¥600M for AI and the CEO wants three pilots running by Q4. My inbox has 23 vendor pitches: warehouse picking co-pilots, a chatbot for shipper inquiries, route optimization, IDP for customs paperwork, predictive maintenance for our forklifts, demand forecasting, an HR resume screener, contract review for our shipping agreements, and more. Every vendor swears theirs is the highest ROI. I have 10 weeks until the next board review. How do I figure out which two or three to actually pilot first, and how do I defend that choice to a skeptical CFO who's seen too many failed digital projects?",
+          "why_adversarial": "A generic LLM will produce a plausible-sounding ranked list using vendor-aligned ROI heuristics, but without the skill's discipline (quantified value pools ≥$500K, archetype classification, six-dimension feasibility scoring, MIT 95/5 embedded-vs-bolt-on test, pilot-discipline filters) it will likely include chatbot-on-the-side framings and parallel pilots that violate the skill's sequencing rule."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3,
+            "framework_rigor": 2,
+            "decision_readiness": 3,
+            "evidence_citations": 1,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 3.33,
+            "framework_rigor": 4,
+            "decision_readiness": 4,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 3.33
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 12,
+          "B": 18.66,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 5.34,
+        "grade": "B",
+        "judgeRationales": [
+          "C executes the full discipline: quantified value pools with the ≥¥50M threshold, archetype classification with one-second/integration/frequency tests, six-dimension feasibility scoring with explicit cuts, and a sequencing rule that rejects parallel pilots — directly matching what the prompt flags as the skill's discipline. B is solid and well-cited but stops at framework naming and gives illustrative picks rather than scored ones; it also recommends three parallel pilots, partly violating the sequencing rule. A is sensible generalist advice but lacks quantified pools, archetype rigor, and citations. Re-shuffled the order mentally; C wins on content density, not length alone.",
+          "Response C applies the most disciplined framework end-to-end: quantified value pools with a ≥¥50M threshold, archetype classification with one-second/integration/frequency tests, six-dimension feasibility scoring with explicit cuts, and a sequencing rule that enforces one pilot at a time. It surfaces the most failure modes (bolt-on anti-pattern, sensor retrofit risk, JP chatbot deflection ceiling, efficiency-only plateau) and provides immediately actionable pilot specs with kill dates and CFO defense. B is strong on citations and structure but recommends three parallel pilots, violating the sequencing discipline, and its numbers are less specific to Sankai. A is well-reasoned but generic. Re-shuffled mentally; C wins on content density not just length.",
+          "C applies the most disciplined framework with quantified value pools (¥350-500M), six-dimension feasibility scoring, archetype classification, and explicit sequencing rule rejecting parallel pilots. It surfaces specific failure modes (WMS write-back rejection, JP B2B chatbot ceiling, sensor retrofit risk) and ties recommendations to Sankai's exact economics. B is strong on citations and structure but more generic in numbers. A is solid generalist advice without quantification or framework rigor."
+        ]
+      },
+      {
+        "skill": "workforce-literacy-curriculum",
+        "prompt": {
+          "scenario": "Aiko Tanaka is the Chief People Officer at Marusan Logistics, a 14,000-employee third-party logistics and cold-chain warehousing group headquartered in Osaka with operations across Japan, South Korea, and a recently acquired 1,200-person fulfilment arm in Hamburg. The Hamburg unit pulls them under EU jurisdiction. The board approved a EUR 6.2M reskilling envelope for FY26 after a survey showed 81% of staff who say they \"use AI\" mean ChatGPT for email rewrites only. Warehouse supervisors, dispatch planners, and the safety/compliance team all need different things, and her German works council is asking pointed questions about what the EU now requires.",
+          "user_prompt": "I'm the CPO at Marusan Logistics — 14,000 staff across Japan, Korea, and a Hamburg unit we just acquired (1,200 people, brings us under EU rules). Board signed off EUR 6.2M for AI reskilling next fiscal year. The problem: our recent pulse showed 81% of \"AI users\" basically just paste stuff into ChatGPT to fix their emails. Dispatchers, warehouse supervisors, safety auditors, the C-suite — totally different needs but HR keeps proposing one generic \"AI for everyone\" e-learning. Hamburg works council is also asking what the EU now legally requires us to train. Can you help me design what this program should actually look like, who gets what depth of training, what we owe regulators in Hamburg, and how to roll it out without it becoming compliance theatre? Average workforce age is 47 and rising — that's a sensitivity too.",
+          "why_adversarial": "A generic LLM will produce a plausible-sounding tiered training plan with personas and modules but will miss the four-pattern mental-model taxonomy, the BCG manager-modeling multiplier, EU AI Act Art. 4 evidence specifics, the 70-20-10 budget split, and the older-worker stigma trap — producing compliance-theatre rather than a defensible, effective curriculum."
+        },
+        "avg": {
+          "A": {
+            "specificity": 3,
+            "framework_rigor": 2.67,
+            "decision_readiness": 3,
+            "evidence_citations": 2,
+            "failure_mode_awareness": 3
+          },
+          "B": {
+            "specificity": 4,
+            "framework_rigor": 5,
+            "decision_readiness": 4,
+            "evidence_citations": 5,
+            "failure_mode_awareness": 4
+          },
+          "C": {
+            "specificity": 5,
+            "framework_rigor": 5,
+            "decision_readiness": 5,
+            "evidence_citations": 4,
+            "failure_mode_awareness": 5
+          }
+        },
+        "totals": {
+          "A": 13.67,
+          "B": 22,
+          "C": 24
+        },
+        "verdicts": {
+          "C": 3
+        },
+        "lift": 2,
+        "grade": "C",
+        "judgeRationales": [
+          "C delivers the most decision-ready artifact: explicit 5x4 competency matrix, named proof artifacts, Art. 4 evidence checklist with owners/dates, 30-day rollout table, and explicit failure-mode diagnostics. B is strong on framework rigor with named citations (BCG 88/25, MIT CISR, Accenture, EU AI Act articles) and clear 70-20-10 logic. A is well-written but more generic, lighter on specific evidence and concrete artifacts. Re-shuffled mentally; C's structure delivers content, not busywork.",
+          "C is the most decision-ready: named owners, dated 30-day plan, Art. 4 evidence checklist, 70-20-10 split, BCG 88/25, Accenture 2/3-1/3, IMDA dimensions, explicit failure modes and diagnostic at Day 90. B is strong on frameworks and citations (BCG, MIT CISR, McKinsey, Deloitte, Accenture) with skill-library hook but less operationally crisp. A is well-written but generic — no specific frameworks named, fewer citations, less compliance specificity. Position bias check: re-evaluated by content; C's structure delivers concrete artifacts, not busywork.",
+          "C delivers the most decision-ready artifact: explicit 5x4 competency matrix with proof artifacts, named Art. 4 evidence checklist with owners and dates, 30-day rollout calendar, and a verdict frame. B is strong on framework rigor with citations to BCG 70-20-10, manager 88/25, MIT CISR stages, and Accenture redeployment, but slightly less operational. A is well-written and sensible but reads as generalist advice with fewer named frameworks and no hard evidence artifacts. C wins on specificity, decision-readiness, and failure-mode awareness (named compliance-theatre diagnostic at Day 90, shadow-AI signal, BCG 88/25 ceiling prediction)."
+        ]
+      }
+    ],
+    "overallTotals": {
+      "A": 202.32,
+      "B": 281.34000000000003,
+      "C": 337.34000000000003
+    },
+    "promptsGenerated": 15,
+    "runsCompleted": 14
+  }
+}

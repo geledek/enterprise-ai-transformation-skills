@@ -38,8 +38,8 @@ BCG's Build for the Future × AI 2026 flagship research. Core findings on the AI
 
 ## When to consult
 
-- For skill `readiness-conversation`: the Future-Built/Traditionalist diagnostic is the rapid senior-team positioning tool.
-- For skill `maturity-assessment`: BCG's Future-Built archetype maps against Accenture's AI Achiever quadrant and MIT CISR's Stage 3–4.
+- For skill `people-readiness-conversation`: the Future-Built/Traditionalist diagnostic is the rapid senior-team positioning tool.
+- For skill `general-maturity-assessment`: BCG's Future-Built archetype maps against Accenture's AI Achiever quadrant and MIT CISR's Stage 3–4.
 
 ## Source
 

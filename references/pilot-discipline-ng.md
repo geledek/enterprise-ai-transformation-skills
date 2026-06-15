@@ -34,8 +34,8 @@ At kickoff, answer:
 
 ## When to consult
 
-- For skill `pilot-design`: this is the full reference for pilot structure — all seven checklist items are the output format.
-- For skill `ai-idea-diagnostic`: Q4 (capability check) asks whether the org can execute a disciplined 90-day pilot on this concept.
+- For skill `process-pilot-design`: this is the full reference for pilot structure — all seven checklist items are the output format.
+- For skill `general-idea-diagnostic`: Q4 (capability check) asks whether the org can execute a disciplined 90-day pilot on this concept.
 
 ## Source
 

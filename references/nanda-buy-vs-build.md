@@ -27,8 +27,8 @@ MIT NANDA 2025's empirical finding on the build vs. buy decision for GenAI: firm
 
 ## When to consult
 
-- For skill `buy-vs-build`: this is the primary empirical anchor for the BUY recommendation and vendor-archetype selection.
-- For skill `stack-diagnostic`: the 2:1 finding reframes "build vs. buy" as a stack diagnostic question — where in the stack does the value actually live?
+- For skill `tech-buy-vs-build`: this is the primary empirical anchor for the BUY recommendation and vendor-archetype selection.
+- For skill `tech-stack-diagnostic`: the 2:1 finding reframes "build vs. buy" as a stack diagnostic question — where in the stack does the value actually live?
 
 ## Source
 

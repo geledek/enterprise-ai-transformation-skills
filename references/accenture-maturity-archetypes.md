@@ -46,8 +46,8 @@ Source: Accenture Art of AI Maturity 2022, Figure 3, p.10.
 
 ## When to consult
 
-- For skill `maturity-assessment`: the Accenture 2×2 is one of the two primary maturity frameworks (alongside MIT-CISR's four stages). Use it to identify the binding constraint — Foundation or Differentiation.
-- For skill `readiness-conversation`: the Differentiation diagnostic (sponsorship, mandatory training, innovation culture) maps directly to the 4-role readiness gap report.
+- For skill `general-maturity-assessment`: the Accenture 2×2 is one of the two primary maturity frameworks (alongside MIT-CISR's four stages). Use it to identify the binding constraint — Foundation or Differentiation.
+- For skill `people-readiness-conversation`: the Differentiation diagnostic (sponsorship, mandatory training, innovation culture) maps directly to the 4-role readiness gap report.
 
 ## Source
 

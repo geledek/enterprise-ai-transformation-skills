@@ -20,9 +20,9 @@ BCG Build for the Future × AI 2026 finding: of the total value AI creates in an
 
 ## When to consult
 
-- For skill `readiness-conversation`: anchor the conversation in the 70/20/10 finding when surfacing why people gaps matter disproportionately.
-- For skill `stack-diagnostic`: use the 10% figure to calibrate expectations — a perfect tech stack won't rescue a 70% people gap.
-- For skill `maturity-assessment`: the 70/20/10 split is the interpretive frame for why Stage 2 → Stage 3 stalls in organizations with strong tech but weak people/process investment.
+- For skill `people-readiness-conversation`: anchor the conversation in the 70/20/10 finding when surfacing why people gaps matter disproportionately.
+- For skill `tech-stack-diagnostic`: use the 10% figure to calibrate expectations — a perfect tech stack won't rescue a 70% people gap.
+- For skill `general-maturity-assessment`: the 70/20/10 split is the interpretive frame for why Stage 2 → Stage 3 stalls in organizations with strong tech but weak people/process investment.
 
 ## Source
 

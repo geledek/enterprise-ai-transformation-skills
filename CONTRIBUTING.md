@@ -10,7 +10,7 @@ Copy a research extract into `references/`, following the file shape in `referen
 
 ### 2. Add diagnostic cases
 
-Drop a diagnosed case file into `skills/ai-idea-diagnostic/cases/`. Use the existing case format (frontmatter + outcome summary + Q1–Q4 assessment + verdict). The `ai-idea-diagnostic` skill will reference the closest case at synthesis time.
+Drop a diagnosed case file into `skills/general-idea-diagnostic/cases/`. Use the existing case format (frontmatter + outcome summary + Q1–Q4 assessment + verdict). The `general-idea-diagnostic` skill will reference the closest case at synthesis time.
 
 ### 3. Fork a skill
 
@@ -19,7 +19,7 @@ Copy any `SKILL.md`, rename it, and adjust:
 - Role instructions (add sector-specific context, internal process names, role titles)
 - Reference pointers (point to your own reference files or internal docs)
 
-Example forks: sector-specific (`ai-idea-diagnostic-healthtech`), internal process-aware (`roi-gate-[company]`), role-specific (`readiness-conversation-board`).
+Example forks: sector-specific (`general-idea-diagnostic-healthtech`), internal process-aware (`roi-gate-[company]`), role-specific (`people-readiness-conversation-board`).
 
 ## What not to change in a fork
 
@@ -46,5 +46,5 @@ PRs not accepted for:
 
 Examples:
 - `references: add stanford-51-deployments extract`
-- `roi-gate-pwc: tighten Q3 measurement prompt`
-- `ai-idea-diagnostic: add healthtech case`
+- `general-roi-gate: tighten Q3 measurement prompt`
+- `general-idea-diagnostic: add healthtech case`

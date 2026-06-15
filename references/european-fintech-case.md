@@ -35,9 +35,9 @@ This is the canonical measurement-gap failure: metrics defined post-deployment, 
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: Q3 (measurement check) — name the three metrics that prove this is working and audit whether they would naturally get tracked.
-- For skill `pilot-design`: pre-deployment metric definition is the make-or-break step in pilot design.
-- For skill `roi-gate-pwc`: the measurement-gap is the failure mode PwC's Do #4 (monitor and iterate) is designed to prevent.
+- For skill `general-idea-diagnostic`: Q3 (measurement check) — name the three metrics that prove this is working and audit whether they would naturally get tracked.
+- For skill `process-pilot-design`: pre-deployment metric definition is the make-or-break step in pilot design.
+- For skill `general-roi-gate`: the measurement-gap is the failure mode PwC's Do #4 (monitor and iterate) is designed to prevent.
 
 ## Source
 

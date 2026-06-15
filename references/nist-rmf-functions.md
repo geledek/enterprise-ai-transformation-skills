@@ -38,8 +38,8 @@ MAP outputs feed MEASURE, MEASURE outputs feed MANAGE, MANAGE outcomes loop back
 
 ## When to consult
 
-- For skill `agent-guardrail-imda`: NIST RMF GOVERN and MANAGE functions map against IMDA Dimensions 2 and 3 — use both together.
-- For skill `stack-diagnostic`: the MEASURE and MANAGE functions define what ongoing stack oversight looks like post-deployment.
+- For skill `tech-agent-guardrail`: NIST RMF GOVERN and MANAGE functions map against IMDA Dimensions 2 and 3 — use both together.
+- For skill `tech-stack-diagnostic`: the MEASURE and MANAGE functions define what ongoing stack oversight looks like post-deployment.
 
 ## Source
 

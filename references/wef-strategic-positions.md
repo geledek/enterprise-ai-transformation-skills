@@ -29,8 +29,8 @@ WEF/BCG 2026 framework: AI reconfigures value chains; firms must make *explicit*
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: Q3 (value accumulates?) should ask whether the initiative builds toward the firm's named strategic position.
-- For skill `maturity-assessment`: a mature firm should be able to state its strategic position; if it can't, this is a Differentiation gap (Accenture Innovator failure pattern).
+- For skill `general-idea-diagnostic`: Q3 (value accumulates?) should ask whether the initiative builds toward the firm's named strategic position.
+- For skill `general-maturity-assessment`: a mature firm should be able to state its strategic position; if it can't, this is a Differentiation gap (Accenture Innovator failure pattern).
 
 ## Source
 

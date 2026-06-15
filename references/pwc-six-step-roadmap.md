@@ -32,9 +32,9 @@ Source: PwC Agentic AI Playbook 2026 and PwC ROI 2026.
 
 ## When to consult
 
-- For skill `pilot-design`: Step 4 defines pilot discipline.
-- For skill `roi-gate-pwc`: Steps 1–3 are the pre-gate prerequisites; the 20-item checklist is the Step 4 gate.
-- For skill `maturity-assessment`: the six steps map directly against MIT-CISR's four stages and Accenture's archetypes.
+- For skill `process-pilot-design`: Step 4 defines pilot discipline.
+- For skill `general-roi-gate`: Steps 1–3 are the pre-gate prerequisites; the 20-item checklist is the Step 4 gate.
+- For skill `general-maturity-assessment`: the six steps map directly against MIT-CISR's four stages and Accenture's archetypes.
 
 ## Source
 

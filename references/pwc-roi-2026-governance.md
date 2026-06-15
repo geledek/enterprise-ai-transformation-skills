@@ -20,9 +20,9 @@ PwC's 2026 ROI research covering the relationship between AI governance maturity
 
 ## When to consult
 
-- For skill `agent-guardrail-imda`: the 1.7× finding is the business case for governance investment — governance from day 1, not at deployment gate.
-- For skill `roi-gate-pwc`: reference the 1.6× vs. 2.6× finding when setting value objectives — aim for reinvention, not efficiency-only.
-- For skill `maturity-assessment`: the six-step roadmap maps against maturity stages.
+- For skill `tech-agent-guardrail`: the 1.7× finding is the business case for governance investment — governance from day 1, not at deployment gate.
+- For skill `general-roi-gate`: reference the 1.6× vs. 2.6× finding when setting value objectives — aim for reinvention, not efficiency-only.
+- For skill `general-maturity-assessment`: the six-step roadmap maps against maturity stages.
 
 ## Source
 

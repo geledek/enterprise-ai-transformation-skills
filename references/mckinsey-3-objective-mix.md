@@ -40,9 +40,9 @@ PwC ROI 2026 confirms McKinsey's lens empirically: efficiency-only produces a 1.
 
 ## When to consult
 
-- For skill `ai-idea-diagnostic`: map the proposed initiative to one of the three objective types. Efficiency-only gets a lower Q3 score unless it has a moat-building dimension.
-- For skill `maturity-assessment`: a mature firm's portfolio should include growth/innovation objectives; pure efficiency signals a Stage 2 plateau.
-- For skill `readiness-conversation`: use the objective-mix audit to surface strategic positioning gaps at the CEO level.
+- For skill `general-idea-diagnostic`: map the proposed initiative to one of the three objective types. Efficiency-only gets a lower Q3 score unless it has a moat-building dimension.
+- For skill `general-maturity-assessment`: a mature firm's portfolio should include growth/innovation objectives; pure efficiency signals a Stage 2 plateau.
+- For skill `people-readiness-conversation`: use the objective-mix audit to surface strategic positioning gaps at the CEO level.
 
 ## Source
 

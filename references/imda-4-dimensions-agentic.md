@@ -51,9 +51,9 @@ Source: IMDA Agentic AI Framework 2026, p.13.
 
 ## When to consult
 
-- For skill `agent-guardrail-imda`: this IS the core content — the skill operationalizes all four dimensions as a structured assessment.
-- For skill `stack-diagnostic`: Dimension 3 (technical controls) maps to the oversight and ops layers of the stack.
-- For skill `readiness-conversation`: Dimension 2 (human accountability) surfaces the governance-ownership gap in leadership teams.
+- For skill `tech-agent-guardrail`: this IS the core content — the skill operationalizes all four dimensions as a structured assessment.
+- For skill `tech-stack-diagnostic`: Dimension 3 (technical controls) maps to the oversight and ops layers of the stack.
+- For skill `people-readiness-conversation`: Dimension 2 (human accountability) surfaces the governance-ownership gap in leadership teams.
 
 ## Source
 
