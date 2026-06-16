@@ -3,7 +3,7 @@ name: people-readiness-conversation
 description: Use when assessing an organization's leadership readiness for AI transformation, surfacing where people and leadership gaps will block AI progress, preparing for a leadership team AI conversation, or diagnosing why AI investments aren't creating value despite good technology. Phrases like "is our leadership team ready for AI?", "surface AI readiness gaps in our leadership team", "help me understand where our people gaps are on AI", "prepare me for a leadership team AI conversation", "why aren't we getting value from AI despite our investment?", "assess AI readiness in our organization" all trigger this skill. Runs a four-role gap analysis (CEO / Manager / Employee / HR) with diagnostic questions for each role. Outputs a 4-role gap report with specific actions per gap.
 ---
 
-# AI Leadership Readiness Conversation
+# People — AI Leadership Readiness Conversation
 
 Surface the people and leadership gaps that will block AI progress, regardless of how good the technology is. Four roles. Specific diagnostic questions. Actionable gap report.
 

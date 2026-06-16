@@ -1,4 +1,4 @@
-# Agent Guardrail (IMDA)
+# Tech — Agentic AI Governance Check (IMDA)
 
 IMDA's four-dimension agentic AI governance check, adapted for enterprise deployment decisions.
 

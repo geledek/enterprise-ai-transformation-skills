@@ -3,7 +3,7 @@ name: general-peer-cases
 description: Use when a leader asks for named peer cases, comparable deployments, or analog stories before making a selection or build decision. Phrases like "how have others done this?", "show me cases from similar orgs", "what peer examples exist for this use case?", "I want to learn from others' experiences", "exchange best practices on AI deployment", "any Stanford / named case studies on this?" all trigger this skill. Retrieves 3-5 named peer cases matched on vertical / org-size / use-case archetype, extracts cross-case patterns against the 95/5 base rate, and outputs a curated case bundle plus a closest-match action recommendation.
 ---
 
-# Peer Case Library
+# General — Peer Case Library
 
 Surface relevant named peer cases for the asker's situation. Output what worked, what failed, what they would do differently — and which single case is the closest analog.
 

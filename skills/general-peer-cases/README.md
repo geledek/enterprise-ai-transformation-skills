@@ -1,4 +1,4 @@
-# Peer Case Library
+# General — Peer Case Library
 
 Retrieves named peer cases matched on archetype/vertical/size, then names the closest analog and what to copy or change.
 

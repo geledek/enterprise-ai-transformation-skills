@@ -3,7 +3,7 @@ name: general-use-case-discovery
 description: Use when a leader cannot decide where to point AI first across a function or business unit. Phrases like "how to focus on areas where AI can be utilized", "finding a useful productive case use", "knowing what to adopt and how to use agentic", "decide among the myriad of choices", "which use case should we pilot first", all trigger this skill. Generates, scores and ranks candidate AI use cases through four sequential roles — Value-Pool Mapper, Capability Archetype Classifier, Feasibility & Moat Scorer, Portfolio Sequencer — and outputs a TOP-3 ranked portfolio with first-pilot pick, why-not-others, and kill list.
 ---
 
-# Use-Case Discovery
+# General — Use-Case Discovery
 
 Most enterprises drown in candidate ideas and pilot the wrong one. MIT's 95/5 finding shows 95% of GenAI pilots return zero P&L impact — the failure is upstream, in selection. Stanford's 51-deployment study shows winners cluster around narrow, repetitive, measurable workflows. Run the four roles below before committing budget.
 

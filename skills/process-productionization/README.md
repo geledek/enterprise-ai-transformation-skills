@@ -1,4 +1,4 @@
-# Pilot-to-Production Playbook
+# Process — Pilot-to-Production Playbook
 
 A 5-stage playbook for moving a working AI prototype past demo-ware into SLO-bound production with named owners and a go-live verdict.
 

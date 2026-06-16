@@ -3,7 +3,7 @@ name: tech-agent-guardrail
 description: Use when deploying an AI agent, reviewing agentic AI governance, checking whether an AI agent deployment is safe and well-governed, or assessing whether an organization's oversight of autonomous AI systems is adequate. Phrases like "check the governance on this agent deployment", "is our agentic AI safe to deploy?", "review guardrails for this AI agent", "we're about to launch an AI agent — what do we need to have in place?", "help me assess our agentic AI oversight" all trigger this skill. Runs IMDA's four-dimension agentic governance check across risk bounding, human accountability, technical controls, and end-user responsibility. Outputs a governance readiness assessment with gaps and required actions.
 ---
 
-# Agentic AI Governance Check (IMDA)
+# Tech — Agentic AI Governance Check (IMDA)
 
 A four-dimension governance assessment for any AI agent deployment. Runs IMDA's Model AI Governance Framework (Agentic AI, 2026) iteratively across the agent lifecycle.
 

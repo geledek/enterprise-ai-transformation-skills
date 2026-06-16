@@ -3,7 +3,7 @@ name: people-frontline-engagement
 description: Use when frontline experts — clinicians, investigators, lawyers, engineers, customer agents — fear AI replacement, deskilling, or accountability shift, and the rollout is stalling on resistance rather than tech. Phrases like "clinicians are afraid AI will replace them", "how do I integrate AI into a high-stakes clinical workflow without revolt?", "the team thinks this is automation in disguise", "senior staff are blocking the AI pilot", "we need buy-in from the frontline before we deploy", all trigger this skill. Runs a five-role engagement protocol — empathic listening, jagged-frontier task split, co-design workshop, psychological-safety contract, tradecraft protection — that turns the threatened expert into the co-author of the augmentation. Outputs an Engagement Plan, an AI-leads/Human-leads/Hybrid/Off-limits task split, and a written Safety Contract.
 ---
 
-# Frontline Augmentation Engagement
+# People — Frontline Augmentation Engagement
 
 A five-role protocol for engaging fearful or skeptical frontline experts as co-designers of an augmentation workflow rather than targets of automation. Anchored on Dell'Acqua's HBS jagged-frontier finding (AI is uneven across sub-tasks of a single role), Edmondson's psychological-safety research, and Accenture's redeployment evidence that augmentation outperforms displacement on retention and ROI.
 

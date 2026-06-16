@@ -3,7 +3,7 @@ name: general-maturity-assessment
 description: Use when plotting an organization's AI maturity stage, assessing where an org sits on the AI capability curve, benchmarking AI progress against industry peers, setting AI strategy ambition level, or preparing a board-level AI readiness briefing. Phrases like "where are we on the AI maturity curve?", "assess our AI maturity", "benchmark our AI progress", "what stage are we at for AI?", "help me understand how mature our AI capabilities are", "prepare a board briefing on our AI readiness" all trigger this skill. Runs MIT CISR's four-stage model alongside Accenture's Foundation × Differentiation 2×2, surfaces the binding constraint (platform gap vs. strategy gap), and outputs a maturity placement with a prioritized roadmap to the next stage.
 ---
 
-# AI Maturity Assessment
+# General — AI Maturity Assessment
 
 Plot the organization on the AI maturity curve. Identify the binding constraint. Build the roadmap to the next stage.
 

@@ -1,4 +1,4 @@
-# Workforce AI Literacy Curriculum
+# People — Workforce AI Literacy Curriculum
 
 Designs a role-anchored AI literacy program that satisfies EU AI Act Art. 4 and breaks the chatbot-only usage pattern.
 

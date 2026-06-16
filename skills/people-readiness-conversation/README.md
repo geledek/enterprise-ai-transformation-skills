@@ -1,4 +1,4 @@
-# AI Leadership Readiness Conversation
+# People — AI Leadership Readiness Conversation
 
 A four-role people and leadership gap analysis. Surfaces where CEO, manager, employee, and HR readiness gaps will block AI progress, regardless of technology quality.
 

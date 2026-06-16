@@ -3,7 +3,7 @@ name: process-portfolio-observability
 description: Use when an enterprise has shipped AI agents but cannot see usage, cost, or ROI at the portfolio level. Phrases like "we deployed agents but can't see them", "unclear ROI on our AI", "token spend is exploding", "governance dashboard for AI", "how do we track agent performance", "what's the net ROI after oversight" all trigger this skill. Builds a three-layer KPI tree, dashboard spec, and review cadence that subtracts human-oversight cost from gross gains — outputs a portfolio observability blueprint with sunset criteria and an Observable-and-governed / Partial-observability / Black-box verdict.
 ---
 
-# AI Portfolio Observability
+# Process — AI Portfolio Observability
 
 Most enterprises run AI like a black box: they ship agents, they pay tokens, they cannot answer "what did this earn us net of oversight?" PwC's 2026 ROI guidance is explicit — *gross* productivity is not the number; **net-of-oversight ROI** is. The european fintech case shows the trap: 40% deflection headline, 22% CSAT drop, net value negative. This skill builds the instrumentation that exposes that math before the board does.
 

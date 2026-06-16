@@ -3,7 +3,7 @@ name: general-roi-gate
 description: Use when approving or rejecting an AI investment proposal, greenlighting an AI program for funding, evaluating whether an AI initiative should proceed to production, or reviewing an AI business case before board or executive sign-off. Phrases like "should we fund this AI project?", "run the ROI gate on this", "is this AI investment justified?", "we're about to approve AI spending for X", "help me evaluate this AI business case" all trigger this skill. Runs PwC's 20-item Do's-and-Don'ts checklist plus a three-channel ROI model and objective-mode audit. Outputs an approval recommendation with named conditions and red flags.
 ---
 
-# AI Investment ROI Gate (PwC)
+# General — AI Investment ROI Gate (PwC)
 
 A pre-flight risk gate before greenlighting any AI investment. Runs PwC's 20-item checklist, a three-channel ROI model, and an objective-mode audit. An unanswered item is itself a red flag.
 

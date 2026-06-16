@@ -1,4 +1,4 @@
-# Data-Trust Deployment Pattern
+# Tech — Data-Trust Deployment Pattern
 
 A four-dimension assignment of data sensitivity to one of five deployment tiers, with the minimum control stack and a deployment-pattern verdict.
 

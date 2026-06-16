@@ -3,7 +3,7 @@ name: people-literacy-curriculum
 description: Use when designing AI literacy training, addressing workforce that "uses AI as a chatbot only", responding to EU AI Act Art. 4 mandatory literacy duty, building role-based AI upskilling, or fixing low-awareness symptoms across executives/managers/frontline. Phrases like "our employees only use AI as a chatbot", "we need an AI literacy program", "what does EU AI Act Art. 4 require us to train", "build a role-based AI curriculum", "how do we get older workers up to speed on AI", "design an AI training rollout" all trigger this skill. Builds a four-pattern mental-model taxonomy (chatbot / RAG / workflow / agent) crossed with role segments, then outputs a curriculum spec, EU AI Act Art. 4 compliance footprint, and 30-day rollout plan.
 ---
 
-# Workforce AI Literacy Curriculum
+# People — Workforce AI Literacy Curriculum
 
 Design a role-anchored AI literacy program that satisfies EU AI Act Art. 4 (mandatory literacy duty, in force since 2 Feb 2025) AND fixes the "chatbot-only" usage pattern that strands organizations on the wrong side of the MIT 95% GenAI divide.
 

@@ -3,7 +3,7 @@ name: tech-data-deployment
 description: Use when matching enterprise data sensitivity to AI deployment pattern, deciding whether a use case can run on consumer ChatGPT vs enterprise SaaS vs VPC vs air-gapped, suppressing shadow AI, or specifying the control stack required per data class. Phrases like "can we use ChatGPT for this?", "is this data safe for an enterprise SaaS LLM?", "what controls do we need for PII/PHI in this AI workflow?", "consumer-tier vs enterprise-tier tool — which one applies?", "shadow-AI is everywhere, how do we sanction tools?", "what deployment pattern fits regulated data?" all trigger this skill. Maps each data sensitivity class to one of five deployment tiers, names the minimum control stack per tier under NIST AI RMF / ISO 42001 / EU AI Act, and outputs a deployment-pattern verdict (Approved / Conditional / Blocked) with a control checklist and regulatory citations.
 ---
 
-# Data-Trust Deployment Pattern
+# Tech — Data-Trust Deployment Pattern
 
 A four-dimension assignment of data sensitivity class to deployment pattern with explicit per-tier controls. Anchored to NIST AI RMF (GOVERN/MAP/MEASURE/MANAGE), ISO/IEC 42001, EU AI Act risk tiers, and IMDA Model AI Governance Framework + GenAI Companion.
 

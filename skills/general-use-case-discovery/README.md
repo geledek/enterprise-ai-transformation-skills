@@ -1,4 +1,4 @@
-# Use-Case Discovery
+# General — Use-Case Discovery
 
 Generates, scores, and ranks AI use-case candidates through four sequential roles into a TOP-3 portfolio.
 

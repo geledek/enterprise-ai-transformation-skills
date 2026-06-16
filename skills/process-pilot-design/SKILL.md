@@ -3,7 +3,7 @@ name: process-pilot-design
 description: Use when designing an AI pilot, structuring a proof-of-concept, or preparing to test an AI idea before full investment. Phrases like "how should we structure this pilot?", "what does a 90-day AI pilot look like?", "help me design the test for this AI initiative?", "we want to pilot AI for X — what do we need?", "what metrics should we track?" all trigger this skill. Runs a structured 7-question pilot design protocol: scope, problem, pre-deployment metrics, blast radius, stop conditions, workflow redesign, ownership. Outputs a one-page pilot brief ready for sponsor approval.
 ---
 
-# AI Pilot Design
+# Process — AI Pilot Design
 
 Design a 90-day AI pilot with pre-deployment metrics, stop conditions, and workflow redesign baked in. Seven questions. One-page output ready for sponsor approval.
 

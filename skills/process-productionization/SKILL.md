@@ -3,7 +3,7 @@ name: process-productionization
 description: Use when moving an AI prototype past demo-ware into production with reliability, fallbacks, and on-call. Phrases like "demo works but production breaks", "need SLOs and evals", "AI still makes mistakes so benefit unclear", "fallback and human-in-loop design", "staged rollout plan", "go-live readiness gate" all trigger this skill. Runs the 5-stage pilot-to-production playbook anchored in Stanford's 51-deployments postmortem and NIST RMF MANAGE controls. Outputs a go-live verdict, remediation list, and week-by-week rollout schedule.
 ---
 
-# Pilot-to-Production Playbook
+# Process — Pilot-to-Production Playbook
 
 Take a working prototype to production-grade. Stanford's 51-deployment study found most failures happen *after* the demo: missing SLOs, no fallback path, no on-call, project team disbands before product team forms. NIST RMF MANAGE 2.4 mandates off-path handling. This playbook closes the gap with 5 stages and a 15-item go-live gate.
 

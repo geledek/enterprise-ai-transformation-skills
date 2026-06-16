@@ -1,4 +1,4 @@
-# Frontline Augmentation Engagement
+# People — Frontline Augmentation Engagement
 
 A five-role engagement protocol that turns fearful frontline experts into co-authors of an augmentation workflow.
 

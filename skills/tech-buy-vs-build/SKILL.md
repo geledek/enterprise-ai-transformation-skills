@@ -3,7 +3,7 @@ name: tech-buy-vs-build
 description: Use when deciding whether to build AI capability in-house, buy it from a vendor, or partner for it. Phrases like "should we build or buy this AI?", "should we train our own model or use an API?", "which vendor should we use for AI?", "help me decide on the AI sourcing strategy", "we're choosing between building vs. buying AI — which is right?" all trigger this skill. Applies the NANDA 2:1 evidence and vendor-archetype taxonomy to produce a BUILD / BUY / PARTNER recommendation with investment rationale.
 ---
 
-# Buy vs. Build (AI Sourcing)
+# Tech — Buy vs. Build (AI Sourcing)
 
 Decide whether to build AI capability in-house, buy from a vendor, or partner. Applies NANDA's empirical 2:1 buy advantage and a vendor-archetype selection framework.
 

@@ -1,4 +1,4 @@
-# Buy vs. Build
+# Tech — Buy vs. Build (AI Sourcing)
 
 A four-role AI sourcing decision framework. Applies NANDA's 2:1 buy evidence and a vendor-archetype taxonomy to produce a BUILD / BUY / PARTNER recommendation.
 

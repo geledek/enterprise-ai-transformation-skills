@@ -3,7 +3,7 @@ name: tech-stack-diagnostic
 description: Use when assessing an organization's AI technology infrastructure, diagnosing why AI pilots aren't scaling, evaluating technical readiness before a major AI investment, or identifying the weakest layer in the AI stack. Phrases like "diagnose our AI tech stack", "why isn't our AI scaling?", "assess our AI infrastructure", "where are we technically on AI?", "what are our biggest tech gaps for AI?", "review our AI architecture" all trigger this skill. Walks the full six-layer stack — data, model, orchestration, tools, oversight, operations — surfaces the weakest link, and outputs a prioritized remediation plan.
 ---
 
-# AI Stack Diagnostic
+# Tech — AI Stack Diagnostic
 
 Diagnose the full enterprise AI technology stack across six layers. The model is the smallest part of the problem. Data and orchestration are where most organizations are blocked.
 

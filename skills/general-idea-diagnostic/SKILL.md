@@ -3,7 +3,7 @@ name: general-idea-diagnostic
 description: Use when evaluating an AI idea, AI concept, or early-stage AI proposal — before any pilot design or investment decision. Phrases like "should we pursue this AI idea?", "is this AI concept worth exploring?", "does this AI use case make sense?", "we're thinking about building AI for X — is it a good idea?" all trigger this skill. Diagnoses using a five-role framework — Investigator (real friction), Devil's Advocate (right solution mode), Long-term Strategist (value accumulates), Realist (right capability), Senior Advisor (synthesis verdict). Outputs Fund / Fund-with-condition / Reframe / Kill.
 ---
 
-# AI Idea Diagnostic
+# General — AI Idea Diagnostic
 
 Diagnose an AI idea at concept stage — before pilot design, before investment, before any build decision. Five sequential roles. Maintain all prior reasoning as state — each role builds on the previous.
 

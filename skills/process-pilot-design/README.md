@@ -1,4 +1,4 @@
-# Pilot Design
+# Process — AI Pilot Design
 
 A seven-role structured protocol for designing a 90-day AI pilot with pre-deployment metrics, stop conditions, and workflow redesign.
 

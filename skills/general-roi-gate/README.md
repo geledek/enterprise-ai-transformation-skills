@@ -1,4 +1,4 @@
-# ROI Gate (PwC)
+# General — AI Investment ROI Gate (PwC)
 
 A three-role investment approval gate: objective-mode audit, three-channel ROI model, PwC 20-item checklist. Outputs a formal Approve / Approve-with-conditions / Return-for-revision / Reject recommendation.
 

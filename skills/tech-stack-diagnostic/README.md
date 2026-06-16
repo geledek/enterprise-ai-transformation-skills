@@ -1,4 +1,4 @@
-# Stack Diagnostic
+# Tech — AI Stack Diagnostic
 
 A six-layer AI technology stack assessment: data, model, orchestration, tools, oversight, operations. Surfaces the weakest link and outputs a prioritized remediation plan.
 

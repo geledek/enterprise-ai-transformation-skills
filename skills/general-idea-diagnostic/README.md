@@ -1,4 +1,4 @@
-# AI Idea Diagnostic
+# General — AI Idea Diagnostic
 
 A five-role concept gate for AI ideas — before any pilot design or investment decision.
 

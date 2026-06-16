@@ -1,4 +1,4 @@
-# AI Maturity Assessment
+# General — AI Maturity Assessment
 
 A four-part organizational AI maturity assessment using MIT CISR's four-stage model and Accenture's Foundation × Differentiation 2×2. Identifies the binding constraint and outputs a stage-advancement roadmap.
 
