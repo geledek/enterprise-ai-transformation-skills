@@ -58,11 +58,11 @@ After restart, test each skill with its trigger phrase. Skills are grouped by bu
 
 ## Claude Desktop
 
-1. Open Claude Desktop → **Customize** (left sidebar) → **Plugins** tab
-2. Click **Browse plugins** or **Upload custom plugin**
+1. Open Claude Desktop → **Customization** (left sidebar)
+2. Click **Add plugin** (`+`) → **Create Plugin** → **Add Marketplace** → **Add from a repository**
 3. Paste this URL when prompted:
    `https://github.com/geledek/enterprise-ai-transformation-skills`
-4. Restart Claude Desktop. All 15 skills activate automatically.
+4. Restart Claude Desktop. All 15 skills activate automatically from their trigger phrases.
 
 Requires a paid plan (Pro, Max, Team, or Enterprise). See [Claude plugin docs](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
 

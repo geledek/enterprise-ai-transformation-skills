@@ -51,7 +51,7 @@ If your question hits multiple rows, run the **higher one first** — it sets co
 
 ### Install once
 
-**Claude Desktop (easiest)** — Customize → Plugins → Upload custom plugin → paste:
+**Claude Desktop (easiest)** — Customization → **Add plugin** (`+`) → **Create Plugin** → **Add Marketplace** → **Add from a repository** → paste:
 ```
 https://github.com/geledek/enterprise-ai-transformation-skills
 ```
