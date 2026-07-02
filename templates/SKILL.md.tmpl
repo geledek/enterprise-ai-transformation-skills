@@ -1,0 +1,65 @@
+---
+name: <bucket>-<skill-slug>
+description: Use when <the situation this skill addresses>. Phrases like "<trigger phrase 1>", "<trigger phrase 2>", "<trigger phrase 3>" all trigger this skill. <One sentence on the method — e.g. "Runs a four-role gap analysis (X / Y / Z / W)">. Outputs <the verdict vocabulary or artifact — e.g. "Fund / Reframe / Kill" or "a 90-day pilot plan with Day 30/60/90 gates">.
+---
+
+# <Bucket> — <Human-Readable Title>
+
+<One-paragraph statement of what this skill does and when it runs. Name the
+methodology: N sequential roles / steps. State that prior reasoning is
+maintained as context — each role builds on the previous. Instruct the model
+to complete all roles without stopping.>
+
+---
+
+## Role 1: <Role Name> (<the question this role answers>)
+
+<Instructions for this role. Be imperative and specific. Where a claim rests
+on research, cite the reference file by bare filename:>
+*Consult `<reference-file>.md` — <one-line reminder of what it contains>.*
+
+Output:
+<PIPE | SEPARATED | SECTION | LABELS>
+
+---
+
+## Role 2: <Role Name> (<question>)
+
+<...repeat per role. Keep 4–7 roles. The final role is always a synthesis
+that reads the prior outputs and produces the verdict — it must not introduce
+new assessment.>
+
+---
+
+## Role N: <Synthesis Role Name>
+
+Read the outputs of Roles 1 to N-1. Produce the verdict. Do not introduce new
+assessment here. Write for a board audience. Be direct.
+
+VERDICT: [<Verdict-1> / <Verdict-2> / <Verdict-3>]
+
+<2-sentence summaries per prior role's question>
+
+STRONGEST LINK: <where the subject is most solid>
+WEAKEST LINK: <where it is most at risk of failing silently>
+ONE CHANGE: <specific action — not a general recommendation>
+
+---
+
+## References
+
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
+- `<reference-file>.md` — <one line on what it contributes to this skill>
+
+<!--
+Checklist before opening a PR (CI enforces most of this via scripts/validate.py):
+  [ ] Directory name matches frontmatter `name` and carries a bucket prefix
+  [ ] description ≤ 1024 chars and contains the trigger phrases
+  [ ] Every cited reference file exists in references/ and has an _index.md row
+  [ ] Skill added to BOTH .claude-plugin/plugin.json and marketplace.json
+  [ ] README.md added next to this file; README + INSTALL.md tables updated
+  [ ] Verdict vocabulary does not collide with another gating skill's
+      (see "Cross-skill cautions" in the root README)
+  [ ] Trigger prompt + expected output shape added to tests/golden-prompts.md
+-->

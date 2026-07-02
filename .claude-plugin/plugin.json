@@ -6,6 +6,18 @@
   "author": "Ray Han",
   "license": "MIT",
   "homepage": "https://github.com/geledek/enterprise-ai-transformation-skills",
+  "repository": "https://github.com/geledek/enterprise-ai-transformation-skills",
+  "keywords": [
+    "enterprise-ai",
+    "ai-transformation",
+    "ai-governance",
+    "ai-strategy",
+    "roi",
+    "pilot-design",
+    "eu-ai-act",
+    "nist-ai-rmf",
+    "decision-frameworks"
+  ],
   "skills": [
     "skills/general-idea-diagnostic",
     "skills/general-use-case-discovery",

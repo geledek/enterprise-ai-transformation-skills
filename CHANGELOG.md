@@ -6,6 +6,12 @@ All notable changes to this plugin are documented here.
 
 ### Added
 - `scripts/validate.py` + GitHub Action (`.github/workflows/validate.yml`) — CI consistency check on every push/PR: every reference pointer in a SKILL.md resolves, `_index.md` consumer columns match actual citations, plugin manifests match the `skills/` directories, versions agree across manifests, and skill frontmatter is well-formed.
+- `CLAUDE.md` — repo conventions for Claude Code sessions (bucket prefixes, reference-pointer rule, verdict-vocabulary stability, validator, release flow).
+- `templates/SKILL.md.tmpl` — starting point for new skills, with frontmatter shape, role structure, and a pre-PR checklist.
+- `scripts/bump_version.py` — single-command version bump across `plugin.json`, `marketplace.json`, and the changelog.
+- `tests/golden-prompts.md` — one trigger prompt per skill plus its output contract, for regression-checking skill edits.
+- Each SKILL.md References section now states where reference files live (`${CLAUDE_PLUGIN_ROOT}/references/`), making retrieval deterministic when installed as a plugin.
+- Plugin manifest metadata: `repository` + `keywords` in `plugin.json`, owner email in `marketplace.json`.
 
 ### Fixed
 - **Broken reference pointer.** Three skills (`tech-buy-vs-build`, `tech-stack-diagnostic`, `general-peer-cases`) and `references/_index.md` cited `nanda-tech-buy-vs-build.md`, but the file on disk was named `nanda-buy-vs-build.md`. The file has been renamed to match the citations.

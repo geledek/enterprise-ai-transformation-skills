@@ -14,7 +14,8 @@ Drop a diagnosed case file into `skills/general-idea-diagnostic/cases/`. Use the
 
 ### 3. Fork a skill
 
-Copy any `SKILL.md`, rename it, and adjust:
+Start from `templates/SKILL.md.tmpl` (it carries the frontmatter shape, role
+structure, and a pre-PR checklist), or copy any `SKILL.md`, rename it, and adjust:
 - `name` and `description` frontmatter
 - Role instructions (add sector-specific context, internal process names, role titles)
 - Reference pointers (point to your own reference files or internal docs)
@@ -39,6 +40,20 @@ PRs not accepted for:
 - Removing the MIT license or attribution
 - Breaking changes to existing skill output shapes
 - Vendor-specific promotions
+
+## Before opening a PR
+
+Run the consistency validator — CI runs the same script and will reject drift:
+
+```bash
+python3 scripts/validate.py
+```
+
+It checks that every reference pointer resolves, `references/_index.md`
+matches actual citations, the plugin manifests match the `skills/`
+directories, and frontmatter is well-formed. If you changed a skill's
+behavior, re-run its row from `tests/golden-prompts.md` and confirm the
+verdict vocabulary is unchanged.
 
 ## Commit style
 
