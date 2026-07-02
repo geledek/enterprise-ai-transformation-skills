@@ -2,7 +2,7 @@
 
 All notable changes to this plugin are documented here.
 
-## [Unreleased]
+## [0.4.0] — 2026-07-02
 
 ### Added
 - `scripts/validate.py` + GitHub Action (`.github/workflows/validate.yml`) — CI consistency check on every push/PR: every reference pointer in a SKILL.md resolves, `_index.md` consumer columns match actual citations, plugin manifests match the `skills/` directories, versions agree across manifests, and skill frontmatter is well-formed.
