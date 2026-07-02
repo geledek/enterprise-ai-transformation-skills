@@ -145,6 +145,8 @@ PROFILE | CASE BUNDLE | CROSS-CASE LESSONS | CLOSEST-MATCH ACTION | CONFIDENCE |
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `stanford-51-deployments.md` — 51-deployment study; 77% invisible-cost finding; canonical retrieved-case set.
 - `95-5-genai-divide.md` — base-rate anchor: 95% of pilots produce zero measurable P&L impact; 5% breakthrough criteria.
 - `european-fintech-case.md` — canonical Replace-mode case: 700 agents replaced, CSAT -22%, hiring resumed; the measurement-gap failure mode.

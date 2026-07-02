@@ -145,6 +145,8 @@ CURRENT STATE SUMMARY | TARGET STATE | CAPABILITY GAPS (ordered) | BOLD GOAL | R
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `mit-cisr-4-stages.md` — four-stage model; performance data; Stage 3 inflection; DBS/Ping An exemplars
 - `accenture-maturity-archetypes.md` — Foundation × Differentiation 2×2; archetype definitions; Achiever performance premium
 - `mckinsey-3-objective-mix.md` — efficiency/growth/innovation objective mix

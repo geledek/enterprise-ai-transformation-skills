@@ -178,6 +178,8 @@ VERDICT | ASSIGNED TIER | CONTROL CHECKLIST | REGULATORY CITATIONS | SANCTIONED-
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `nist-rmf-functions.md` — GOVERN / MAP / MEASURE / MANAGE; MEASURE 2.7 privacy, 2.10 security; MANAGE 2.4 off-path.
 - `eu-ai-act-essentials.md` — Art. 4 literacy; Art. 12 logging; Art. 14 oversight; Art. 26 deployer obligations; risk tiers.
 - `imda-4-dimensions-agentic.md` — technical controls dimension; GenAI Companion provenance + data quality.

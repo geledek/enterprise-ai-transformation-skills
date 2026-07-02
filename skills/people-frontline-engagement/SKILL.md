@@ -169,6 +169,8 @@ VERDICT | ENGAGEMENT PLAN | FOUR-COLUMN TASK SPLIT | SAFETY CONTRACT | TRADECRAF
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `stanford-51-deployments.md` — 77% of deployment costs are invisible (change, trust, redesign); tradecraft preservation as first-class deliverable
 - `imda-4-dimensions-agentic.md` — named human accountability (Dimension 2); structural over prompt-layer controls
 - `bcg-manager-modeling.md` — leader-speaks-last norm; manager modeling as the unlock for frontline adoption

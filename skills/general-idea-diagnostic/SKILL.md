@@ -127,6 +127,8 @@ See `cases/` for diagnosed examples. When diagnosing a new idea, compare against
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `95-5-genai-divide.md` — empirical basis for why rigorous gating matters: 95% of pilots produce zero measurable P&L impact
 - `european-fintech-case.md` — canonical measurement-gap failure case
 - `mckinsey-3-objective-mix.md` — objective-mode classification (efficiency / growth / innovation)

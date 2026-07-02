@@ -151,6 +151,8 @@ READINESS VERDICT | GAPS LIST | CRITICAL GAPS | REGULATORY OBLIGATIONS TRIGGERED
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `imda-4-dimensions-agentic.md` — the four-dimension governance framework (IMDA 2026)
 - `eu-ai-act-essentials.md` — Art. 4 literacy obligation; Art. 26 deployer obligations; risk tiers
 - `nist-rmf-functions.md` — GOVERN, MANAGE functions; MANAGE 2.4 (off-path requirement)

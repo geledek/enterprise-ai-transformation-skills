@@ -161,6 +161,8 @@ STACK SCORECARD | WEAKEST LINK | MATURITY STAGE IMPLICATION | REMEDIATION PRIORI
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `ai-stack-layers.md` — the six-layer framework reference
 - `nanda-tech-buy-vs-build.md` — 2:1 buy advantage; orchestration-as-moat
 - `accenture-redeployment-roi.md` — AI core case study (5 vs. 18 months)

@@ -82,6 +82,8 @@ KPI_TREE | DASHBOARD_SPEC | REVIEW_CADENCE | SUNSET_CRITERIA | STATE: Observable
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `pwc-roi-2026-governance.md` — net-of-oversight ROI as the disclosure-grade number; gross ROI no longer defensible.
 - `pwc-20-item-checklist.md` — 20-item governance audit; items 11–16 cover input/output/outcome KPI wiring.
 - `imda-4-dimensions-agentic.md` — Dimension 4 structural controls (bounded tools, bounded budget, kill-switch) maps to dashboard guardrails.

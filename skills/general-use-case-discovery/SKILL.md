@@ -101,6 +101,8 @@ Default stance: if fewer than 3 candidates clear the bar, return what you have a
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - mckinsey-3-objective-mix.md — productivity / growth / transformation portfolio balance, ~50/30/20 default.
 - andrew-ng-three-moats.md — proprietary data, workflow embedding, distribution as the only durable moats in applied AI.
 - pilot-discipline-ng.md — narrow + reversible + measurable + owned filter for first-pilot selection.

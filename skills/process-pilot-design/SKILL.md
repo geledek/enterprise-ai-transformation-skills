@@ -154,6 +154,8 @@ Produce a one-page pilot brief from Roles 1–6. Write for sponsor approval. Be 
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `95-5-genai-divide.md` — Scope × Execution Grid; 90-day timeline; narrow-scope success patterns
 - `stanford-51-deployments.md` — invisible-costs; workflow-redesign-first; pre-deployment metrics discipline
 - `european-fintech-case.md` — measurement-gap reference case

@@ -95,6 +95,8 @@ The deliverable is a one-page go-live memo with the verdict, the remediation lis
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - stanford-51-deployments.md — Stanford's postmortem of 51 enterprise AI deployments; root causes of post-launch failure.
 - imda-4-dimensions-agentic.md — IMDA's structural-controls dimension covering kill-switch, human-confirm, scope-fence.
 - nist-rmf-functions.md — NIST AI RMF; MANAGE 2.4 mandates off-path procedures and incident response.

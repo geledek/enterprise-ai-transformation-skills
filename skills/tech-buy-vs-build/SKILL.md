@@ -109,6 +109,8 @@ SOURCING STRATEGY | MOAT ASSESSMENT | RISK FLAGS | RECOMMENDED NEXT ACTION
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `nanda-tech-buy-vs-build.md` — 2:1 buy advantage; orchestration as moat; vendor archetypes
 - `95-5-genai-divide.md` — empirical basis for buy advantage
 - `andrew-ng-three-moats.md` — moat types; "buy the model, build the orchestration" principle

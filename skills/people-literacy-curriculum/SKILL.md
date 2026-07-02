@@ -155,6 +155,8 @@ Verdict states:
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - eu-ai-act-essentials.md — Art. 4 mandatory literacy duty, scope, refresh, evidence requirements.
 - bcg-manager-modeling.md — 88/25 finding; manager weekly use as the adoption multiplier.
 - deloitte-cheerleader-to-champion.md — 30% champion-level executive sponsorship as ceiling on adoption.

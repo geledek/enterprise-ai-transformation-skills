@@ -119,6 +119,8 @@ RECOMMENDATION | CONDITIONS (if any) | RED FLAGS (if any) | VERDICT RATIONALE
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `pwc-20-item-checklist.md` — the full 20-item Do's and Don'ts list
 - `pwc-roi-2026-governance.md` — 1.6× vs. 2.6× productivity gap; 1.7× RAI governance advantage
 - `mckinsey-3-objective-mix.md` — efficiency / growth / innovation objective classification

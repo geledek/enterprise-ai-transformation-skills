@@ -134,6 +134,8 @@ Consolidate Roles 1–4. Write for CEO or CHRO audience.
 
 ## References
 
+*All files below live in `references/` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/references/` when installed as a plugin).*
+
 - `70-20-10-value-split.md` — BCG 70% people value; context for why these gaps matter
 - `bcg-manager-modeling.md` — 88/25 role-modeling gap; specific manager behaviors
 - `mckinsey-3x-senior-ownership.md` — 3× CEO ownership differential
