@@ -2,7 +2,7 @@
 
 All notable changes to this plugin are documented here.
 
-## [Unreleased]
+## [0.5.0] — 2026-07-02
 
 ### Added
 - Routing (negative-trigger) tests in `tests/golden-prompts.md` — nine prompts that must route to one skill and must NOT activate its adjacent sibling (tool-selection vs. literacy-curriculum, idea-diagnostic vs. roi-gate, data-deployment vs. agent-guardrail, …), plus a dormancy check. Inspired by the book-to-skill ecosystem's activation/dormancy testing.
