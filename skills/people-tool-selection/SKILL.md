@@ -12,6 +12,8 @@ Two structural rules that govern the whole diagnosis:
 1. **Constraints eliminate before capability ranks.** A tool that fails a hard constraint (cost, ecosystem, setup, language, data, IT policy) is out regardless of how capable it is. Do not build a weighted matrix that lets capability buy back a failed constraint.
 2. **Measure delta from the group's baseline, not absolute capability.** A tool that improves artifacts the group can already make competes with "just teach better prompting." A tool that unlocks a new artifact class at near-zero effort wins the session.
 
+Mode vocabulary: **Deepen / Extend / Introduce**. Verdict vocabulary (stable output contract): **Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip**. For build/buy/partner sourcing use `tech-buy-vs-build`; for enterprise-wide curriculum design use `people-literacy-curriculum`.
+
 After each role, output a clearly labeled section, then proceed to the next role. Do not stop until all six are complete.
 
 ---

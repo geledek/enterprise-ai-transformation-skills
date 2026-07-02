@@ -7,6 +7,8 @@ description: Use when moving an AI prototype past demo-ware into production with
 
 Take a working prototype to production-grade. Stanford's 51-deployment study found most failures happen *after* the demo: missing SLOs, no fallback path, no on-call, project team disbands before product team forms. NIST RMF MANAGE 2.4 mandates off-path handling. This playbook closes the gap with 5 stages and a 15-item go-live gate.
 
+Verdict vocabulary (stable output contract): **GO / CONDITIONAL GO / NO-GO**, with remediation list and week-by-week rollout schedule.
+
 ## Stage 1: SLO & Eval Definition
 
 Demos optimize for the happy path. Production needs measured floors and ceilings. *Consult `pilot-discipline-ng.md`: every pilot needs pre-declared success metrics or it cannot graduate.*

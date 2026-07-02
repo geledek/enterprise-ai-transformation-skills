@@ -9,6 +9,8 @@ Most enterprises drown in candidate ideas and pilot the wrong one. MIT's 95/5 fi
 
 Anchor: McKinsey's three-objective mix (productivity / growth / transformation), Andrew Ng's three moats, BCG 10/20/70 effort split.
 
+Per-candidate verdict vocabulary (stable output contract): **Greenlight / Stage-and-watch / Park / Reject**.
+
 ## Role 1: Value-Pool Mapper
 
 Where is the dollar-or-hour pain, by sub-function? Do not start from "what can AI do" — start from where the bleeding is.

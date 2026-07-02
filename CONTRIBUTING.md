@@ -22,6 +22,25 @@ structure, and a pre-PR checklist), or copy any `SKILL.md`, rename it, and adjus
 
 Example forks: sector-specific (`general-idea-diagnostic-healthtech`), internal process-aware (`roi-gate-[company]`), role-specific (`people-readiness-conversation-board`).
 
+### 4. Distill a new skill from a book or your own practice
+
+The skills here are distilled decision processes. To add one, answer five
+questions before writing any role (the full version lives in
+`templates/SKILL.md.tmpl`):
+
+1. What decision does the skill gate, and who stands behind the verdict?
+2. What are the sequential questions? Each "because" in the original reasoning becomes a role.
+3. Which criteria are hard filters (eliminate) vs. ranking criteria (compare)? Keep them in separate roles.
+4. Which failure modes deserve their own role?
+5. What verdict vocabulary fits — without colliding with another skill's?
+
+Then define 2–3 **negative triggers** — adjacent prompts that must route to a
+*different* skill — and add them to the routing table in
+`tests/golden-prompts.md`. Before merging, confirm the skill reproduces the
+case that inspired it, and that one counterfactual (a changed input) flips the
+verdict. `skills/people-tool-selection/` with its `cases/` file is the worked
+example of this process.
+
 ## What not to change in a fork
 
 - The structural role sequence — it's the methodology, not a style choice

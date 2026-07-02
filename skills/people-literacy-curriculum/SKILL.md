@@ -9,6 +9,8 @@ Design a role-anchored AI literacy program that satisfies EU AI Act Art. 4 (mand
 
 Anchor: BCG 88/25 manager role-modeling — 88% of managers say role-modeling AI matters, only 25% do it visibly; weekly-AI-use rates jumped 55%→72% YoY in cohorts where managers used the tools themselves. Training without manager role-modeling is theatre.
 
+Verdict vocabulary (stable output contract): **Compliant-and-effective / Compliant-not-effective / Non-compliant**. This designs the enterprise-wide *program*; for choosing which single tool to put in front of a specific group, use `people-tool-selection`.
+
 ---
 
 ## Step 1: Mental-Model Taxonomy

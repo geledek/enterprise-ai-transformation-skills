@@ -9,6 +9,8 @@ Diagnose the full enterprise AI technology stack across six layers. The model is
 
 Walk each layer. Score it. Surface the weakest link. A chain breaks where the weakest link breaks — and most chains break at data or orchestration, not at the model.
 
+Output contract (stable): six per-layer scores (**STRONG / ADEQUATE / GAP / BLOCKING**), naming the single weakest layer and its remediation priority.
+
 ---
 
 ## Layer 1: Data Foundation

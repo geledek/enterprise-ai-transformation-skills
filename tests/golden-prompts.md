@@ -45,3 +45,22 @@ comparable across versions.
 | `people-literacy-curriculum` | "We need an AI literacy program that satisfies EU AI Act Article 4." | Role-based curriculum + Art. 4 evidence plan; verdict **Compliant-and-effective / Compliant-not-effective / Non-compliant** |
 | `people-frontline-engagement` | "Our senior lawyers are openly hostile to the contract-review AI. What now?" | Co-design engagement plan incl. pilot-window no-headcount-cut clause; verdict **Co-designed / Imposed-with-resistance / Stalled** |
 | `people-tool-selection` | "I'm training school teachers who already use ChatGPT — should I teach advanced prompting, agent skills, or a new tool?" | 6 roles; constraints eliminate before capability ranks; mode **Deepen / Extend / Introduce**; verdict **Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip** + first-win exercise + growth path |
+
+## Routing prompts — must NOT misfire
+
+With 16 skills, the failure mode isn't just "skill doesn't trigger" — it's the
+*adjacent* skill triggering instead. Each prompt below must route to the skill
+in column 2 and must NOT activate the skill in column 3. Run these after
+editing any frontmatter `description` (that's what Claude routes on).
+
+| Prompt | Must route to | Must NOT trigger | Boundary being tested |
+|---|---|---|---|
+| "Which AI tool should I teach this group of nurses?" | `people-tool-selection` | `people-literacy-curriculum` | Single tool for one group vs. enterprise-wide program design |
+| "Build a role-based AI literacy curriculum for the whole company" | `people-literacy-curriculum` | `people-tool-selection` | Same boundary, opposite direction |
+| "Should we build or buy this AI capability?" | `tech-buy-vs-build` | `people-tool-selection` | Sourcing decision vs. group-adoption decision |
+| "Should we pursue this AI idea at all?" | `general-idea-diagnostic` | `general-roi-gate` | Concept-stage gating vs. investment approval |
+| "The idea is validated — run the funding gate on the proposal" | `general-roi-gate` | `general-idea-diagnostic` | Same boundary, opposite direction |
+| "Where can this customer data legally run — ChatGPT or VPC?" | `tech-data-deployment` | `tech-agent-guardrail` | Where data runs vs. how an agent is governed |
+| "We're launching an autonomous agent next month — is it safely governed?" | `tech-agent-guardrail` | `tech-data-deployment` | Same boundary, opposite direction |
+| "Design a 90-day pilot for the claims summarizer" | `process-pilot-design` | `process-productionization` | Pilot structuring vs. post-demo production hardening |
+| "Refactor this Python function to use a dict lookup" | *(none)* | any of the 16 | Dormancy check — unrelated engineering work must not activate the plugin |

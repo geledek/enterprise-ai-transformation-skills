@@ -9,6 +9,8 @@ A four-dimension governance assessment for any AI agent deployment. Runs IMDA's 
 
 The framework is iterative — not a one-time gate. If anomalies appear in monitoring (Dimension 3), re-run Dimensions 1 and 2.
 
+Verdict vocabulary (stable output contract): **Deploy / Deploy-with-conditions / Do-not-deploy-until-gaps-addressed**. This governs the *agent's* autonomy and accountability; where the underlying *data* may legally run is `tech-data-deployment`.
+
 ---
 
 ## Dimension 1: Assess and Bound the Risks Upfront

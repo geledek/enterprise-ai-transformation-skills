@@ -9,6 +9,8 @@ Surface the people and leadership gaps that will block AI progress, regardless o
 
 BCG 2026: 70% of AI value comes from People. The 88/25 manager role-modeling gap is the most actionable single lever. Most organizations that under-perform on AI have a technology that works and people who don't.
 
+Per-layer rating vocabulary (stable output contract): **STRONG / DEVELOPING / CRITICAL-GAP**.
+
 ---
 
 ## Role 1: CEO Readiness — Champion vs. Cheerleader

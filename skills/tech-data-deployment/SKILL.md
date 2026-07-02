@@ -9,6 +9,8 @@ A four-dimension assignment of data sensitivity class to deployment pattern with
 
 Empirical anchor: BCG 2025 broad-use-vs-value gap — 88% of organizations use AI broadly, only ~25% capture material value; the gap is largely a data-trust and deployment-pattern gap, not a model gap. (Distinct from the BCG 88/25 *manager role-modeling* finding cited in `people-readiness-conversation` and `people-literacy-curriculum`.) MIT 95% — most enterprise GenAI pilots fail to reach production, and shadow-AI usage runs ~2x sanctioned usage in the surveyed cohort.
 
+Verdict vocabulary (stable output contract): **Approved / Conditional / Blocked**, with assigned deployment tier and per-tier control checklist.
+
 ---
 
 ## Dimension 1: Data Sensitivity Classification

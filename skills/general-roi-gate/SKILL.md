@@ -9,6 +9,8 @@ A pre-flight risk gate before greenlighting any AI investment. Runs PwC's 20-ite
 
 This skill gates *funding decisions* — after the idea has been assessed (use `general-idea-diagnostic` for concept-stage gating) and after a pilot brief exists (use `process-pilot-design` for pilot structuring). This is the investment-approval gate.
 
+Verdict vocabulary (stable output contract): **Approve / Approve-with-conditions / Return-for-revision / Reject**.
+
 ---
 
 ## Role 1: Objective-Mode Audit

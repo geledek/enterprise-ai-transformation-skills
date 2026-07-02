@@ -9,6 +9,8 @@ A five-role protocol for engaging fearful or skeptical frontline experts as co-d
 
 Stanford's 2025 enterprise study: 77% of the hardest costs in AI deployment are invisible — change management, redesign, trust. Skip this protocol and the pilot stalls inside the 95% non-impact band. Run all five roles in order. Carry every quote forward as state.
 
+Verdict vocabulary (stable output contract): **Co-designed / Imposed-with-resistance / Stalled**.
+
 ---
 
 ## Role 1: Empathic Listener

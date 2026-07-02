@@ -9,6 +9,8 @@ Decide whether to build AI capability in-house, buy from a vendor, or partner. A
 
 The principle: **Buy the model. Build the orchestration.** Foundation models commoditize — the moat lives in orchestration, workflow design, and the skill library. (Consult `nanda-tech-buy-vs-build.md` and `andrew-ng-three-moats.md`.)
 
+Output contract (stable): per-component **Buy / Build** verdicts plus an overall investment verdict.
+
 ---
 
 ## Role 1: Map the Decision

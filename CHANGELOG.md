@@ -5,7 +5,13 @@ All notable changes to this plugin are documented here.
 ## [Unreleased]
 
 ### Added
+- Routing (negative-trigger) tests in `tests/golden-prompts.md` — nine prompts that must route to one skill and must NOT activate its adjacent sibling (tool-selection vs. literacy-curriculum, idea-diagnostic vs. roi-gate, data-deployment vs. agent-guardrail, …), plus a dormancy check. Inspired by the book-to-skill ecosystem's activation/dormancy testing.
+- Size-budget warning in `scripts/validate.py` — non-fatal WARN when a SKILL.md exceeds ~4K tokens (16K chars), keeping skills one-gulp loadable.
+- Distillation guide — the five extraction questions for turning a book, framework, or real decision into a skill, in `templates/SKILL.md.tmpl` and `CONTRIBUTING.md`, with negative-trigger and counterfactual-reproduction requirements in the pre-PR checklist.
 - **New skill: `people-tool-selection`** — six-role selector for choosing which AI tool to put in front of a specific user group (training cohort, team, department). Constraint-first method: hard eliminators (cost, ecosystem, setup friction, data, language, IT policy) filter candidates before capability comparison; then picks an intervention mode (Deepen / Extend / Introduce) and ranks survivors by new-artifact delta per unit of friction. Outputs Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip plus a first-win exercise and growth path. Ships with the Mongolian-teachers reference case (NotebookLM chosen over advanced prompting, agent skills, and Manus). Skill count is now 16.
+
+### Changed
+- All 16 SKILL.md files now front-load their output contract — verdict vocabulary (and boundary pointers to adjacent skills) stated before Role 1, so the contract survives context compaction.
 
 ## [0.4.0] — 2026-07-02
 

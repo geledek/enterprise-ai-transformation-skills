@@ -10,6 +10,12 @@ methodology: N sequential roles / steps. State that prior reasoning is
 maintained as context — each role builds on the previous. Instruct the model
 to complete all roles without stopping.>
 
+Verdict vocabulary (stable output contract): **<Verdict-1> / <Verdict-2> /
+<Verdict-3>**. <Where an adjacent skill exists, one boundary line: "For
+<adjacent situation> use `<other-skill>`."> <This contract line must stay
+before Role 1 — context compaction truncates from the end, so front-load
+what must survive.>
+
 ---
 
 ## Role 1: <Role Name> (<the question this role answers>)
@@ -53,13 +59,31 @@ ONE CHANGE: <specific action — not a general recommendation>
 - `<reference-file>.md` — <one line on what it contributes to this skill>
 
 <!--
+Distilling a method into a skill (from a book, a framework, or a decision you
+actually made) — answer these five questions before writing any role:
+  1. What decision does this skill gate, and who stands behind the verdict?
+  2. What are the sequential questions? Each "because" in the original
+     reasoning becomes a role question.
+  3. Which criteria are hard filters (eliminate candidates) and which are
+     ranking criteria (compare survivors)? Keep them in separate roles —
+     never let a ranking score buy back a failed filter.
+  4. Which failure modes are common enough to deserve their own role?
+  5. What verdict vocabulary fits the decision — and does it collide with
+     another gating skill's?
+
 Checklist before opening a PR (CI enforces most of this via scripts/validate.py):
   [ ] Directory name matches frontmatter `name` and carries a bucket prefix
   [ ] description ≤ 1024 chars and contains the trigger phrases
+  [ ] Output contract (verdict vocabulary + boundary lines) stated BEFORE Role 1
+  [ ] SKILL.md body within ~16K chars (~4K tokens) — validate.py warns above
   [ ] Every cited reference file exists in references/ and has an _index.md row
   [ ] Skill added to BOTH .claude-plugin/plugin.json and marketplace.json
   [ ] README.md added next to this file; README + INSTALL.md tables updated
   [ ] Verdict vocabulary does not collide with another gating skill's
       (see "Cross-skill cautions" in the root README)
   [ ] Trigger prompt + expected output shape added to tests/golden-prompts.md
+  [ ] 2–3 negative triggers defined — adjacent prompts that must route to a
+      DIFFERENT skill — added to the routing table in tests/golden-prompts.md
+  [ ] Skill reproduces its originating case, and one counterfactual (a changed
+      input that must flip the verdict) behaves as expected
 -->

@@ -9,6 +9,8 @@ Design a 90-day AI pilot with pre-deployment metrics, stop conditions, and workf
 
 The discipline: narrow scope, pre-deployment metrics, workflow redesign before technology. AI bolted onto a legacy workflow is the #1 process failure mode (Stanford AI Index 2026 — consult `stanford-51-deployments.md`).
 
+Output contract (stable): a one-page plan with Day 30 / Day 60 / Day 90 gates, pre-deployment metrics, stop conditions, and a pass/fail verdict criterion.
+
 ---
 
 ## Role 1: Scope and Problem Framing

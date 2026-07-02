@@ -13,6 +13,8 @@ Checks:
   5. plugin.json version == marketplace.json metadata.version.
   6. Every skill has SKILL.md + README.md; frontmatter `name` matches the
      directory name; `description` present and <= 1024 chars.
+  7. WARN (non-fatal) when a SKILL.md body exceeds ~4K tokens — skills should
+     stay loadable in one gulp; density over completeness.
 
 Exits non-zero with a list of failures if anything is inconsistent.
 """
@@ -23,11 +25,17 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SKILL_SIZE_BUDGET = 16_000  # chars, ~4K tokens
 errors = []
+warnings = []
 
 
 def err(msg: str) -> None:
     errors.append(msg)
+
+
+def warn(msg: str) -> None:
+    warnings.append(msg)
 
 
 def frontmatter(text: str) -> dict:
@@ -69,6 +77,13 @@ for skill in skill_names:
         err(f"skills/{skill}/SKILL.md: missing frontmatter description")
     elif len(desc) > 1024:
         err(f"skills/{skill}/SKILL.md: description is {len(desc)} chars (limit 1024)")
+
+    # check 7: size budget (warning only)
+    if len(body) > SKILL_SIZE_BUDGET:
+        warn(
+            f"skills/{skill}/SKILL.md is {len(body):,} chars "
+            f"(budget {SKILL_SIZE_BUDGET:,} ≈ 4K tokens) — consider moving detail to references/ or cases/"
+        )
 
     # check 1: every backticked .md pointer resolves
     for ref in set(re.findall(r"`([a-z0-9-]+\.md)`", body)):
@@ -143,6 +158,8 @@ if pv != mv:
     err(f"version drift — plugin.json has {pv!r}, marketplace.json has {mv!r}")
 
 # ---- report ---------------------------------------------------------------
+for w in warnings:
+    print(f"  WARN - {w}")
 if errors:
     print(f"FAIL — {len(errors)} issue(s):\n")
     for e in errors:

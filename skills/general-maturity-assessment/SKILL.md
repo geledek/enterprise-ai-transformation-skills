@@ -9,6 +9,8 @@ Plot the organization on the AI maturity curve. Identify the binding constraint.
 
 Two complementary frameworks: MIT CISR's four-stage sequential model (where are we, and what is next?) + Accenture's Foundation × Differentiation 2×2 (what is the binding constraint that's keeping us here?). Use both — they answer different questions.
 
+Output contract (stable): MIT CISR stage placement (**Stage 1 / Stage 2 / Stage 3 / Stage 4**) plus Accenture archetype, with named next-stage actions.
+
 ---
 
 ## Part 1: MIT CISR Stage Placement

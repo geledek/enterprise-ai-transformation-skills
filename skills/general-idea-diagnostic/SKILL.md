@@ -7,6 +7,8 @@ description: Use when evaluating an AI idea, AI concept, or early-stage AI propo
 
 Diagnose an AI idea at concept stage — before pilot design, before investment, before any build decision. Five sequential roles. Maintain all prior reasoning as state — each role builds on the previous.
 
+Verdict vocabulary (stable output contract): **Fund / Fund-with-condition / Reframe / Kill**, plus solution mode **Replace / Augment / Create**. This gates the *concept*; the funding decision comes later — use `general-roi-gate` for investment approval.
+
 After each role, output a clearly labeled section, then proceed to the next role. Do not stop until all five are complete.
 
 ---

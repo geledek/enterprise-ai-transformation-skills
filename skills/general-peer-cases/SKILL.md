@@ -11,6 +11,8 @@ Anchor base rate: 95% of GenAI pilots produce zero measurable P&L impact (MIT 20
 
 The library is bundled in `references/`. Pull cases by archetype match — not by name recall.
 
+Output contract (stable): asker profile, case bundle, cross-case patterns, and a confidence state — including **No-analog-found** when fewer than 3 archetype matches exist.
+
 ---
 
 ## Step 1: Asker Profile

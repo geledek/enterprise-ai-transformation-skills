@@ -9,6 +9,8 @@ Most enterprises run AI like a black box: they ship agents, they pay tokens, the
 
 Anchor: PwC three-channel ROI (efficiency + growth + revenue) minus oversight cost; IMDA Dimension 4 structural controls; NIST RMF MANAGE function on continuous monitoring; 70/20/10 *portfolio mix* prior (70% core / 20% adjacent / 10% transformational — not to be confused with BCG's 10/20/70 *effort split* used in `general-use-case-discovery` and `general-peer-cases`, or `people-literacy-curriculum`'s 70-20-10 *training-budget* split).
 
+Verdict vocabulary (stable output contract): **Observable-and-governed / Partial-observability / Black-box**.
+
 ## Dimension 1: KPI Tree Construction
 
 Every initiative gets three connected layers. If any layer is missing, the agent is unobservable by definition.
