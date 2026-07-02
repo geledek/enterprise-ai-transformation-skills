@@ -16,27 +16,27 @@ Skills reference files by name only — no relative paths. Example pointer in a 
 
 | File | Contents | Primary for skill | Also consulted by |
 |---|---|---|---|
-| `70-20-10-value-split.md` | BCG 70/20/10 People/Process/Tech value split | — | people-readiness-conversation, tech-stack-diagnostic, general-maturity-assessment |
-| `95-5-genai-divide.md` | MIT NANDA 95% zero P&L + Scope × Execution Grid | process-pilot-design | general-idea-diagnostic, general-roi-gate, tech-buy-vs-build |
-| `nanda-tech-buy-vs-build.md` | 2:1 buy advantage; orchestration-as-moat | tech-buy-vs-build | tech-stack-diagnostic |
-| `pwc-roi-2026-governance.md` | 1.7× RAI advantage; 1.6× vs. 2.6× productivity gap | — | tech-agent-guardrail, general-roi-gate, general-maturity-assessment |
-| `pwc-20-item-checklist.md` | PwC 10 Do's + 10 Don'ts (full checklist) | general-roi-gate | process-pilot-design |
-| `andrew-ng-three-moats.md` | Three AI moat types (portfolio/industry/virtuous cycle) | — | general-idea-diagnostic, tech-buy-vs-build, general-maturity-assessment |
-| `wef-strategic-positions.md` | WEF/BCG positional choice; strategic dilution risk | — | general-idea-diagnostic, general-maturity-assessment |
-| `pwc-six-step-roadmap.md` | PwC six-step AI ROI pathway | — | process-pilot-design, general-roi-gate, general-maturity-assessment |
-| `stanford-51-deployments.md` | 51 deployments; invisible costs (77%); workflow-redesign-first | — | process-pilot-design, general-idea-diagnostic, general-roi-gate |
-| `bcg-manager-modeling.md` | 88/25 manager role-modeling gap | — | people-readiness-conversation, general-maturity-assessment |
-| `deloitte-cheerleader-to-champion.md` | CEO champion vs. cheerleader; HR's 5 jobs; 74/21 governance gap | — | people-readiness-conversation, general-maturity-assessment |
-| `mckinsey-3x-senior-ownership.md` | 3× CEO ownership differential; AI high-performer archetype | — | people-readiness-conversation, general-maturity-assessment |
-| `mckinsey-3-objective-mix.md` | Efficiency / Growth / Innovation objective mix; 80% efficiency-only | — | general-idea-diagnostic, general-maturity-assessment, people-readiness-conversation |
-| `imda-4-dimensions-agentic.md` | IMDA four dimensions of agentic AI governance | tech-agent-guardrail | — |
-| `eu-ai-act-essentials.md` | Art. 4 literacy obligation; risk tiers; deployer obligations | — | tech-agent-guardrail, people-readiness-conversation |
-| `nist-rmf-functions.md` | NIST AI RMF: GOVERN / MAP / MEASURE / MANAGE | — | tech-agent-guardrail, tech-stack-diagnostic |
+| `70-20-10-value-split.md` | BCG 70/20/10 People/Process/Tech value split | — | people-literacy-curriculum, people-readiness-conversation, process-portfolio-observability |
+| `95-5-genai-divide.md` | MIT NANDA 95% zero P&L + Scope × Execution Grid | process-pilot-design | general-idea-diagnostic, general-peer-cases, tech-buy-vs-build |
+| `nanda-tech-buy-vs-build.md` | 2:1 buy advantage; orchestration-as-moat | tech-buy-vs-build | general-peer-cases, tech-stack-diagnostic |
+| `pwc-roi-2026-governance.md` | 1.7× RAI advantage; 1.6× vs. 2.6× productivity gap | — | general-maturity-assessment, general-roi-gate, process-portfolio-observability, tech-agent-guardrail |
+| `pwc-20-item-checklist.md` | PwC 10 Do's + 10 Don'ts (full checklist) | general-roi-gate | process-portfolio-observability, process-productionization, tech-data-deployment |
+| `andrew-ng-three-moats.md` | Three AI moat types (portfolio/industry/virtuous cycle) | — | general-idea-diagnostic, general-use-case-discovery, tech-buy-vs-build |
+| `wef-strategic-positions.md` | WEF/BCG positional choice; strategic dilution risk | — | — (not currently cited by any skill) |
+| `pwc-six-step-roadmap.md` | PwC six-step AI ROI pathway | — | — (not currently cited by any skill) |
+| `stanford-51-deployments.md` | 51 deployments; invisible costs (77%); workflow-redesign-first | — | general-idea-diagnostic, general-peer-cases, general-roi-gate, general-use-case-discovery, people-frontline-engagement, process-pilot-design, process-productionization |
+| `bcg-manager-modeling.md` | 88/25 manager role-modeling gap | — | people-frontline-engagement, people-literacy-curriculum, people-readiness-conversation |
+| `deloitte-cheerleader-to-champion.md` | CEO champion vs. cheerleader; HR's 5 jobs; 74/21 governance gap | — | general-maturity-assessment, people-frontline-engagement, people-literacy-curriculum, people-readiness-conversation |
+| `mckinsey-3x-senior-ownership.md` | 3× CEO ownership differential; AI high-performer archetype | — | people-readiness-conversation |
+| `mckinsey-3-objective-mix.md` | Efficiency / Growth / Innovation objective mix; 80% efficiency-only | — | general-idea-diagnostic, general-maturity-assessment, general-peer-cases, general-roi-gate, general-use-case-discovery, people-readiness-conversation |
+| `imda-4-dimensions-agentic.md` | IMDA four dimensions of agentic AI governance | tech-agent-guardrail | people-frontline-engagement, people-literacy-curriculum, process-portfolio-observability, process-productionization, tech-data-deployment |
+| `eu-ai-act-essentials.md` | Art. 4 literacy obligation; risk tiers; deployer obligations | — | people-literacy-curriculum, people-readiness-conversation, tech-agent-guardrail, tech-data-deployment |
+| `nist-rmf-functions.md` | NIST AI RMF: GOVERN / MAP / MEASURE / MANAGE | — | people-literacy-curriculum, process-portfolio-observability, process-productionization, tech-agent-guardrail, tech-data-deployment, tech-stack-diagnostic |
 | `accenture-maturity-archetypes.md` | Accenture AI Achievers/Innovators/Builders/Experimenters | general-maturity-assessment | people-readiness-conversation |
-| `mit-cisr-4-stages.md` | MIT CISR four maturity stages; Stage 3 inflection; DBS/Ping An examples | general-maturity-assessment | — |
-| `european-fintech-case.md` | Anonymized fintech case; measurement-gap failure | — | general-idea-diagnostic, process-pilot-design, general-roi-gate |
-| `ai-stack-layers.md` | Six-layer stack diagnostic framework | tech-stack-diagnostic | — |
-| `pilot-discipline-ng.md` | Cross-source pilot discipline: 90-day cap, pre-deployment metrics | process-pilot-design | general-idea-diagnostic |
+| `mit-cisr-4-stages.md` | MIT CISR four maturity stages; Stage 3 inflection; DBS/Ping An examples | general-maturity-assessment | general-peer-cases, process-portfolio-observability, process-productionization, tech-stack-diagnostic |
+| `european-fintech-case.md` | Anonymized fintech case; measurement-gap failure | — | general-idea-diagnostic, general-peer-cases, general-roi-gate, process-pilot-design, process-portfolio-observability, process-productionization |
+| `ai-stack-layers.md` | Six-layer stack diagnostic framework | tech-stack-diagnostic | tech-buy-vs-build, tech-data-deployment |
+| `pilot-discipline-ng.md` | Cross-source pilot discipline: 90-day cap, pre-deployment metrics | process-pilot-design | general-use-case-discovery, process-productionization |
 
 ## Additional references in this collection
 
