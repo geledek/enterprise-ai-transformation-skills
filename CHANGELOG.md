@@ -2,6 +2,15 @@
 
 All notable changes to this plugin are documented here.
 
+## [Unreleased]
+
+### Added
+- `scripts/validate.py` + GitHub Action (`.github/workflows/validate.yml`) — CI consistency check on every push/PR: every reference pointer in a SKILL.md resolves, `_index.md` consumer columns match actual citations, plugin manifests match the `skills/` directories, versions agree across manifests, and skill frontmatter is well-formed.
+
+### Fixed
+- **Broken reference pointer.** Three skills (`tech-buy-vs-build`, `tech-stack-diagnostic`, `general-peer-cases`) and `references/_index.md` cited `nanda-tech-buy-vs-build.md`, but the file on disk was named `nanda-buy-vs-build.md`. The file has been renamed to match the citations.
+- **Stale consumer columns in `references/_index.md`.** The "Also consulted by" column predated the 0.3.0 skill renames and cross-linking; regenerated from actual SKILL.md citations. `pwc-six-step-roadmap.md` and `wef-strategic-positions.md` are flagged as not currently cited by any skill.
+
 ## [0.3.0] — 2026-06-16
 
 ### Added
