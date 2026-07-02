@@ -1,6 +1,6 @@
 # Enterprise AI Transformation Skills
 
-Fifteen installable skills that help executives, operators, and consultants run enterprise AI transformation — from "where do we start?" to "is our agent governed correctly?" — distilled from 21 flagship research sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF) published 2024–2026.
+Sixteen installable skills that help executives, operators, and consultants run enterprise AI transformation — from "where do we start?" to "is our agent governed correctly?" — distilled from 21 flagship research sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF) published 2024–2026.
 
 > **TL;DR.** 95% of enterprise GenAI pilots return zero P&L impact. The 5% that win don't have better models — they operate differently across **people, process, technology**, and a layer of **general** strategy/diagnostics. This skill library encodes those operating patterns. Each skill is a structured prompt the AI runs for you; you ask the question, the skill produces a board-ready output.
 
@@ -42,6 +42,7 @@ Skills are grouped by what they fix. Pick the bucket that matches your problem; 
 | "Why isn't our AI investment moving the needle? (people gaps)" | `people-readiness-conversation` | people |
 | "We need an AI literacy / EU AI Act Art. 4 training program." | `people-literacy-curriculum` | people |
 | "Frontline experts (clinicians, lawyers, agents) are blocking the pilot." | `people-frontline-engagement` | people |
+| "Which AI tool should I teach / roll out to this specific group?" | `people-tool-selection` | people |
 
 If your question hits multiple rows, run the **higher one first** — it sets context for the rest.
 
@@ -55,7 +56,7 @@ If your question hits multiple rows, run the **higher one first** — it sets co
 ```
 https://github.com/geledek/enterprise-ai-transformation-skills
 ```
-Restart. All 15 skills activate from their trigger phrases.
+Restart. All 16 skills activate from their trigger phrases.
 
 **Claude Code** — `claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills`
 
@@ -105,6 +106,7 @@ For a leader running an end-to-end AI transformation, this is the canonical sequ
 ├─ people-readiness-conversation ── (run quarterly — surfaces gaps the tech can't fix)
 ├─ people-literacy-curriculum ───── (close the literacy gap, satisfy EU AI Act Art. 4)
 ├─ people-frontline-engagement ──── (when fearful experts are blocking rollout)
+├─ people-tool-selection ────────── (choosing which AI tool to put in front of a group)
 │
 ├─ general-peer-cases ──────────── (pull at any decision point: "what have others done?")
 └─ tech-stack-diagnostic ───────── (run before any major scaling decision)

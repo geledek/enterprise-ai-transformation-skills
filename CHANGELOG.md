@@ -2,6 +2,11 @@
 
 All notable changes to this plugin are documented here.
 
+## [Unreleased]
+
+### Added
+- **New skill: `people-tool-selection`** — six-role selector for choosing which AI tool to put in front of a specific user group (training cohort, team, department). Constraint-first method: hard eliminators (cost, ecosystem, setup friction, data, language, IT policy) filter candidates before capability comparison; then picks an intervention mode (Deepen / Extend / Introduce) and ranks survivors by new-artifact delta per unit of friction. Outputs Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip plus a first-win exercise and growth path. Ships with the Mongolian-teachers reference case (NotebookLM chosen over advanced prompting, agent skills, and Manus). Skill count is now 16.
+
 ## [0.4.0] — 2026-07-02
 
 ### Added

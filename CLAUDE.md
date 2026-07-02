@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This repo is a Claude Code plugin: 15 prompt-only skills for enterprise AI
+This repo is a Claude Code plugin: 16 prompt-only skills for enterprise AI
 transformation. No build step, no runtime dependencies — everything is
 markdown plus two JSON manifests.
 

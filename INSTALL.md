@@ -8,7 +8,7 @@
 claude plugin install https://github.com/geledek/enterprise-ai-transformation-skills
 ```
 
-Restart Claude Code. All 15 skills activate automatically.
+Restart Claude Code. All 16 skills activate automatically.
 
 ### Option B — Manual Clone
 
@@ -53,6 +53,7 @@ After restart, test each skill with its trigger phrase. Skills are grouped by bu
 | `people-readiness-conversation` | "Surface AI readiness gaps in our leadership team" |
 | `people-literacy-curriculum` | "Build a role-based AI literacy curriculum" |
 | `people-frontline-engagement` | "How do we engage skeptical frontline experts?" |
+| `people-tool-selection` | "Which AI tool should I teach this group?" |
 
 ---
 
@@ -62,7 +63,7 @@ After restart, test each skill with its trigger phrase. Skills are grouped by bu
 2. Click **Add plugin** (`+`) → **Create Plugin** → **Add Marketplace** → **Add from a repository**
 3. Paste this URL when prompted:
    `https://github.com/geledek/enterprise-ai-transformation-skills`
-4. Restart Claude Desktop. All 15 skills activate automatically from their trigger phrases.
+4. Restart Claude Desktop. All 16 skills activate automatically from their trigger phrases.
 
 Requires a paid plan (Pro, Max, Team, or Enterprise). See [Claude plugin docs](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
 

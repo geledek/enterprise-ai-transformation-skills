@@ -1,6 +1,6 @@
 # Usage Guide — Enterprise AI Transformation Skills
 
-A comprehensive, worked-example reference for the 15 skills in this repo. Every section is the actual transcript an agent produces when the skill is invoked against a real situation — not summaries, not abstractions.
+A comprehensive, worked-example reference for the skills in this repo. Every section is the actual transcript an agent produces when the skill is invoked against a real situation — not summaries, not abstractions.
 
 This guide answers four questions:
 
@@ -25,7 +25,7 @@ References are bundled per-skill (in `references/`) and resolved by filename, no
 
 ---
 
-## 2. The 15 skills at a glance
+## 2. The skills at a glance
 
 | # | Skill | When to use it | Closes which gap |
 |---|---|---|---|
@@ -44,6 +44,7 @@ References are bundled per-skill (in `references/`) and resolved by filename, no
 | 13 | `people-literacy-curriculum` | Stand up role-based literacy + EU AI Act Art. 4 evidence | People |
 | 14 | `people-frontline-engagement` | Engage skeptical frontline experts as co-designers, protect tradecraft | People |
 | 15 | `general-peer-cases` | "What have others actually done?" — pull closest-match analogs | Reference |
+| 16 | `people-tool-selection` | Choose which AI tool to put in front of a specific user group | Tool choice |
 
 For a typical executive flow, see the README. For chained-flow examples, see Section 4 below.
 
