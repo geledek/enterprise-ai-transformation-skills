@@ -134,9 +134,17 @@ This loads one skill per Project. Skills activate on their trigger phrases.
 
 ---
 
-## Updating / Syncing References
+## Updating
 
-Reference files in `references/` are snapshots. To update:
+**Claude Code (plugin manager install):**
+
+```bash
+claude plugin update enterprise-ai-transformation-skills
+```
+
+**Claude Desktop:** remove the plugin (Customization → your plugin → remove), then repeat the install steps above. Restart after updating.
+
+**Manual clone (Claude Code, Grok, or fork):**
 
 ```bash
 git pull origin main
