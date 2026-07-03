@@ -1,0 +1,62 @@
+name: Wrong verdict report
+description: A skill produced a verdict that didn't match reality. This is the most valuable feedback this repo can receive — every confirmed report becomes a regression case.
+title: "[wrong-verdict] <skill>: <one-line summary>"
+labels: ["wrong-verdict"]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Which skill?
+      options:
+        - general-idea-diagnostic
+        - general-use-case-discovery
+        - general-maturity-assessment
+        - general-peer-cases
+        - general-roi-gate
+        - process-pilot-design
+        - process-productionization
+        - process-portfolio-observability
+        - tech-stack-diagnostic
+        - tech-buy-vs-build
+        - tech-data-deployment
+        - tech-agent-guardrail
+        - people-readiness-conversation
+        - people-literacy-curriculum
+        - people-frontline-engagement
+        - people-tool-selection
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: The situation you ran it on
+      description: Anonymized — pattern over personality (no company or person names needed). Enough detail that someone else could reproduce the run.
+      placeholder: "Training cohort of ~40 nurses, hospital on Microsoft 365, no budget, patient data in scope…"
+    validations:
+      required: true
+  - type: input
+    id: verdict-given
+    attributes:
+      label: Verdict the skill gave
+      placeholder: "Adopt-now"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What actually happened (or what you expected and why)
+      description: If you followed the verdict — what was the outcome? If you overrode it — what did the skill miss?
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and host you ran it on
+      placeholder: "Claude Opus 4.8 via Claude Code plugin / pasted into ChatGPT / …"
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The situation above is anonymized — no confidential or personal data.
+          required: true

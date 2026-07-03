@@ -72,7 +72,16 @@ It checks that every reference pointer resolves, `references/_index.md`
 matches actual citations, the plugin manifests match the `skills/`
 directories, and frontmatter is well-formed. If you changed a skill's
 behavior, re-run its row from `tests/golden-prompts.md` and confirm the
-verdict vocabulary is unchanged.
+verdict vocabulary is unchanged — or run it live:
+
+```bash
+python3 scripts/run_golden_prompts.py --only <your-skill>          # activation
+python3 scripts/run_golden_prompts.py --routing --only <your-skill> # routing
+```
+
+(This calls the API through headless `claude -p`, so it costs tokens and is
+not run by CI. If you changed a frontmatter `description`, run the routing
+mode — descriptions are what Claude routes on.)
 
 ## Commit style
 

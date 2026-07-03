@@ -2,6 +2,15 @@
 
 All notable changes to this plugin are documented here.
 
+## [Unreleased]
+
+### Added
+- `scripts/run_golden_prompts.py` — live golden-prompt runner. Executes every activation and routing prompt from `tests/golden-prompts.md` through headless `claude -p --plugin-dir`, asserting the right skill activates, adjacent skills stay dormant, and (in `--full` mode) the output uses the contracted verdict vocabulary. Costs API tokens — run before releases, not in CI. Supports `--model` for cross-model checks.
+- "Wrong verdict report" issue template (`.github/ISSUE_TEMPLATE/wrong-verdict.yml`) — structured field-report intake; every confirmed report becomes a regression case.
+
+### Fixed
+- **`plugin.json` rejected by current Claude Code.** The manifest failed schema validation (`author` must be an object, not a string; `skills` paths must be `./`-prefixed), so `--plugin-dir` loads — and potentially fresh plugin-manager installs — silently dropped all 16 skills. Found by the first live run of the golden-prompt runner.
+
 ## [0.5.0] — 2026-07-02
 
 ### Added

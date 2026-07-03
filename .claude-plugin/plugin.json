@@ -3,7 +3,10 @@
   "displayName": "Enterprise AI Transformation Skills",
   "version": "0.5.0",
   "description": "Sixteen installable skills for diagnosing, designing, governing, and scaling enterprise AI transformation. Distilled from 21 flagship sources (Stanford, MIT, McKinsey, BCG, Deloitte, PwC, Accenture, NIST, EU AI Act, IMDA, WEF).",
-  "author": "Ray Han",
+  "author": {
+    "name": "Ray Han",
+    "email": "ray@rayhan.ai"
+  },
   "license": "MIT",
   "homepage": "https://github.com/geledek/enterprise-ai-transformation-skills",
   "repository": "https://github.com/geledek/enterprise-ai-transformation-skills",
@@ -19,21 +22,21 @@
     "decision-frameworks"
   ],
   "skills": [
-    "skills/general-idea-diagnostic",
-    "skills/general-use-case-discovery",
-    "skills/general-maturity-assessment",
-    "skills/general-peer-cases",
-    "skills/general-roi-gate",
-    "skills/process-pilot-design",
-    "skills/process-productionization",
-    "skills/process-portfolio-observability",
-    "skills/tech-stack-diagnostic",
-    "skills/tech-buy-vs-build",
-    "skills/tech-data-deployment",
-    "skills/tech-agent-guardrail",
-    "skills/people-readiness-conversation",
-    "skills/people-literacy-curriculum",
-    "skills/people-frontline-engagement",
-    "skills/people-tool-selection"
+    "./skills/general-idea-diagnostic",
+    "./skills/general-use-case-discovery",
+    "./skills/general-maturity-assessment",
+    "./skills/general-peer-cases",
+    "./skills/general-roi-gate",
+    "./skills/process-pilot-design",
+    "./skills/process-productionization",
+    "./skills/process-portfolio-observability",
+    "./skills/tech-stack-diagnostic",
+    "./skills/tech-buy-vs-build",
+    "./skills/tech-data-deployment",
+    "./skills/tech-agent-guardrail",
+    "./skills/people-readiness-conversation",
+    "./skills/people-literacy-curriculum",
+    "./skills/people-frontline-engagement",
+    "./skills/people-tool-selection"
   ]
 }
