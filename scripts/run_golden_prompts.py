@@ -104,8 +104,11 @@ def run_claude(prompt: str, model: str | None, max_turns: int | None, timeout: i
                     activated.add(block.get("input", {}).get("skill", "").split(":")[-1])
         elif event.get("type") == "result":
             result_text = event.get("result") or ""
-            if event.get("is_error") or event.get("subtype") != "success":
-                # A failed run must not masquerade as "skill stayed dormant".
+            # error_max_turns is expected in capped routing runs — activation is
+            # already visible in the transcript. Any other failure must not
+            # masquerade as "skill stayed dormant".
+            if (event.get("is_error") or event.get("subtype") != "success") \
+                    and event.get("subtype") != "error_max_turns":
                 result_error = f"{event.get('subtype')}: {result_text[:200]}"
     return activated, result_text, result_error
 
