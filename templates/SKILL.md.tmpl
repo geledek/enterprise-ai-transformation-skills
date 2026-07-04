@@ -40,7 +40,7 @@ new assessment.>
 ## Role N: <Synthesis Role Name>
 
 Read the outputs of Roles 1 to N-1. Produce the verdict. Do not introduce new
-assessment here. Write for a board audience. Be direct.
+assessment here.
 
 VERDICT: [<Verdict-1> / <Verdict-2> / <Verdict-3>]
 
@@ -70,6 +70,17 @@ actually made) — answer these five questions before writing any role:
   4. Which failure modes are common enough to deserve their own role?
   5. What verdict vocabulary fits the decision — and does it collide with
      another gating skill's?
+
+Writing the roles — two habits that keep a skill sharp as it grows:
+  - Noop deletion test: for every sentence outside the output template, ask
+    "would deleting this change the output?" If not, cut it. Generic framing
+    ("write for a board audience", "be direct") almost always fails this test
+    — the output template already governs format.
+  - Leading words: pick one dense, well-known term that captures this
+    skill's core distinction (e.g. "constraints eliminate before capability
+    ranks", "net-of-oversight ROI") and echo it at the role where a weaker
+    model is most likely to drift from it — don't just define it once in the
+    intro and never mention it again.
 
 Checklist before opening a PR (CI enforces most of this via scripts/validate.py):
   [ ] Directory name matches frontmatter `name` and carries a bucket prefix

@@ -124,7 +124,7 @@ USER TRANSPARENCY STATUS | TRAINING COMPLETENESS | TRADECRAFT RISK
 
 ## Synthesis: Governance Readiness Assessment
 
-Consolidate Dimensions 1–4. Write for deployment decision-maker.
+Consolidate Dimensions 1–4.
 
 READINESS VERDICT: [Deploy / Deploy-with-conditions / Do-not-deploy-until-gaps-addressed]
 

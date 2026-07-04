@@ -13,7 +13,7 @@ markdown plus two JSON manifests.
 - `references/` — 200–500-word research extracts skills cite by bare filename.
   `references/_index.md` is the catalog; its consumer columns are validated
   against actual citations.
-- `.claude-plugin/plugin.json` + `marketplace.json` — both list all 15 skills
+- `.claude-plugin/plugin.json` + `marketplace.json` — both list all 16 skills
   and carry the version; they must stay in sync (CI checks this).
 - `templates/SKILL.md.tmpl` — starting point for new skills.
 - `docs/` — usage guide, demo scripts, effectiveness reports.
@@ -34,6 +34,15 @@ markdown plus two JSON manifests.
 - Commit style: `<skill-or-ref>: <what changed>`
   (e.g. `general-roi-gate: tighten Q3 measurement prompt`).
 - Notable changes go under `## [Unreleased]` in `CHANGELOG.md`.
+- All 16 skills are deliberately **model-invoked** — the frontmatter
+  `description` (and its trigger phrases) is designed to sit in the agent's
+  context every session so the right skill auto-fires on the right prompt.
+  This is a considered tradeoff, not an oversight: it costs per-session
+  context (16 descriptions ≈ 3K tokens), but a decision-gate plugin that
+  requires the user to remember and manually invoke 16 skill names defeats
+  its own purpose. Don't "fix" this by making skills user-invoked-only; do
+  keep descriptions tight, since that context cost is paid on every session
+  regardless of which skill fires.
 
 ## Before committing
 

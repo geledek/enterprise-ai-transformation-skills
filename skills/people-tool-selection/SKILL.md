@@ -1,6 +1,6 @@
 ---
 name: people-tool-selection
-description: Use when choosing which AI tool to put in front of a specific user group — a training cohort, a team, a school, a department — or deciding whether to teach deeper prompting, extend existing tools with agent skills, or introduce a new tool. Phrases like "which AI tool should I teach this group?", "choosing an AI tool for our teachers / nurses / analysts", "what AI tool should we roll out to the team?", "should I teach advanced prompting or a new tool?" all trigger this skill. Runs six roles — Audience Profiler, Constraint Mapper (hard eliminators before any capability comparison), Intervention-Mode Selector (Deepen / Extend / Introduce), Capability-Delta Assessor, First-Win Realist, Synthesis. Outputs Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip plus a growth path. For build/buy/partner sourcing of an AI capability use tech-buy-vs-build; for enterprise-wide curriculum design use people-literacy-curriculum.
+description: Use when choosing which AI tool to put in front of a specific user group — a training cohort, a team, a school, a department — or deciding whether to teach deeper prompting, extend existing tools with agent skills, or introduce a new tool. Phrases like "which AI tool should I teach this group?", "choosing an AI tool for our teachers / nurses / analysts", "should I teach advanced prompting or a new tool?" all trigger this skill. Runs six roles — Audience Profiler, Constraint Mapper (hard eliminators before any capability comparison), Intervention-Mode Selector (Deepen / Extend / Introduce), Capability-Delta Assessor, First-Win Realist, Synthesis. Outputs Adopt-now / Adopt-with-scaffolding / Pilot-with-subgroup / Skip plus a growth path. For build/buy/partner sourcing of an AI capability use tech-buy-vs-build; for enterprise-wide curriculum design use people-literacy-curriculum.
 ---
 
 # People — AI Tool Selection
@@ -51,7 +51,7 @@ CANDIDATES | CONSTRAINT TABLE (pass/fail per filter) | SURVIVORS | ELIMINATED (e
 
 ## Role 3: Intervention-Mode Selector (Deepen / Extend / Introduce?)
 
-The real choice set is rarely just tools — it is three intervention modes. Pick the primary mode before ranking tools.
+Work only from Role 2's survivor set — constraints already eliminated the rest. The real choice set is rarely just tools — it is three intervention modes. Pick the primary mode before ranking tools.
 
 - **DEEPEN** — better use of tools the group already has (structured prompting frameworks, workflow habits). Right when the baseline is low, or current tools are underused relative to their ceiling.
 - **EXTEND** — add capability to existing tools (agent skills, custom GPTs/Projects, connectors, templates). Right when the baseline is solid AND someone in the group can own and maintain the extensions. *Consult `hiten-skill-library.md` — the skill-library strategy is the canonical Extend play.*

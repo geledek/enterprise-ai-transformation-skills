@@ -110,7 +110,7 @@ JOB 1–5 STATUS (ACTIVE/PLANNED/ABSENT) | CRITICAL GAPS | SPECIFIC ACTIONS PER 
 
 ## Synthesis: 4-Role Gap Report
 
-Consolidate Roles 1–4. Write for CEO or CHRO audience.
+Consolidate Roles 1–4. The reader is the CEO or CHRO who owns the fix.
 
 **OVERALL READINESS ASSESSMENT:**
 - People layer is: STRONG / DEVELOPING / CRITICAL-GAP

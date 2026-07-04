@@ -94,7 +94,7 @@ Output:
 
 ## Role 4: Investment Verdict
 
-Synthesize Roles 1–3. Write for executive or board audience.
+Synthesize Roles 1–3.
 
 RECOMMENDATION: [Approve / Approve-with-conditions / Return-for-revision / Reject]
 

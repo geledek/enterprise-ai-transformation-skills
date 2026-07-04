@@ -1,13 +1,13 @@
 ---
 name: tech-data-deployment
-description: Use when matching enterprise data sensitivity to AI deployment pattern, deciding whether a use case can run on consumer ChatGPT vs enterprise SaaS vs VPC vs air-gapped, suppressing shadow AI, or specifying the control stack required per data class. Phrases like "can we use ChatGPT for this?", "is this data safe for an enterprise SaaS LLM?", "what controls do we need for PII/PHI in this AI workflow?", "consumer-tier vs enterprise-tier tool — which one applies?", "shadow-AI is everywhere, how do we sanction tools?", "what deployment pattern fits regulated data?" all trigger this skill. Maps each data sensitivity class to one of five deployment tiers, names the minimum control stack per tier under NIST AI RMF / ISO 42001 / EU AI Act, and outputs a deployment-pattern verdict (Approved / Conditional / Blocked) with a control checklist and regulatory citations.
+description: Use when matching enterprise data sensitivity to AI deployment pattern, deciding whether a use case can run on consumer ChatGPT vs enterprise SaaS vs VPC vs air-gapped, suppressing shadow AI, or specifying the control stack required per data class. Phrases like "can we use ChatGPT for this?", "is this data safe for an enterprise SaaS LLM?", "what controls do we need for PII/PHI in this AI workflow?", "shadow-AI is everywhere, how do we sanction tools?", "what deployment pattern fits regulated data?" all trigger this skill. Maps each data sensitivity class to one of five deployment tiers, names the minimum control stack per tier under NIST AI RMF / ISO 42001 / EU AI Act, and outputs a deployment-pattern verdict (Approved / Conditional / Blocked) with a control checklist and regulatory citations.
 ---
 
 # Tech — Data-Trust Deployment Pattern
 
 A four-dimension assignment of data sensitivity class to deployment pattern with explicit per-tier controls. Anchored to NIST AI RMF (GOVERN/MAP/MEASURE/MANAGE), ISO/IEC 42001, EU AI Act risk tiers, and IMDA Model AI Governance Framework + GenAI Companion.
 
-Empirical anchor: BCG 2025 broad-use-vs-value gap — 88% of organizations use AI broadly, only ~25% capture material value; the gap is largely a data-trust and deployment-pattern gap, not a model gap. (Distinct from the BCG 88/25 *manager role-modeling* finding cited in `people-readiness-conversation` and `people-literacy-curriculum`.) MIT 95% — most enterprise GenAI pilots fail to reach production, and shadow-AI usage runs ~2x sanctioned usage in the surveyed cohort.
+Empirical anchor: BCG 2025 *broad-use-vs-value* 88/25 gap — 88% of organizations use AI broadly, only ~25% capture material value; the gap is largely a data-trust and deployment-pattern gap, not a model gap. (A different BCG 88/25 finding — *manager role-modeling* — is cited in `people-readiness-conversation` and `people-literacy-curriculum`; always read "88/25" here as broad-use-vs-value.) MIT 95% — most enterprise GenAI pilots fail to reach production, and shadow-AI usage runs ~2x sanctioned usage in the surveyed cohort.
 
 Verdict vocabulary (stable output contract): **Approved / Conditional / Blocked**, with assigned deployment tier and per-tier control checklist.
 
@@ -149,7 +149,7 @@ SANCTIONED CATALOGUE STATUS | CONDITIONAL-ACCESS POSTURE | SHADOW-AI RATE | SEAT
 
 ## Synthesis: Deployment Pattern Verdict
 
-Consolidate Dimensions 1–4. Write for the deployment decision-maker (CISO + business owner + DPO).
+Consolidate Dimensions 1–4. Name the sign-off owners: CISO, business owner, DPO.
 
 DEPLOYMENT VERDICT: [Approved / Conditional / Blocked]
 

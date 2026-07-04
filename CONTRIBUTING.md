@@ -41,6 +41,14 @@ case that inspired it, and that one counterfactual (a changed input) flips the
 verdict. `skills/people-tool-selection/` with its `cases/` file is the worked
 example of this process.
 
+Two habits keep a skill sharp as it grows:
+- **Noop deletion test.** For every sentence outside the output template, ask
+  "would deleting this change the output?" If not, cut it — generic framing
+  ("write for a board audience", "be direct") almost never survives this test.
+- **Leading words.** Pick one dense, well-known term that captures the
+  skill's core distinction, and echo it at the role where a weaker model is
+  most likely to drift from it — don't just define it once in the intro.
+
 ## What not to change in a fork
 
 - The structural role sequence — it's the methodology, not a style choice

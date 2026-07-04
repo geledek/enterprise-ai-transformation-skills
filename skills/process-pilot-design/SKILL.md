@@ -130,7 +130,7 @@ PILOT OWNER | SPONSOR | USER CHAMPION
 
 ## Role 7: Pilot Brief (Synthesis)
 
-Produce a one-page pilot brief from Roles 1–6. Write for sponsor approval. Be direct.
+Produce a one-page pilot brief from Roles 1–6, ready for sponsor sign-off.
 
 **PILOT BRIEF**
 

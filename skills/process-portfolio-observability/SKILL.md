@@ -7,7 +7,7 @@ description: Use when an enterprise has shipped AI agents but cannot see usage, 
 
 Most enterprises run AI like a black box: they ship agents, they pay tokens, they cannot answer "what did this earn us net of oversight?" PwC's 2026 ROI guidance is explicit — *gross* productivity is not the number; **net-of-oversight ROI** is. The european fintech case shows the trap: 40% deflection headline, 22% CSAT drop, net value negative. This skill builds the instrumentation that exposes that math before the board does.
 
-Anchor: PwC three-channel ROI (efficiency + growth + revenue) minus oversight cost; IMDA Dimension 4 structural controls; NIST RMF MANAGE function on continuous monitoring; 70/20/10 *portfolio mix* prior (70% core / 20% adjacent / 10% transformational — not to be confused with BCG's 10/20/70 *effort split* used in `general-use-case-discovery` and `general-peer-cases`, or `people-literacy-curriculum`'s 70-20-10 *training-budget* split).
+Anchor: PwC three-channel ROI (efficiency + growth + revenue) minus oversight cost; IMDA Dimension 4 structural controls; NIST RMF MANAGE function on continuous monitoring; 70/20/10 *portfolio mix* prior (70% core / 20% adjacent / 10% transformational). Distinct from BCG's *effort-split* and *training-budget* uses of the same digits elsewhere in this plugin — always read "70/20/10" here as portfolio mix.
 
 Verdict vocabulary (stable output contract): **Observable-and-governed / Partial-observability / Black-box**.
 

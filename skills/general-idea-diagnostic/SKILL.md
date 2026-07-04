@@ -32,7 +32,7 @@ WHO FEELS THE PAIN | WHAT IT COSTS | FRICTION-FIRST OR TECH-FIRST | PAIN STATEME
 
 ## Role 2: Devil's Advocate (Q2 — Right Solution Mode?)
 
-Your job is to find where this breaks, not where it succeeds.
+Your job is to find where this breaks, not where it succeeds. If Role 1 classified this as tech-first, apply extra scrutiny below — a solution hunting for friction fails the reliability test more often than one born from a named pain.
 
 RELIABILITY TEST. "Would I be comfortable if this output reached the end consequence — the customer, the regulator, the judge — without human review?" Yes or no. Name the consequence of an error.
 
@@ -88,7 +88,7 @@ WHAT ACCUMULATES | THREE METRICS | MEASUREMENT GAP | OBJECTIVE MODE | MOAT TYPE 
 
 ## Role 4: Realist (Q4 — Right Capability?)
 
-Your job is to identify the execution gaps that would prevent this idea from working in practice, regardless of how sound the concept is.
+Your job is to identify the execution gaps that would prevent this idea from working in practice, regardless of how sound the concept is. Tech-first ideas (Role 1) tend to surface more gaps here — the capability was chosen before the constraint was known.
 
 DATA. Is the data AI-ready? Does the organisation have confirmed legal rights to use it? Is it in a usable format and accessible via pipeline? (Consult `isg-data-foundation.md` — the binding-constraint finding.)
 
@@ -104,8 +104,6 @@ DATA | INTEGRATION | CHANGE MANAGEMENT | Q4 VERDICT (Pass / Gaps / Fail)
 ## Role 5: Senior Advisor (Synthesis)
 
 Read the outputs of Roles 1–4. Produce the verdict. Do not introduce new assessment here.
-
-Write for a board audience. Be direct.
 
 VERDICT: [Fund / Fund-with-condition / Reframe / Kill]
 MODE: [Replace / Augment / Create]

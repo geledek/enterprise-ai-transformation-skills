@@ -11,6 +11,14 @@ All notable changes to this plugin are documented here.
 ### Fixed
 - **`plugin.json` rejected by current Claude Code.** The manifest failed schema validation (`author` must be an object, not a string; `skills` paths must be `./`-prefixed), so `--plugin-dir` loads — and potentially fresh plugin-manager installs — silently dropped all 16 skills. Found by the first live run of the golden-prompt runner.
 
+### Changed
+- Applied a "missing manual" checklist pass (trigger design, structure, steering, pruning) across the skill suite:
+  - Removed a generic "write for [audience]. Be direct." sentence from 7 Synthesis/consolidation roles that added nothing beyond the output template already below it (kept concrete stakeholder specs where present, e.g. `tech-data-deployment`'s CISO/business-owner/DPO sign-off).
+  - Reinforced two under-used "leading words" so they survive past the intro: `people-tool-selection`'s "constraints eliminate before capability ranks" now echoes at Role 3; `general-idea-diagnostic`'s "Friction-first vs. Tech-first" now echoes at Roles 2 and 4.
+  - Shortened the two long "not to be confused with" disambiguation footnotes (70/20/10 in `process-portfolio-observability`, 88/25 in `tech-data-deployment`) — each colliding number is now self-disambiguating at first use, so the footnote no longer has to carry the whole burden.
+  - Trimmed one redundant example trigger phrase each from the three longest skill descriptions (`people-tool-selection`, `tech-data-deployment`, `people-frontline-engagement`), keeping every distinct phrasing.
+  - `CLAUDE.md` documents the deliberate model-invoked trigger choice for this plugin (and the context-load tradeoff), so it isn't "fixed" by a future contributor; `templates/SKILL.md.tmpl` and `CONTRIBUTING.md` gain a noop-deletion-test and leading-words habit for new skills.
+
 ## [0.5.0] — 2026-07-02
 
 ### Added
